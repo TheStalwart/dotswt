@@ -6,8 +6,8 @@ auto-center = yes
 color title = grey
 color title-bold = grey
 
-color list = grey
-color list-bold = white
+color list = white
+color list-bold = yellow
 
 color status-state = grey
 color status-song = white
