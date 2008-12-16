@@ -21,4 +21,4 @@ docker &
 urxvtd &
 
 # keyboard layout
-setxkbmap -model geniuscomfy2 -layout "lv,ru(winkeys)" -option "grp:caps_toggle" &
+setxkbmap -model geniuscomfy2 -layout "lv,ru" -option "grp:caps_toggle" &
