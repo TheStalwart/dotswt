@@ -1,0 +1,20 @@
+set-xterm-title = yes
+enable-colors = yes
+auto-center = yes
+
+
+color title = grey
+color title-bold = grey
+
+color list = grey
+color list-bold = white
+
+color status-state = grey
+color status-song = white
+color status-time = grey
+color alert = white
+
+
+xterm-title-format = #[MPD#] [[%artist% - ]%title%]|[%file]
+list-format = [[%artist% - ][%album% - ]%title%]|[%file]
+status-format = [[%artist% - ][%album% - ][#[%track%#] ]%title%]|[%file]
