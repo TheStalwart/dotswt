@@ -3,3 +3,5 @@
 	email = stlwrt@gmail.com
 [core]
 	editor = vim
+[color]
+	ui = true
