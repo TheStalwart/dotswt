@@ -1,0 +1,32 @@
+alignment bottom_left
+background no
+border_width 1
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color white
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+double_buffer yes
+font -*-terminus-*-*-*-*-*-120-*-*-*-*-iso10646-*
+gap_x 1683
+gap_y 3
+minimum_size 5 5
+net_avg_samples 3
+no_buffers yes
+out_to_console no
+own_window no
+own_window_class Conky
+own_window_type normal
+stippled_borders 0
+update_interval 5.0
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+
+TEXT
+${freq}MHz $memeasyfree ${fs_free /home} ${downspeed eth0}KiB ${upspeed eth0}KiB
+[$mpd_status] $mpd_artist - $mpd_album - [$mpd_track] $mpd_title
