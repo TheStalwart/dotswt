@@ -291,6 +291,12 @@
     </action>
   </keybind>
 
+  <keybind key="W-p">
+    <action name="Execute">
+      <command>~/Games/torque/pt.sh</command>
+    </action>
+  </keybind>
+
   <keybind key="W-s">
     <startupnotify>
       <enabled>true</enabled>
