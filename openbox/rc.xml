@@ -155,10 +155,8 @@
 </margins>
 
 <dock>
-  <position>Floating</position>
+  <position>BottomRight</position>
   <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
-  <floatingX>1680</floatingX>
-  <floatingY>1022</floatingY>
   <noStrut>yes</noStrut>
   <stacking>Above</stacking>
   <!-- 'Above', 'Normal', or 'Below' -->
