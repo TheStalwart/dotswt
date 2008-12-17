@@ -321,6 +321,16 @@
     </action>
   </keybind>
 
+  <keybind key="W-b">
+    <startupnotify>
+      <enabled>true</enabled>
+      <name>MySQL Query Browser</name>
+    </startupnotify>
+    <action name="Execute">
+      <command>mysql-query-browser</command>
+    </action>
+  </keybind>
+
   <!-- mpd -->
   <keybind key="XF86Tools">
     <action name="Execute">
