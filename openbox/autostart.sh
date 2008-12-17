@@ -19,6 +19,7 @@ esac
 # utils
 docker &
 urxvtd &
+conky &
 
 # keyboard layout
 setxkbmap -model geniuscomfy2 -layout "lv,ru" -option "grp:caps_toggle" &
