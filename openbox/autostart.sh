@@ -20,7 +20,7 @@ esac
 # utils
 docker &
 urxvtd &
-conky $CONKYPARAMS &
+conky -q $CONKYPARAMS &
 
 # keyboard layout
 setxkbmap -model geniuscomfy2 -layout "lv,ru" -option "grp:caps_toggle" &
