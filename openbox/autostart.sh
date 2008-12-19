@@ -10,6 +10,7 @@ case "$HOSTNAME" in
     ;;
   work.scwlab.com)
     feh --bg-center ~/Pictures/wpaps/fire-final.jpg &
+    CONKYPARAMS='-x 3'
     ;;
   *)
     xsetroot -solid "#303030"
@@ -19,7 +20,7 @@ esac
 # utils
 docker &
 urxvtd &
-conky &
+conky $CONKYPARAMS &
 
 # keyboard layout
 setxkbmap -model geniuscomfy2 -layout "lv,ru" -option "grp:caps_toggle" &
