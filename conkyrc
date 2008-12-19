@@ -29,4 +29,4 @@ show_graph_range no
 
 TEXT
 $mpd_smart
-${freq_g}GHz $memeasyfree ${fs_free /home} ${downspeed eth0}KiB ${upspeed eth0}KiB
+${time %H:%M %a %d-%m-%Y} ${freq_g}GHz $memeasyfree ${fs_free /home} ${downspeed eth0}KiB ${upspeed eth0}KiB
