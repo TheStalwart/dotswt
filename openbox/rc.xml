@@ -252,9 +252,28 @@
     </action>
   </keybind>
 
+  <!-- screenshots -->
   <keybind key="Print">
     <action name="Execute">
       <command>scrot</command>
+    </action>
+  </keybind>
+
+  <keybind key="A-Print">
+    <action name="Execute">
+      <command>scrot -s</command>
+    </action>
+  </keybind>
+
+  <keybind key="S-Print">
+    <action name="Execute">
+      <command>imgup</command>
+    </action>
+  </keybind>
+
+  <keybind key="A-S-Print">
+    <action name="Execute">
+      <command>imgup -s</command>
     </action>
   </keybind>
 
