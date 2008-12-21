@@ -1,7 +1,11 @@
 #!/bin/sh
 
-if [[ $1 == '' ]]
-  then filename='/tmp/imgup-'`whoami`'-'`date +%s`'.png'; scrot -e $0' $f' $filename; rm $filename; exit
+if [[ $1 == '-s' ]]
+  then scrot_opts='-s'
+fi
+
+if [[ ! -f $1 ]]
+  then filename='/tmp/imgup-'`whoami`'-'`date +%s`'.png'; scrot $scrot_opts -e $0' $f' $filename; rm $filename; exit
 fi
 
 filemime=`xdg-mime query filetype $1`
