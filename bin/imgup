@@ -1,5 +1,9 @@
 #!/bin/sh
 
+if [[ $1 == '' ]]
+  then filename='/tmp/imgup-'`whoami`'-'`date +%s`'.png'; scrot -e $0' $f' $filename; rm $filename; exit
+fi
+
 filemime=`xdg-mime query filetype $1`
 fileurl=`curl -s -F 'postimg=1' -F filename=@$1\;type=$filemime -w '%{redirect_url}' http://img.flashtux.org`
 
