@@ -1,0 +1,6 @@
+#!/bin/sh
+
+filemime=`xdg-mime query filetype $1`
+fileurl=`curl -s -F 'postimg=1' -F filename=@$1\;type=$filemime -w '%{redirect_url}' http://img.flashtux.org`
+
+xdg-open $fileurl
