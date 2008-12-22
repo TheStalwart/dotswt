@@ -344,6 +344,16 @@
     </action>
   </keybind>
 
+  <keybind key="S-W-t">
+    <startupnotify>
+      <enabled>true</enabled>
+      <name>LinuxDC++</name>
+    </startupnotify>
+    <action name="Execute">
+      <command>linuxdcpp</command>
+    </action>
+  </keybind>
+
   <keybind key="W-b">
     <startupnotify>
       <enabled>true</enabled>
