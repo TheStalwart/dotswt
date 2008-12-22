@@ -337,7 +337,7 @@
   <keybind key="W-t">
     <startupnotify>
       <enabled>true</enabled>
-      <name>KTorrent</name>
+      <name>Transmission</name>
     </startupnotify>
     <action name="Execute">
       <command>transmission</command>
