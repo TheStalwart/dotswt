@@ -340,7 +340,7 @@
       <name>KTorrent</name>
     </startupnotify>
     <action name="Execute">
-      <command>ktorrent</command>
+      <command>transmission</command>
     </action>
   </keybind>
 
