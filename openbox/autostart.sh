@@ -20,6 +20,7 @@ esac
 # utils
 docker &
 urxvtd &
+numlockx &
 conky -q $CONKYPARAMS &
 
 # keyboard layout
