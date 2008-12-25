@@ -324,6 +324,16 @@
     </action>
   </keybind>
 
+  <keybind key="W-o">
+    <startupnotify>
+      <enabled>true</enabled>
+      <name>OpenOffice</name>
+    </startupnotify>
+    <action name="Execute">
+      <command>openoffice.org</command>
+    </action>
+  </keybind>
+
   <keybind key="W-f">
     <startupnotify>
       <enabled>true</enabled>
