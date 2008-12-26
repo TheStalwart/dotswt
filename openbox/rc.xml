@@ -374,6 +374,16 @@
     </action>
   </keybind>
 
+  <keybind key="W-e">
+    <startupnotify>
+      <enabled>true</enabled>
+      <name>Dolphin</name>
+    </startupnotify>
+    <action name="Execute">
+      <command>dolphin</command>
+    </action>
+  </keybind>
+
   <!-- mpd -->
   <keybind key="XF86Tools">
     <action name="Execute">
