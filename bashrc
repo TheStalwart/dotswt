@@ -16,3 +16,6 @@ export PATH=~/.dotswt/bin:$PATH
 
 export EDITOR="vim"
 export RPM_PACKAGER="Pavel \"Stalwart\" Shevchuk <stlwrt@gmail.com>"
+
+alias cal="cal -m -3"
+alias df="df -h"
