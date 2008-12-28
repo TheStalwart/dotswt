@@ -384,6 +384,16 @@
     </action>
   </keybind>
 
+  <keybind key="W-g">
+    <startupnotify>
+      <enabled>true</enabled>
+      <name>GIMP</name>
+    </startupnotify>
+    <action name="Execute">
+      <command>gimp</command>
+    </action>
+  </keybind>
+
   <!-- mpd -->
   <keybind key="XF86Tools">
     <action name="Execute">
