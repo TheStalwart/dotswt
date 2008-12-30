@@ -10,7 +10,8 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 double_buffer yes
-font -*-terminus-*-*-*-*-*-120-*-*-*-*-iso10646-*
+use_xft yes
+xftfont Terminus:pixelsize=10:style=bold
 gap_x 1683
 gap_y 3
 minimum_size 5 5
