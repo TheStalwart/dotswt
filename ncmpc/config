@@ -1,6 +1,7 @@
 set-xterm-title = yes
 enable-colors = yes
 auto-center = yes
+hide-cursor = 15
 
 
 color title = grey
