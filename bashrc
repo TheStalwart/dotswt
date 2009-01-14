@@ -22,4 +22,6 @@ alias df="df -h"
 alias du="du -h"
 
 alias yu="sudo yum update"
+alias yi="sudo yum install"
+alias yr="sudo yum remove"
 alias ys="yum search"
