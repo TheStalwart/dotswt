@@ -8,7 +8,7 @@ color title = grey
 color title-bold = grey
 
 color list = white
-color list-bold = yellow
+color list-bold = brightblue
 
 color status-state = grey
 color status-song = white
