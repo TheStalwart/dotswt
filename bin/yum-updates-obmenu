@@ -2,7 +2,7 @@
 
 import yum
 
-updatecmd = "urxvtc -hold -e sudo yum update"
+updatecmd = "urxvtc -hold -title yum -e sudo yum update"
 
 def compare_pkg(a, b):
   return cmp("%s.%s" % (a.name, a.arch), "%s.%s" % (b.name, b.arch))
