@@ -35,8 +35,8 @@ urxvt*color3: #c4a000
 urxvt*color11: #edd400
 
 ! DarkBlue + Blue
-urxvt*color4: #204a87
-urxvt*color12: #3465a4
+urxvt*color4: #3465a4
+urxvt*color12: #729fcf
 
 ! DarkMangenta + Mangenta
 urxvt*color5: #ce5c00
