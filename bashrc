@@ -18,6 +18,11 @@ export EDITOR="vim"
 export RPM_PACKAGER="Pavel \"Stalwart\" Shevchuk <stlwrt@gmail.com>"
 
 alias cal="cal -m -3"
+
+alias l="ls"
+alias la="ls -a"
+alias ll="ls -la"
+
 alias df="df -h"
 alias du="du -h"
 
