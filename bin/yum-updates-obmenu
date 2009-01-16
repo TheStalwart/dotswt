@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+
+import yum
+
+updatecmd = "urxvtc -hold -e sudo yum update"
+
+def compare_pkg(a, b):
+  return cmp("%s.%s" % (a.name, a.arch), "%s.%s" % (b.name, b.arch))
+
+def menu_item(label, pkg = ""):
+  return "<item label=\"%s\"><action name=\"Execute\"><command>%s %s</command></action></item>" % (label.replace("_", "-"), updatecmd, pkg)
+
+print "<openbox_pipe_menu>"
+
+y = yum.YumBase()
+y.conf.cache = 1
+updates = sorted(y.doPackageLists(pkgnarrow='updates').updates, compare_pkg)
+
+for pkg in updates:
+  print menu_item("%s.%s - %s-%s" % (pkg.name, pkg.arch, pkg.version, pkg.release), "%s.%s" % (pkg.name, pkg.arch))
+
+print "<separator />%s</openbox_pipe_menu>" % (menu_item("Update all"))
