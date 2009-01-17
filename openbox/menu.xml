@@ -5,9 +5,20 @@
 <menu id="applications-menu" label="Applications" execute="/usr/share/openbox/xdg-menu applications"/>
 <menu id="updates-menu" label="Updates" execute="yum-updates-obmenu"/>
 
+<menu id="sys-menu" label="System">
+  <menu id="updates-menu"/>
+  <separator />
+  <item label="Reboot">
+    <action name="Execute"><command>reboot</command></action>
+  </item>
+  <item label="Halt">
+    <action name="Execute"><command>halt</command></action>
+  </item>
+</menu>
+
 <menu id="root-menu" label="Openbox 3">
   <menu id="applications-menu"/>
-  <menu id="updates-menu"/>
+  <menu id="sys-menu"/>
 </menu>
 
 </openbox_menu>
