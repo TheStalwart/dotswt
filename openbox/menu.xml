@@ -4,6 +4,7 @@
 
 <menu id="applications-menu" label="Applications" execute="/usr/share/openbox/xdg-menu applications"/>
 <menu id="updates-menu" label="Updates" execute="yum-updates-obmenu"/>
+<menu id="music-menu" label="Music" execute="mpd-obmenu"/>
 
 <menu id="sys-menu" label="System">
   <menu id="updates-menu"/>
@@ -18,6 +19,7 @@
 
 <menu id="root-menu" label="Openbox 3">
   <menu id="applications-menu"/>
+  <menu id="music-menu"/>
   <menu id="sys-menu"/>
 </menu>
 
