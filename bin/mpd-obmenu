@@ -7,12 +7,16 @@ from sys import argv
 m = mpd.MPDClient()
 m.connect('localhost', 6600)
 
+def item_track(t):
+  return '<item label="%s"><action name="Execute"><command>%s playid %s</command></action></item>' % \
+  (escape("%s - %s" % (t['artist'], t['title'])), argv[0], t['pos'])
+
 if __name__ == '__main__':
   if len(argv) < 2:
     print '<openbox_pipe_menu>'
 
     for item in m.playlistinfo():
-      print '<item label="%s"><action name="Execute"><command>%s playid %s</command></action></item>' % (escape("%s - %s" % (item['artist'], item['title'])), argv[0], item['pos'])
+      print item_track(item)
 
     print '</openbox_pipe_menu>'
   else:
