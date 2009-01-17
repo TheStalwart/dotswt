@@ -2,13 +2,22 @@
 
 import mpd
 from cgi import escape
+from sys import argv
 
 m = mpd.MPDClient()
 m.connect('localhost', 6600)
 
-print '<openbox_pipe_menu>'
+if __name__ == '__main__':
+  if len(argv) < 2:
+    print '<openbox_pipe_menu>'
 
-for item in m.playlistinfo():
-  print '<item label="%s"><action name="Execute"><command>mpc play %s</command></action></item>' % (escape("%s - %s" % (item['artist'], item['title'])), int(item['id']) + 1)
+    for item in m.playlistinfo():
+      print '<item label="%s"><action name="Execute"><command>%s playid %s</command></action></item>' % (escape("%s - %s" % (item['artist'], item['title'])), argv[0], item['pos'])
 
-print '</openbox_pipe_menu>'
+    print '</openbox_pipe_menu>'
+  else:
+    if argv[1] == 'playid':
+      try:
+        m.play(argv[2])
+      except:
+        exit(1)
