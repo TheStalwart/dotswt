@@ -8,8 +8,16 @@ m = mpd.MPDClient()
 m.connect('localhost', 6600)
 
 def item_track(t):
+  try:
+    title = "%s - %s" % (t['artist'], t['title'])
+  except:
+    try:
+      title = t['title']
+    except:
+      title = t['file'].split('/')[-1]
+
   return '<item label="%s"><action name="Execute"><command>%s playid %s</command></action></item>' % \
-  (escape("%s - %s" % (t['artist'], t['title'])), argv[0], t['pos'])
+  (escape(title), argv[0], t['pos'])
 
 if __name__ == '__main__':
   if len(argv) < 2:
