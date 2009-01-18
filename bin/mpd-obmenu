@@ -31,9 +31,8 @@ if __name__ == '__main__':
       print item_track(item)
 
     print '</openbox_pipe_menu>'
-  else:
-    if argv[1] == 'playid':
-      try:
-        m.play(argv[2])
-      except:
-        exit(1)
+  elif argv[1] == 'playid':
+    try:
+      m.play(argv[2])
+    except:
+      exit(1)
