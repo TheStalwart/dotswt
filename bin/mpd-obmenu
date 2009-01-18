@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: UTF-8 -*-
 
 import mpd
 from cgi import escape
@@ -15,6 +16,9 @@ def item_track(t):
       title = t['title']
     except:
       title = t['file'].split('/')[-1]
+
+  if t == m.currentsong():
+    title = '► ' + title
 
   return '<item label="%s"><action name="Execute"><command>%s playid %s</command></action></item>' % \
   (escape(title), argv[0], t['pos'])
