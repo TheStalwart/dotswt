@@ -17,7 +17,11 @@ y = yum.YumBase()
 y.conf.cache = 1
 updates = sorted(y.doPackageLists(pkgnarrow='updates').updates, compare_pkg)
 
-for pkg in updates:
-  print menu_item("%s.%s - %s-%s" % (pkg.name, pkg.arch, pkg.version, pkg.release), "%s.%s" % (pkg.name, pkg.arch))
+if len(updates):
+  for pkg in updates:
+    print menu_item("%s.%s - %s-%s" % (pkg.name, pkg.arch, pkg.version, pkg.release), "%s.%s" % (pkg.name, pkg.arch))
+  print "<separator /><item label=\"Update all\"><action name=\"Execute\"><command>%s</command></action></item>" % updatecmd
+else:
+  print "<item label=\"None available\" />"
 
-print "<separator /><item label=\"Update all\"><action name=\"Execute\"><command>%s</command></action></item></openbox_pipe_menu>" % updatecmd
+print "</openbox_pipe_menu>"
