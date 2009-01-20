@@ -219,6 +219,18 @@
   <keybind key="A-F4">
     <action name="Close"/>
   </keybind>
+  <keybind key="W-q">
+    <action name="Close"/>
+  </keybind>
+  <keybind key="W-w">
+    <action name="ToggleMaximizeFull"/>
+  </keybind>
+  <keybind key="W-S-w">
+    <action name="ToggleMaximizeVert"/>
+  </keybind>
+  <keybind key="W-A-w">
+    <action name="ToggleMaximizeHorz"/>
+  </keybind>
   <keybind key="A-Escape">
     <action name="Lower"/>
     <action name="FocusToBottom"/>
