@@ -24,4 +24,4 @@ numlockx &
 conky -q $CONKYPARAMS &
 
 # keyboard layout
-setxkbmap -model geniuscomfy2 -layout "lv,ru" -option "grp:caps_toggle" &
+setxkbmap -model logitech_base -layout "lv,ru" -option "grp:caps_toggle" &

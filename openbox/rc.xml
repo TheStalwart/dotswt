@@ -407,7 +407,7 @@
   </keybind>
 
   <!-- mpd -->
-  <keybind key="XF86Tools">
+  <keybind key="XF86AudioMedia">
     <action name="Execute">
       <command>urxvtc -e ncmpc</command>
     </action>
