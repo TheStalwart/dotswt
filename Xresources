@@ -9,7 +9,7 @@ urxvt*boldItalicFont: -*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*
 urxvt*scrollBar: false
 urxvt*perl-ext: default,matcher,-searchable-scrollback
 URxvt.urlLauncher: firefox
-urxvt.matcher.button: 3
+urxvt.matcher.button: 1
 URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-] 
 
 !Tango colors
