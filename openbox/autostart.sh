@@ -21,7 +21,7 @@ esac
 docker &
 urxvtd &
 numlockx &
-conky -q $CONKYPARAMS &
+LC_TIME=ru_RU.UTF-8 conky -q $CONKYPARAMS &
 
 # keyboard layout
 setxkbmap -model logitech_base -layout "lv,ru" -option "grp:caps_toggle" &
