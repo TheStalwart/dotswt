@@ -24,10 +24,9 @@ own_window_type normal
 stippled_borders 0
 update_interval 5.0
 uppercase no
-use_spacer none
+use_spacer left
 show_graph_scale no
 show_graph_range no
 
 TEXT
-$mpd_smart
-${time %H:%M %a %d-%m-%Y} $memeasyfree ${fs_free /home} ${downspeed eth0}KiB ${upspeed eth0}KiB
+${time %H:%M %a %d-%m-%Y} $memeasyfree ${fs_free /home} ${downspeed eth0}KiB ${upspeed eth0}KiB ${offset 25}$mpd_smart
