@@ -2,7 +2,7 @@ alignment bottom_left
 background no
 border_width 1
 cpu_avg_samples 2
-default_color white
+default_color babdb6
 default_outline_color white
 default_shade_color white
 draw_borders no
