@@ -20,6 +20,7 @@ export RPM_PACKAGER="Pavel \"Stalwart\" Shevchuk <stlwrt@gmail.com>"
 export MC_COLOR_TABLE='normal=,default:selected=,lightgray:marked=,default:markselect=,lightgray:executable=,default:doc=,default:archive=,default:source=,default:media=,default:graph=,default:directory=,default:database=,default:hidden=gray,default:temp=,default'
 
 alias cal="cal -m -3"
+alias gq="geeqie"
 
 alias l="ls"
 alias la="ls -a"
