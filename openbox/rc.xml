@@ -270,6 +270,12 @@
     </action>
   </keybind>
 
+  <keybind key="W-r">
+    <action name="Execute">
+      <command>urxvtc -e screen -DRR</command>
+    </action>
+  </keybind>
+
   <!-- screenshots -->
   <keybind key="Print">
     <action name="Execute">
