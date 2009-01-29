@@ -17,7 +17,10 @@ export PATH=~/.dotswt/bin:$PATH
 export EDITOR="vim"
 export RPM_PACKAGER="Pavel \"Stalwart\" Shevchuk <stlwrt@gmail.com>"
 
-export MC_COLOR_TABLE='normal=,default:selected=,lightgray:marked=,default:markselect=,lightgray:executable=,default:doc=,default:archive=,default:source=,default:media=,default:graph=,default:directory=,default:database=,default:hidden=gray,default:temp=,default'
+MC_COLOR_BASE='normal=,default:selected=,lightgray:marked=,default:markselect=,lightgray:errors=,:input=default,default:reverse=,:gauge=,'
+MC_COLOR_SPECIAL='executable=,default:directory=,default:link=,default:stalelink=,default:device=,default:special=gray,default:core=,default'
+MC_COLOR_FILETYPES='hidden=gray,default:temp=,default:doc=,default:archive=,default:source=,default:media=,default:graph=,default:database=,default'
+export MC_COLOR_TABLE=$MC_COLOR_BASE:$MC_COLOR_SPECIAL:$MC_COLOR_FILETYPES
 
 alias cal="cal -m -3"
 alias gq="geeqie"
