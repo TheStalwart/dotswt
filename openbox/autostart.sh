@@ -25,3 +25,6 @@ LC_TIME=ru_RU.UTF-8 conky -q $CONKYPARAMS &
 
 # keyboard layout
 setxkbmap -model logitech_base -layout "lv,ru" -option "grp:caps_toggle" &
+
+# reasonable power saving
+xset dpms 600 0 900
