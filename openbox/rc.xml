@@ -276,6 +276,12 @@
     </action>
   </keybind>
 
+  <keybind key="W-BackSpace">
+    <action name="Execute">
+      <command>eject -T sr0</command>
+    </action>
+  </keybind>
+
   <!-- screenshots -->
   <keybind key="Print">
     <action name="Execute">
