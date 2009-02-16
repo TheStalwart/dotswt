@@ -374,6 +374,16 @@
     </action>
   </keybind>
 
+  <keybind key="W-S-f">
+    <startupnotify>
+      <enabled>true</enabled>
+      <name>Midori</name>
+    </startupnotify>
+    <action name="Execute">
+      <command>midori</command>
+    </action>
+  </keybind>
+
   <keybind key="W-t">
     <startupnotify>
       <enabled>true</enabled>
