@@ -1,0 +1,8 @@
+mpd_host = "/var/run/mpd/socket"
+
+song_window_title_format = "[MPD] {%a - }{%t}|{%f}"
+playlist_display_mode = "columns" (classic/columns)
+autocenter_mode = "yes"
+song_status_format = "{%a - }{%t}|{%f}"
+
+seek_time = "5"

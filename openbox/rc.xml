@@ -437,7 +437,7 @@
   <!-- mpd -->
   <keybind key="XF86AudioMedia">
     <action name="Execute">
-      <command>urxvtc -e ncmpc</command>
+      <command>urxvtc -e ncmpcpp</command>
     </action>
   </keybind>
 
