@@ -23,6 +23,11 @@ urxvtd &
 numlockx &
 LC_TIME=ru_RU.UTF-8 conky -q $CONKYPARAMS &
 
+# mpd (if not running)
+if [[ `ps --no-heading -C mpd | wc -l` -eq 0 ]]
+  then mpd ~/.dotswt/mpd.conf
+fi
+
 # keyboard layout
 setxkbmap -model logitech_base -layout "lv,ru" -option "grp:caps_toggle" &
 

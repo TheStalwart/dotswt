@@ -1,4 +1,4 @@
-mpd_host = "/var/run/mpd/socket"
+mpd_host = "/tmp/mpd.socket.stalwart"
 
 song_window_title_format = "[MPD] {%a - }{%t}|{%f}"
 playlist_display_mode = "columns" (classic/columns)
