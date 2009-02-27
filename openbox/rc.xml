@@ -441,7 +441,19 @@
     </action>
   </keybind>
 
+  <keybind key="W-v">
+    <action name="Execute">
+      <command>urxvtc -e ncmpcpp</command>
+    </action>
+  </keybind>
+
   <keybind key="XF86AudioPlay">
+    <action name="Execute">
+      <command>mpc toggle</command>
+    </action>
+  </keybind>
+
+  <keybind key="W-x">
     <action name="Execute">
       <command>mpc toggle</command>
     </action>
@@ -453,7 +465,19 @@
     </action>
   </keybind>
 
+  <keybind key="W-S-x">
+    <action name="Execute">
+      <command>sh -c "mpc stop; mpc play"</command>
+    </action>
+  </keybind>
+
   <keybind key="XF86AudioRaiseVolume">
+    <action name="Execute">
+      <command>mpc next</command>
+    </action>
+  </keybind>
+
+  <keybind key="W-c">
     <action name="Execute">
       <command>mpc next</command>
     </action>
@@ -462,6 +486,24 @@
   <keybind key="XF86AudioLowerVolume">
     <action name="Execute">
       <command>mpc prev</command>
+    </action>
+  </keybind>
+
+  <keybind key="W-z">
+    <action name="Execute">
+      <command>mpc prev</command>
+    </action>
+  </keybind>
+
+  <keybind key="W-Prior">
+    <action name="Execute">
+      <command>amixer sset Master 1+</command>
+    </action>
+  </keybind>
+
+  <keybind key="W-Next">
+    <action name="Execute">
+      <command>amixer sset Master 1-</command>
     </action>
   </keybind>
 </keyboard>
