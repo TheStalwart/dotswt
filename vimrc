@@ -1,3 +1,5 @@
+colo elflord
+
 set nocp
 
 set number
