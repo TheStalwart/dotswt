@@ -19,7 +19,6 @@ esac
 
 # utils
 docker &
-urxvtd &
 numlockx &
 LC_TIME=ru_RU.UTF-8 conky -q $CONKYPARAMS &
 
