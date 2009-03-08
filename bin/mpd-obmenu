@@ -27,8 +27,12 @@ if __name__ == '__main__':
   if len(argv) < 2:
     print '<openbox_pipe_menu>'
 
-    for item in m.playlistinfo():
-      print item_track(item)
+    playlist = m.playlistinfo()
+    if len(playlist):
+      for item in playlist:
+        print item_track(item)
+    else:
+      print '<item label="Playlist is empty" />'
 
     print '</openbox_pipe_menu>'
   elif argv[1] == 'playid':
