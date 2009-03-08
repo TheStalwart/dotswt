@@ -231,6 +231,9 @@
   <keybind key="W-A-w">
     <action name="ToggleMaximizeHorz"/>
   </keybind>
+  <keybind key="W-Return">
+    <action name="ToggleDecorations"/>
+  </keybind>
   <keybind key="A-Escape">
     <action name="Lower"/>
     <action name="FocusToBottom"/>
