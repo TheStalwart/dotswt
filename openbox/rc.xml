@@ -338,6 +338,12 @@
     </action>
   </keybind>
 
+  <keybind key="W-a">
+    <action name="Execute">
+      <command>quake3</command>
+    </action>
+  </keybind>
+
   <keybind key="W-p">
     <action name="Execute">
       <command>~/Games/torque/pt.sh</command>
