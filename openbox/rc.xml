@@ -347,6 +347,12 @@
     </action>
   </keybind>
 
+  <keybind key="W-S-a">
+    <action name="Execute">
+      <command>openarena</command>
+    </action>
+  </keybind>
+
   <keybind key="W-p">
     <action name="Execute">
       <command>~/Games/torque/pt.sh</command>
