@@ -455,6 +455,16 @@
     </action>
   </keybind>
 
+  <keybind key="W-S-g">
+    <startupnotify>
+      <enabled>true</enabled>
+      <name>Inkscape</name>
+    </startupnotify>
+    <action name="Execute">
+      <command>inkscape</command>
+    </action>
+  </keybind>
+
   <!-- mpd -->
   <keybind key="XF86AudioMedia">
     <action name="Execute">
