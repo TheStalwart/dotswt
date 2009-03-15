@@ -310,6 +310,12 @@
     </action>
   </keybind>
 
+  <keybind key="C-W-z">
+    <action name="Execute">
+      <command>xmag -source 256x255</command>
+    </action>
+  </keybind>
+
   <!-- apps -->
   <keybind key="W-space">
     <action name="Execute">
