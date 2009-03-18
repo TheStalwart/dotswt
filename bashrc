@@ -34,6 +34,8 @@ alias ll="ls -la"
 alias df="df -h"
 alias du="du -h"
 
+alias tree='tree -A'
+
 alias yu="sudo yum update"
 alias yi="sudo yum install"
 alias yr="sudo yum remove"
