@@ -1,0 +1,3 @@
+#!/bin/sh
+/usr/bin/quake3 $@
+rm -f ~/botlib.log
