@@ -38,3 +38,5 @@ alias yu="sudo yum update"
 alias yi="sudo yum install"
 alias yr="sudo yum remove"
 alias ys="yum search"
+
+alias grep="grep --color=auto"
