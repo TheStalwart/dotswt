@@ -9,6 +9,11 @@
 <menu id="sys-menu" label="System">
   <menu id="updates-menu"/>
   <separator />
+  <item label="Log Out">
+    <action name="SessionLogout">
+      <prompt>no</prompt>
+    </action>
+  </item>
   <item label="Reboot">
     <action name="Execute"><command>reboot</command></action>
   </item>
