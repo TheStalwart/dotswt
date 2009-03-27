@@ -5,6 +5,9 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+export LANG=ru_RU.UTF-8
+export LC_MESSAGES=en_US.UTF-8
+
 # User specific aliases and functions
 
 stty -ixon
