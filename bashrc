@@ -44,3 +44,5 @@ alias yr="sudo yum remove"
 alias ys="yum search"
 
 alias grep="grep --color=auto"
+
+alias man="LANG=en_US.UTF-8 man"
