@@ -8,6 +8,7 @@ fi
 # User specific aliases and functions
 
 stty -ixon
+shopt -s autocd
 
 export HISTCONTROL="ignoredups"
 
