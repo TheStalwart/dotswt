@@ -20,7 +20,7 @@ esac
 # utils
 docker &
 numlockx &
-LC_TIME=ru_RU.UTF-8 conky -q $CONKYPARAMS &
+conky -q $CONKYPARAMS &
 
 # mpd (if not running)
 if [[ `ps --no-heading -C mpd | wc -l` -eq 0 ]]
