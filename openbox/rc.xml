@@ -269,7 +269,7 @@
 
   <keybind key="W-l">
     <action name="Execute">
-      <command>xlock -mode blank -dpmsoff 60</command>
+      <command>sh -c "slock || xlock -mode blank -dpmsoff 60"</command>
     </action>
   </keybind>
 
