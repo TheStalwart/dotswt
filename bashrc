@@ -11,7 +11,10 @@ export LC_MESSAGES=en_US.UTF-8
 # User specific aliases and functions
 
 stty -ixon
-shopt -s autocd
+
+if [ ${BASH_VERSINFO[0]} -gt 3 ]; then \
+  shopt -s autocd
+fi
 
 export HISTCONTROL="ignoredups"
 
