@@ -232,7 +232,7 @@
     <action name="ToggleMaximizeHorz"/>
   </keybind>
   <keybind key="W-Return">
-    <action name="ToggleDecorations"/>
+    <action name="ToggleFullscreen"/>
   </keybind>
   <keybind key="A-Escape">
     <action name="Lower"/>
