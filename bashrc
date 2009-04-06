@@ -16,7 +16,7 @@ if [ ${BASH_VERSINFO[0]} -gt 3 ]; then \
   shopt -s autocd
 fi
 
-export HISTCONTROL="ignoredups"
+export HISTCONTROL="ignoreboth"
 
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\007"'
 export PATH=~/.dotswt/bin:$PATH
