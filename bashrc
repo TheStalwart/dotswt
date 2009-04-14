@@ -20,6 +20,7 @@ export HISTCONTROL="ignoreboth"
 
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\007"'
 export PATH=~/.dotswt/bin:$PATH
+export CDPATH=.:~
 
 export EDITOR="vim"
 export RPM_PACKAGER="Pavel \"Stalwart\" Shevchuk <stlwrt@gmail.com>"
