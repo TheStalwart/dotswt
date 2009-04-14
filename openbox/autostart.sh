@@ -6,7 +6,7 @@ fi
 # set wallpaper
 case "$HOSTNAME" in
   delta.scwlab.com)
-    feh --bg-tile ~/Images/wpaps/background-2.jpg &
+    feh --bg-tile ~/img/wpaps/background-2.jpg &
     ;;
   work.scwlab.com)
     feh --bg-center ~/Pictures/wpaps/fire-final.jpg &
