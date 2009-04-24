@@ -15,7 +15,10 @@ print "<openbox_pipe_menu>"
 
 y = yum.YumBase()
 y.conf.cache = 1
-updates = sorted(y.doPackageLists(pkgnarrow='updates').updates, compare_pkg)
+try:
+  updates = sorted(y.doPackageLists(pkgnarrow='updates').updates, compare_pkg)
+except:
+  updates = []
 
 if len(updates):
   for pkg in updates:
