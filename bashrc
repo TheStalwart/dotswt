@@ -22,6 +22,7 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"
 export PATH=~/.dotswt/bin:$PATH
 export CDPATH=.:~
 
+
 export EDITOR="vim"
 export RPM_PACKAGER="Pavel \"Stalwart\" Shevchuk <stlwrt@gmail.com>"
 
@@ -31,6 +32,8 @@ MC_COLOR_BASE='normal=,default:selected=,lightgray:marked=,default:markselect=,l
 MC_COLOR_SPECIAL='executable=,default:directory=,default:link=,default:stalelink=,default:device=,default:special=gray,default:core=,default'
 MC_COLOR_FILETYPES='hidden=gray,default:temp=,default:doc=,default:archive=,default:source=,default:media=,default:graph=,default:database=,default'
 export MC_COLOR_TABLE=$MC_COLOR_BASE:$MC_COLOR_SPECIAL:$MC_COLOR_FILETYPES
+
+export SCREENRC=~/.dotswt/screenrc
 
 alias cal="cal -m -3"
 alias gq="geeqie"
