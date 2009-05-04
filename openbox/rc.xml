@@ -435,6 +435,16 @@
     </action>
   </keybind>
 
+  <keybind key="W-S-b">
+    <startupnotify>
+      <enabled>true</enabled>
+      <name>MySQL Administrator</name>
+    </startupnotify>
+    <action name="Execute">
+      <command>mysql-administrator</command>
+    </action>
+  </keybind>
+
   <keybind key="W-e">
     <startupnotify>
       <enabled>true</enabled>
