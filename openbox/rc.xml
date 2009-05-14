@@ -567,6 +567,9 @@
   <mousebind button="W-Middle" action="Press">
     <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
   </mousebind> 
+  <mousebind button="W-Right" action="Press">
+    <action name="ShowMenu"><menu>root-menu</menu></action>
+  </mousebind>
   <mousebind button="A-Left" action="Press">
     <action name="Focus"/>
     <action name="Raise"/>
@@ -885,6 +888,9 @@
       <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
     </mousebind> 
     <mousebind button="Right" action="Press">
+      <action name="ShowMenu"><menu>root-menu</menu></action>
+    </mousebind>
+    <mousebind button="W-Right" action="Press">
       <action name="ShowMenu"><menu>root-menu</menu></action>
     </mousebind>
   </context>
