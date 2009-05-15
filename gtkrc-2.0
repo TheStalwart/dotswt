@@ -1,0 +1,4 @@
+gtk-theme-name = "swtlooks-graphite"
+gtk-icon-theme-name = "Tango"
+gtk-font-name="Liberation Sans 8"
+gtk-toolbar-style = GTK_TOOLBAR_ICONS
