@@ -323,6 +323,12 @@
     </action>
   </keybind>
 
+  <keybind key="A-F2">
+    <action name="Execute">
+      <command>dmenu_run</command>
+    </action>
+  </keybind>
+
   <keybind key="W-h">
     <action name="Execute">
       <command>urxvtc -e htop</command>

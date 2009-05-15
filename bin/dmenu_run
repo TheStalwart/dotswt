@@ -1,0 +1,3 @@
+#!/bin/sh
+arch=`uname -i`
+exe=`dmenu_path | dmenu.$arch ${1+"$@"}` && exec $exe
