@@ -29,4 +29,4 @@ show_graph_scale no
 show_graph_range no
 
 TEXT
-${time %H:%M %a %d-%m-%Y} $memeasyfree ${fs_free /home} ${downspeed eth0}KiB ${upspeed eth0}KiB ${offset 25}$mpd_smart
+${time %H:%M %a %d-%m-%Y} $memeasyfree ${fs_free /home} ${downspeed eth0} ${upspeed eth0} $mpd_smart
