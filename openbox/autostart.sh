@@ -23,7 +23,7 @@ esac
 # utils
 docker &
 numlockx &
-conky -q $CONKYPARAMS &
+conky -q $CONKYPARAMS -c ~/.dotswt/conkyrc -d &
 
 # mpd (if not running)
 if [[ `ps --no-heading -C mpd | wc -l` -eq 0 ]]
