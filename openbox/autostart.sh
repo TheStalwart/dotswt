@@ -31,7 +31,7 @@ if [[ `ps --no-heading -C mpd | wc -l` -eq 0 ]]
 fi
 
 # keyboard layout
-setxkbmap -model logitech_base -layout "lv,ru" -option "grp:caps_toggle" &
+setxkbmap -model logitech_base -layout "lv,ru" -option "grp:caps_toggle" -option "eurosign:5" &
 
 # reasonable power saving
 xset dpms 600 0 900
