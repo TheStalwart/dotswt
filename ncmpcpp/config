@@ -1,5 +1,6 @@
 mpd_host = "/tmp/mpd.socket.stalwart"
 
+header_visibility = "no"
 song_window_title_format = "[MPD] {%a - }{%t}|{%f}"
 playlist_display_mode = "columns" (classic/columns)
 autocenter_mode = "yes"
