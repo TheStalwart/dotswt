@@ -343,7 +343,7 @@
 
   <keybind key="W-m">
     <action name="Execute">
-      <command>urxvtc -e mc</command>
+      <command>urxvtc -geometry 160x48 -e mc</command>
     </action>
   </keybind>
 
