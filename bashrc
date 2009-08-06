@@ -56,3 +56,6 @@ alias grep="grep --color=auto"
 alias psg='ps aux | grep $*'
 
 alias man="LANG=en_US.UTF-8 man"
+
+urxvtfix() { scp /usr/share/terminfo/r/rxvt-unicode $1:/usr/share/terminfo/r/ ; }
+
