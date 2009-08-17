@@ -494,6 +494,16 @@
     </action>
   </keybind>
 
+  <keybind key="W-S-v">
+    <startupnotify>
+      <enabled>true</enabled>
+      <name>Sun VirtualBox</name>
+    </startupnotify>
+    <action name="Execute">
+      <command>VirtualBox</command>
+    </action>
+  </keybind>
+
   <keybind key="XF86AudioPlay">
     <action name="Execute">
       <command>mpc toggle</command>
