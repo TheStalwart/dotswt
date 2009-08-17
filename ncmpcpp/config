@@ -3,7 +3,11 @@ mpd_host = "/tmp/mpd.socket.stalwart"
 header_visibility = "no"
 song_window_title_format = "[MPD] {%a - }{%t}|{%f}"
 playlist_display_mode = "columns" (classic/columns)
+song_columns_list_format = "(7){l} (26){a} (40){t} (27){b}"
 autocenter_mode = "yes"
 song_status_format = "{%a - }{%t}|{%f}"
 
 seek_time = "5"
+
+main_window_color = "magenta"
+main_window_highlight_color = "default"
