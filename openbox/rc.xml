@@ -404,6 +404,16 @@
   <keybind key="W-S-f">
     <startupnotify>
       <enabled>true</enabled>
+      <name>Chromium</name>
+    </startupnotify>
+    <action name="Execute">
+      <command>chromium-browser --enable-plugins</command>
+    </action>
+  </keybind>
+
+  <keybind key="W-M-f">
+    <startupnotify>
+      <enabled>true</enabled>
       <name>Midori</name>
     </startupnotify>
     <action name="Execute">
