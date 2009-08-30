@@ -1,0 +1,17 @@
+- */Thumbs.db
+- */.directory
+
++ /home/
++ /home/stalwart/
++ /home/stalwart/music/***
++ /home/stalwart/video/
++ /home/stalwart/video/Top Gear/***
++ /home/stalwart/proj/***
++ /home/stalwart/img/***
++ /home/stalwart/doc/***
++ /home/stalwart/Games/
++ /home/stalwart/Games/ddr/***
+
+
+- *
+

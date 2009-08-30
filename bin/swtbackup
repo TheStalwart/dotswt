@@ -1,0 +1,45 @@
+#!/bin/bash
+
+. ~/.dotswt/swtbackup/global.sh
+. ~/.dotswt/swtbackup/`hostname`/params.sh
+
+if [ ! -d $RAWMNT ]; then \
+  echo 'Creating destination mountpoint'
+  mkdir $RAWMNT
+fi
+
+if [ ! -d $MNT ]; then \
+  echo 'Creating backup mountpoint'
+  mkdir $MNT
+fi
+
+if [ `egrep $DEST $RAWMNT /proc/mounts | wc -l` -eq 0 ]; then \
+  sshfs $DEST $RAWMNT -o idmap=user
+  if [ $? -ne 0 ]; then echo 'Backup destination mount failed!'; exit 1; fi
+fi
+
+if [ `egrep encfs $MNT /proc/mounts | wc -l` -eq 0 ]; then \
+  encfs $RAWMNT $MNT
+  if [ $? -ne 0 ]; then echo 'Backup decryption failed!'; exit 1; fi
+fi
+
+echo 'Backup mounted'
+
+read -a RESULT -e -n 1 -p 'Check for changes? (y/n) '
+if [ $RESULT == 'y' ]; then \
+  echo 'Looking for changed files...'
+  sh -c "rsync -n $RSYNC_PARAMS --include-from=$HOME/.dotswt/swtbackup/`hostname`/include.txt / $MNT > $DIFFLOGFILE"
+  less $DIFFLOGFILE
+  rm $DIFFLOGFILE
+fi
+
+read -a RESULT -e -n 1 -p 'Update backup? (y/n) '
+if [ $RESULT == 'y' ]; then \
+  echo 'Updating backup...'
+  sh -c "rsync $RSYNC_PARAMS --include-from=$HOME/.dotswt/swtbackup/`hostname`/include.txt / $MNT | tee $LOGFILE"
+fi
+
+echo 'Backup completed!'
+
+fusermount -u $MNT
+fusermount -u $RAWMNT
