@@ -467,7 +467,7 @@
       <name>Dolphin</name>
     </startupnotify>
     <action name="Execute">
-      <command>thunar</command>
+      <command>dolphin</command>
     </action>
   </keybind>
 
