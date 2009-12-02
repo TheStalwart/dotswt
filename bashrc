@@ -38,6 +38,7 @@ export SCREENRC=~/.dotswt/screenrc
 
 alias cal="cal -m -3"
 alias gq="geeqie"
+alias fm="dolphin ."
 alias s="screen -DRR"
 
 alias l="ls"
