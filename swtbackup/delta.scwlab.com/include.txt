@@ -1,5 +1,6 @@
 - */Thumbs.db
 - */.directory
+- */.DS_Store
 - /home/stalwart/music/.mpd/
 
 + /home/
