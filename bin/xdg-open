@@ -1,2 +1,7 @@
 #!/bin/sh
-gnome-open "$@"
+
+if [ $KDE_FULL_SESSION ]; then \
+  kde-open "$@"
+else \
+  gnome-open "$@"
+fi
