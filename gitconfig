@@ -3,5 +3,6 @@
 	email = stlwrt@gmail.com
 [core]
 	editor = vim
+	excludesfile = /Users/stalwart/.dotswt/gitignore
 [color]
 	ui = true
