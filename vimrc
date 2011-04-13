@@ -7,6 +7,7 @@ set nobackup
 set smartindent
 set textwidth=0
 set ts=4
+set hlsearch
 
 if has("unix")
 	command -nargs=? Swrite :w !sudo tee %
