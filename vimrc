@@ -6,7 +6,7 @@ set number
 set nobackup
 set smartindent
 set textwidth=0
-set ts=4
+set ts=4 sw=4
 set hlsearch
 
 if has("unix")
