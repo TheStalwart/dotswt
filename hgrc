@@ -1,3 +1,6 @@
 [ui]
 username = Stalwart <stlwrt@gmail.com>
 ignore.other = /Users/stalwart/.dotswt/hgignore
+
+[extensions]
+color =
