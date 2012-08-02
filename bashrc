@@ -33,7 +33,7 @@ case `uname -s` in
 		urxvtfix() { scp /usr/share/terminfo/r/rxvt-unicode $1:/usr/share/terminfo/r/ ; }
 		;;
 	Darwin )
-		export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH
+		export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/usr/local/sbin:$PATH
 		;;
 esac
 
