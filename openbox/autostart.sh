@@ -27,7 +27,7 @@ conky -q $CONKYPARAMS -c ~/.dotswt/conkyrc -d &
 
 # mpd (if not running)
 if [[ `ps --no-heading -C mpd | wc -l` -eq 0 ]]
-  then mpd ~/.dotswt/mpd.conf
+  then mpd ~/.dotswt/mpd/mpd.conf
 fi
 
 # keyboard layout
