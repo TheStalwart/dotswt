@@ -1,3 +1,5 @@
+host = 192.168.1.3
+
 set-xterm-title = yes
 enable-colors = yes
 auto-center = yes
