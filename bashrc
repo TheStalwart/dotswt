@@ -61,6 +61,7 @@ export SCREENRC=~/.dotswt/screenrc
 
 alias s="screen -DRR"
 
+export CLICOLOR=1
 alias l="ls"
 alias la="ls -a"
 alias ll="ls -la"
