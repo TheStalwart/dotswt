@@ -34,6 +34,7 @@ case `uname -s` in
 		;;
 	Darwin )
 		export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/usr/local/sbin:$PATH
+		export PATH=~/.dotswt/bin-osx:$PATH
 
 		FLEX_SDK_BIN="/Users/stalwart/Projects/Flex/bin"
 		if [ -d "$FLEX_SDK_BIN" ]; then
