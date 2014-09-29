@@ -42,6 +42,7 @@ case `uname -s` in
 		export FLEX_SDK="/Users/stalwart/Projects/Flex"
 		if [ -d "$FLEX_SDK" ]; then
 			export PATH=$FLEX_SDK/bin:$PATH
+			alias idb="${FLEX_SDK}/lib/aot/bin/iOSBin/idb"
 		fi
 
 		if [ -f `brew --prefix`/etc/bash_completion ]; then
