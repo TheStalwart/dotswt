@@ -44,6 +44,9 @@ case `uname -s` in
 			export PATH=$FLEX_SDK/bin:$PATH
 		fi
 
+		if [ -f `brew --prefix`/etc/bash_completion ]; then
+			. `brew --prefix`/etc/bash_completion
+		fi
 		;;
 esac
 
