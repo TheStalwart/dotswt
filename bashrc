@@ -37,7 +37,7 @@ case `uname -s` in
 		export PATH=~/.dotswt/bin-osx:$PATH
 
 		export ANT_OPTS="-Xmx4096M"
-		export _JAVA_OPTIONS="-Xmx4096M"
+		#export _JAVA_OPTIONS="-Xmx4096M"
 
 		export FLEX_SDK="/Users/stalwart/Projects/Flex"
 		if [ -d "$FLEX_SDK" ]; then
