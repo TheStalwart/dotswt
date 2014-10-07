@@ -9,7 +9,7 @@ set textwidth=0
 set ts=4 sw=4
 set hlsearch
 syntax on
-filetype plugin on
+filetype plugin indent on
 
 if has("unix")
 	command -nargs=? Swrite :w !sudo tee %
