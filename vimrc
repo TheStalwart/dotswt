@@ -8,6 +8,7 @@ set smartindent
 set textwidth=0
 set ts=4 sw=4
 set hlsearch
+set incsearch
 syntax on
 filetype plugin indent on
 
