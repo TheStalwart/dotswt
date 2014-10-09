@@ -90,3 +90,7 @@ alias du="du -h"
 alias grep="grep --color=auto"
 alias psg='ps aux | grep $*'
 
+if [ -f /usr/local/bin/colorsvn ]; then
+	alias svn="colorsvn"
+fi
+
