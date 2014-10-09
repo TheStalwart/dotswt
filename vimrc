@@ -3,6 +3,7 @@ colo elflord
 set nocp
 set colorcolumn=80
 set number
+set ruler
 set nobackup
 set smartindent
 set textwidth=0
