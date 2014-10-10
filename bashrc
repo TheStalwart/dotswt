@@ -36,6 +36,8 @@ case `uname -s` in
 		export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/usr/local/sbin:$PATH
 		export PATH=~/.dotswt/bin-osx:$PATH
 
+		export FIGNORE=$FIGNORE:.DS_Store
+
 		export ANT_OPTS="-Xmx4096M"
 		#export _JAVA_OPTIONS="-Xmx4096M"
 
