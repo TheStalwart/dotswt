@@ -86,6 +86,8 @@ alias l="ls"
 alias la="ls -a"
 alias ll="ls -la"
 
+alias p="pwd"
+
 alias df="df -h"
 alias du="du -h"
 
