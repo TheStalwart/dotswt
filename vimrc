@@ -15,6 +15,9 @@ filetype plugin indent on
 
 nnoremap t :NERDTreeToggle<CR>
 
+nnoremap <C-n> :cnext<CR>
+nnoremap <C-p> :cprev<CR>
+
 if has("unix")
 	command -nargs=? Swrite :w !sudo tee %
 endif
