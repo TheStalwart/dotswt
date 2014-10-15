@@ -13,7 +13,7 @@ set incsearch
 syntax on
 filetype plugin indent on
 
-nmap t :NERDTreeToggle<CR>
+nnoremap t :NERDTreeToggle<CR>
 
 if has("unix")
 	command -nargs=? Swrite :w !sudo tee %
