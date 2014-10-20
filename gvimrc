@@ -1,3 +1,3 @@
 colo desert
-set guioptions=acegimrLt
+set guioptions=acegimt
 set guifont=Monaco:h12
