@@ -1,7 +1,7 @@
 colo elflord
 
 set nocp
-set colorcolumn=80
+set colorcolumn=120
 set number
 set ruler
 set nobackup
