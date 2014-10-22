@@ -67,6 +67,7 @@ if [ ${BASH_VERSINFO[0]} -gt 3 ]; then \
 fi
 
 export HISTCONTROL="ignoreboth"
+export HISTSIZE=1000
 
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\007"'
 export CDPATH=.:~
