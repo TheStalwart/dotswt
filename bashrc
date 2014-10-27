@@ -36,7 +36,6 @@ case `uname -s` in
 		export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/usr/local/sbin:$PATH
 		export PATH=~/.dotswt/bin-osx:$PATH
 
-		alias adb="/Users/stalwart/Projects/cte/adt-bundle-mac-x86_64-20140702/sdk/platform-tools/adb"
 		source ~/.dotswt/bash-completion/android
 
 		export FIGNORE=$FIGNORE:.DS_Store
@@ -48,6 +47,7 @@ case `uname -s` in
 		if [ -d "$FLEX_SDK" ]; then
 			export PATH=$FLEX_SDK/bin:$PATH
 			alias idb="${FLEX_SDK}/lib/aot/bin/iOSBin/idb"
+			export PATH=$FLEX_SDK/lib/android/bin:$PATH
 		fi
 
 		if [ -f `brew --prefix`/etc/bash_completion ]; then
