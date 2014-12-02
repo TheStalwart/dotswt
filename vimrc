@@ -17,6 +17,8 @@ set foldmethod=syntax
 set foldnestmax=2
 let xml_syntax_folding=1
 
+let g:SuperTabDefaultCompletionType="context"
+
 nnoremap t :NERDTreeToggle<CR>
 
 nnoremap <C-n> :cnext<CR>
