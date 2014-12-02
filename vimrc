@@ -13,6 +13,10 @@ set incsearch
 syntax on
 filetype plugin indent on
 
+set foldmethod=syntax
+set foldnestmax=2
+let xml_syntax_folding=1
+
 nnoremap t :NERDTreeToggle<CR>
 
 nnoremap <C-n> :cnext<CR>
