@@ -44,7 +44,14 @@ case `uname -s` in
 		export ANT_OPTS="-Xmx4096M"
 		#export _JAVA_OPTIONS="-Xmx4096M"
 
-		export FLEX_SDK="/Users/stalwart/Projects/Flex"
+		if [ -d "/Users/stalwart/Projects/Flex" ]; then
+			export FLEX_SDK="/Users/stalwart/Projects/Flex"
+		else
+			if [ -d "/Users/stalwart/SDKs/Flex" ]; then
+				export FLEX_SDK="/Users/stalwart/SDKs/Flex"
+			fi
+		fi
+
 		if [ -d "$FLEX_SDK" ]; then
 			export PATH=$FLEX_SDK/bin:$PATH
 			alias idb="${FLEX_SDK}/lib/aot/bin/iOSBin/idb"
