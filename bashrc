@@ -42,6 +42,7 @@ case `uname -s` in
 		export FIGNORE=$FIGNORE:.DS_Store
 
 		export ANT_OPTS="-Xmx4096M"
+		export JAVA_HOME=`/usr/libexec/java_home`
 		#export _JAVA_OPTIONS="-Xmx4096M"
 
 		if [ -d "/Users/stalwart/Projects/Flex" ]; then
