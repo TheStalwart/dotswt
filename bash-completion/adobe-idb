@@ -1,0 +1,29 @@
+function _idb()
+{
+	local cur prev commands
+	COMPREPLY=()
+	cur="${COMP_WORDS[COMP_CWORD]}"
+	prev="${COMP_WORDS[COMP_CWORD-1]}"
+	commands="-devices -install -uninstall -forward -stopforward -help"
+
+	if [[ $COMP_CWORD == 1 ]]; then
+		COMPREPLY=( $( compgen -W "${commands}" -- ${cur}) )
+		return 0
+	fi
+
+	case "${prev}" in
+		-install)
+			_filedir ipa
+			return 0
+			;;
+	esac
+
+	if [[ ${COMP_WORDS[1]} == "-install" ]]; then
+		local deviceIDs=`idb -devices | egrep -o "\s\d" | xargs`
+		COMPREPLY=( $( compgen -W "${deviceIDs}" -- ${cur}) )
+		return 0
+	fi
+}
+
+complete -F _idb idb
+

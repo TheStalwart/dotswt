@@ -37,6 +37,7 @@ case `uname -s` in
 		export PATH=~/.dotswt/bin-osx:$PATH
 
 		source ~/.dotswt/bash-completion/android
+		source ~/.dotswt/bash-completion/adobe-idb
 
 		export FIGNORE=$FIGNORE:.DS_Store
 
