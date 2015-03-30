@@ -59,6 +59,14 @@ case `uname -s` in
 			export PATH=$FLEX_SDK/lib/android/bin:$PATH
 		fi
 
+		if [ -d "/Users/stalwart/SDKs/Imagination" ]; then
+			export IMMAGINATION_SDK="/Users/stalwart/SDKs/Imagination"
+		fi
+
+		if [ -d "$IMMAGINATION_SDK" ]; then
+			export PATH=$IMMAGINATION_SDK/PowerVR_Graphics/PowerVR_Tools/PVRTexTool/CLI/OSX_x86:$PATH
+		fi
+
 		if [ -f `brew --prefix`/etc/bash_completion ]; then
 			. `brew --prefix`/etc/bash_completion
 		fi
