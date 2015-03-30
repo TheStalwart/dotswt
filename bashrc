@@ -67,6 +67,14 @@ case `uname -s` in
 			export PATH=$IMMAGINATION_SDK/PowerVR_Graphics/PowerVR_Tools/PVRTexTool/CLI/OSX_x86:$PATH
 		fi
 
+		if [ -d "/Applications/Adobe Gaming SDK 1.4" ]; then
+			export ADOBE_GAMING_SDK="/Applications/Adobe Gaming SDK 1.4"
+		fi
+
+		if [ -d "$ADOBE_GAMING_SDK" ]; then
+			export PATH=$ADOBE_GAMING_SDK/Utilities/ATF\ Tools:$PATH
+		fi
+
 		if [ -f `brew --prefix`/etc/bash_completion ]; then
 			. `brew --prefix`/etc/bash_completion
 		fi
