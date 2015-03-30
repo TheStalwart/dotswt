@@ -10,6 +10,7 @@ set textwidth=0
 set ts=4 sw=4
 set hlsearch
 set incsearch
+set scrolloff=5
 syntax on
 filetype plugin indent on
 
