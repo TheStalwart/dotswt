@@ -14,9 +14,9 @@ set scrolloff=5
 syntax on
 filetype plugin indent on
 
-set foldmethod=syntax
-set foldnestmax=2
-let xml_syntax_folding=1
+"set foldmethod=syntax
+"set foldnestmax=2
+"let xml_syntax_folding=1
 
 let g:SuperTabDefaultCompletionType="context"
 
