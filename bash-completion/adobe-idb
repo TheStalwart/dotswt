@@ -18,10 +18,12 @@ function _idb()
 			;;
 	esac
 
-	if [[ ${COMP_WORDS[1]} == "-install" ]]; then
-		local deviceIDs=`idb -devices | egrep -o "\s\d" | xargs`
-		COMPREPLY=( $( compgen -W "${deviceIDs}" -- ${cur}) )
-		return 0
+	if [[ $COMP_CWORD == 3 ]]; then
+		if [[ ${COMP_WORDS[1]} == "-install" ]]; then
+			local deviceIDs=`idb -devices | egrep -o "^\s+\d+" | xargs`
+			COMPREPLY=( $( compgen -W "${deviceIDs}" -- ${cur}) )
+			return 0
+		fi
 	fi
 }
 
