@@ -86,6 +86,8 @@ case `uname -s` in
 		if [ -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ]; then
 			source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 		fi
+
+		ane2swc() { unzip $1 catalog.xml library.swf && zip -m ${1%.*}.swc catalog.xml library.swf ; }
 		;;
 esac
 
