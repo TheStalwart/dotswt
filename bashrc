@@ -68,11 +68,11 @@ case `uname -s` in
 		fi
 
 		if [ -d "/Users/stalwart/SDKs/Imagination" ]; then
-			export IMMAGINATION_SDK="/Users/stalwart/SDKs/Imagination"
+			export IMAGINATION_SDK="/Users/stalwart/SDKs/Imagination"
 		fi
 
-		if [ -d "$IMMAGINATION_SDK" ]; then
-			export PATH=$IMMAGINATION_SDK/PowerVR_Graphics/PowerVR_Tools/PVRTexTool/CLI/OSX_x86:$PATH
+		if [ -d "$IMAGINATION_SDK" ]; then
+			export PATH=$IMAGINATION_SDK/PowerVR_Graphics/PowerVR_Tools/PVRTexTool/CLI/OSX_x86:$PATH
 		fi
 
 		if [ -d "/Applications/Adobe Gaming SDK 1.4" ]; then
