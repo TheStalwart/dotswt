@@ -49,11 +49,15 @@ case `uname -s` in
 		export ANT_OPTS="-Xmx4096M"
 		#export _JAVA_OPTIONS="-Xmx4096M"
 
-		if [ -d "/Users/stalwart/Projects/Flex" ]; then
-			export FLEX_SDK="/Users/stalwart/Projects/Flex"
+		if [ -d "/usr/local/Cellar/adobe-air-sdk-flex" ]; then
+			export FLEX_SDK="/usr/local/Cellar/adobe-air-sdk-flex/`ls /usr/local/Cellar/adobe-air-sdk-flex/ | tail -n 1`/libexec"
 		else
-			if [ -d "/Users/stalwart/SDKs/Flex" ]; then
-				export FLEX_SDK="/Users/stalwart/SDKs/Flex"
+			if [ -d "/Users/stalwart/Projects/Flex" ]; then
+				export FLEX_SDK="/Users/stalwart/Projects/Flex"
+			else
+				if [ -d "/Users/stalwart/SDKs/Flex" ]; then
+					export FLEX_SDK="/Users/stalwart/SDKs/Flex"
+				fi
 			fi
 		fi
 
