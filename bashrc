@@ -83,6 +83,10 @@ case `uname -s` in
 			export PATH=$ADOBE_GAMING_SDK/Utilities/ATF\ Tools:$PATH
 		fi
 
+		if [ -d "/Users/stalwart/SDKs/android-ndk-r10e" ]; then
+			export PATH="/Users/stalwart/SDKs/android-ndk-r10e:$PATH"
+		fi
+
 		if [ -f `brew --prefix`/etc/bash_completion ]; then
 			. `brew --prefix`/etc/bash_completion
 		fi
