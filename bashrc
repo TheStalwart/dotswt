@@ -41,11 +41,6 @@ case `uname -s` in
 
 		export FIGNORE=$FIGNORE:.DS_Store
 
-		if [ -d "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" ]; then
-			export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
-		else
-			export JAVA_HOME=`/usr/libexec/java_home`
-		fi
 		export ANT_OPTS="-Xmx4096M"
 		#export _JAVA_OPTIONS="-Xmx4096M"
 
