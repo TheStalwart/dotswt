@@ -14,11 +14,11 @@ set scrolloff=5
 syntax on
 filetype plugin indent on
 
-set wildignore+=*.png,*.jpg,*.atf,*.tps						" Images
-set wildignore+=*.jar,*.class 								" Java
-set wildignore+=*.fla,*.swf,*.swc,*.as3proj,*/META-INF/* 	" Flash
-set wildignore+=*/res/drawable/*,*/res/layout/*,*/smali/* 	" Android
-set wildignore+=*/*.framework/*,*/*.bundle/*,*/xcuserdata/* " Xcode
+set wildignore+=*.png,*.jpg,*.atf,*.tps							" Images
+set wildignore+=*.jar,*.class 									" Java
+set wildignore+=*.fla,*.swf,*.swc,*.ane,*.as3proj,*/META-INF/* 	" Flash
+set wildignore+=*/res/drawable/*,*/res/layout/*,*/smali/* 		" Android
+set wildignore+=*/*.framework/*,*/*.bundle/*,*/xcuserdata/* 	" Xcode
 
 "set foldmethod=syntax
 "set foldnestmax=2
