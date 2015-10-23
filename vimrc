@@ -26,6 +26,8 @@ set wildignore+=*/*.framework/*,*/*.bundle/*,*/xcuserdata/* 	" Xcode
 
 let g:SuperTabDefaultCompletionType="context"
 
+let g:ctrlp_max_files = 0
+
 nnoremap t :NERDTreeToggle<CR>
 
 nnoremap <C-n> :cnext<CR>
