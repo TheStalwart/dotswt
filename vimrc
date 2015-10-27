@@ -19,6 +19,7 @@ set wildignore+=*.jar,*.class 									" Java
 set wildignore+=*.fla,*.swf,*.swc,*.ane,*.as3proj,*/META-INF/* 	" Flash
 set wildignore+=*/res/drawable/*,*/res/layout/*,*/smali/* 		" Android
 set wildignore+=*/*.framework/*,*/*.bundle/*,*/xcuserdata/* 	" Xcode
+set wildignore+=.DS_Store 										" OS X
 
 "set foldmethod=syntax
 "set foldnestmax=2
