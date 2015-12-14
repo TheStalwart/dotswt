@@ -41,9 +41,6 @@ case `uname -s` in
 
 		export FIGNORE=$FIGNORE:.DS_Store
 
-		export ANT_OPTS="-Xmx4096M"
-		#export _JAVA_OPTIONS="-Xmx4096M"
-
 		if [ -d "/Users/stalwart/SDKs/Flex" ]; then
 			export FLEX_SDK="/Users/stalwart/SDKs/Flex"
 			export PATH=$FLEX_SDK/bin:$PATH
