@@ -41,11 +41,13 @@ case `uname -s` in
 
 		export FIGNORE=$FIGNORE:.DS_Store
 
-		if [ -d "/Users/stalwart/SDKs/Flex" ]; then
-			export FLEX_SDK="/Users/stalwart/SDKs/Flex"
+		if [ -d "/Users/stalwart/SDKs/AIR" ]; then
+			export AIR_ROOT="/Users/stalwart/SDKs/AIR"
+			export FLEX_SDK=$AIR_ROOT/`ls $AIR_ROOT | head -n 1`
 			export PATH=$FLEX_SDK/bin:$PATH
 			alias idb="${FLEX_SDK}/lib/aot/bin/iOSBin/idb"
 			export PATH=$FLEX_SDK/lib/android/bin:$PATH
+			export PATH=$FLEX_SDK/atftools:$PATH
 		fi
 
 		if [ -d "/Users/stalwart/SDKs/Imagination" ]; then
