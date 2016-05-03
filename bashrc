@@ -41,6 +41,11 @@ case `uname -s` in
 
 		export FIGNORE=$FIGNORE:.DS_Store
 
+		if [ -d "/Applications/Xcode.app" ]; then
+			export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer/"
+			alias symbolicatecrash="/Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/symbolicatecrash"
+		fi
+
 		if [ -d "/Users/stalwart/SDKs/AIR" ]; then
 			export AIR_ROOT="/Users/stalwart/SDKs/AIR"
 			export FLEX_SDK=$AIR_ROOT/`ls $AIR_ROOT | head -n 1`
