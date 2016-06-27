@@ -63,8 +63,8 @@ case `uname -s` in
 			export PATH=$IMAGINATION_SDK/PowerVR_Graphics/PowerVR_Tools/PVRTexTool/CLI/OSX_x86:$PATH
 		fi
 
-		if [ -d "/Users/stalwart/SDKs/android-ndk-r10e" ]; then
-			export PATH="/Users/stalwart/SDKs/android-ndk-r10e:$PATH"
+		if [ -d "$HOME/Library/Android/sdk/ndk-bundle" ]; then
+			export PATH="$HOME/Library/Android/sdk/ndk-bundle:$PATH"
 		fi
 
 		if [ -f `brew --prefix`/etc/bash_completion ]; then
