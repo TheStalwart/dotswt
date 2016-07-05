@@ -64,6 +64,7 @@ case `uname -s` in
 		fi
 
 		if [ -d "$HOME/Library/Android/sdk/ndk-bundle" ]; then
+			export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 			export PATH="$HOME/Library/Android/sdk/ndk-bundle:$PATH"
 		fi
 
