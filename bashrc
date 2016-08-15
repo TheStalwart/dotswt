@@ -68,6 +68,10 @@ case `uname -s` in
 			export PATH="$HOME/Library/Android/sdk/ndk-bundle:$PATH"
 		fi
 
+		if [ -f `brew --prefix`/bin/rbenv ]; then
+			eval "$(rbenv init -)"
+		fi
+
 		if [ -f `brew --prefix`/etc/bash_completion ]; then
 			. `brew --prefix`/etc/bash_completion
 		fi
