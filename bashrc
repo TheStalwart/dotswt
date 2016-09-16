@@ -68,6 +68,8 @@ case `uname -s` in
 			export PATH="$HOME/Library/Android/sdk/ndk-bundle:$PATH"
 		fi
 
+		export STUDIO_VM_OPTIONS=~/.dotswt/studio.vmoptions
+
 		if [ -f `brew --prefix`/bin/rbenv ]; then
 			eval "$(rbenv init -)"
 		fi
