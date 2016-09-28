@@ -13,6 +13,7 @@ set incsearch
 set scrolloff=5
 syntax on
 filetype plugin indent on
+au BufRead,BufNewFile Podfile set filetype=ruby
 
 set wildignore+=*.png,*.jpg,*.atf,*.tps							" Images
 set wildignore+=*.jar,*.class 									" Java
