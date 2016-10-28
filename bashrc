@@ -69,6 +69,7 @@ case `uname -s` in
 		fi
 
 		export STUDIO_VM_OPTIONS=~/.dotswt/studio.vmoptions
+		export GRADLE_OPTS=-Xmx2g
 
 		if [ -f `brew --prefix`/bin/rbenv ]; then
 			eval "$(rbenv init -)"
