@@ -157,6 +157,13 @@ logcat() {
 		egrep --line-buffered -v "^.?/StatusBarManagerService\(" | \
 		egrep --line-buffered -v "^.?/CustomFrequencyManagerService\(" | \
 		egrep --line-buffered -v "^.?/TemperatureHumiditySensor\(" | \
+		egrep --line-buffered -v "^.?/ZipFileCache\(" | \
+		egrep --line-buffered -v "^.?/WifiStateMachine\(" | \
+		egrep --line-buffered -v "^.?/SupplicantHeartBeat\(" | \
+		egrep --line-buffered -v "^.?/wpa_supplicant\(" | \
+		egrep --line-buffered -v "^.?/PhoneStatusBar\(" | \
+		egrep --line-buffered -v "^.?/PhoneStatusBar/NavigationBarView\(" | \
+		egrep --line-buffered -v "^.?/AudioManager\(" | \
 		egrep --line-buffered -v "^.?/STATUSBAR-[0-9a-zA-Z]*\("
 }
 
