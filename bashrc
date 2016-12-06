@@ -83,6 +83,10 @@ case `uname -s` in
 			source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 		fi
 
+		if [ -f /usr/local/lib/node_modules/cordova/scripts/cordova.completion ]; then
+			source /usr/local/lib/node_modules/cordova/scripts/cordova.completion
+		fi
+
 		ane2swc() { unzip $1 catalog.xml library.swf && zip -m ${1%.*}.swc catalog.xml library.swf ; }
 		;;
 esac
