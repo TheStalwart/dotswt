@@ -68,6 +68,10 @@ case `uname -s` in
 			export PATH="$HOME/Library/Android/sdk/ndk-bundle:$PATH"
 		fi
 
+		if [ -d "$HOME/.fastlane/bin" ]; then
+			export PATH="$HOME/.fastlane/bin:$PATH"
+		fi
+
 		export STUDIO_VM_OPTIONS=~/.dotswt/studio.vmoptions
 		export GRADLE_OPTS=-Xmx2g
 
