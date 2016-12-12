@@ -30,6 +30,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
+Plug 'benjifisher/matchit.zip'
 call plug#end()
 
 let g:SuperTabDefaultCompletionType="context"
