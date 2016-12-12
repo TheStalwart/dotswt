@@ -26,6 +26,10 @@ set wildignore+=.DS_Store 										" OS X
 "set foldnestmax=2
 "let xml_syntax_folding=1
 
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+call plug#end()
+
 let g:SuperTabDefaultCompletionType="context"
 
 let g:ctrlp_max_files = 0
