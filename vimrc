@@ -28,6 +28,7 @@ set wildignore+=.DS_Store 										" OS X
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 let g:SuperTabDefaultCompletionType="context"
