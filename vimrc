@@ -28,6 +28,7 @@ set wildignore+=.DS_Store 										" OS X
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
 Plug 'benjifisher/matchit.zip'
