@@ -33,6 +33,7 @@ Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
 Plug 'benjifisher/matchit.zip'
 Plug 'molok/vcscommand.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 let g:SuperTabDefaultCompletionType="context"
