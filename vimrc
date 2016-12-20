@@ -31,10 +31,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
-Plug 'airblade/vim-gitgutter'
 Plug 'benjifisher/matchit.zip'
 Plug 'molok/vcscommand.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mhinz/vim-signify'
 call plug#end()
 
 let g:SuperTabDefaultCompletionType="context"
