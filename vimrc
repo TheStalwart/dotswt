@@ -12,6 +12,7 @@ set hlsearch
 set incsearch
 set scrolloff=5
 set laststatus=2
+set wildmenu
 syntax on
 filetype plugin indent on
 au BufRead,BufNewFile Podfile set filetype=ruby
