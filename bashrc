@@ -138,36 +138,3 @@ if [ -f /usr/local/bin/colorsvn ]; then
 	alias svn="colorsvn"
 fi
 
-logcat() { 
-	adb logcat | \
-		egrep --line-buffered -v "^D/StatusBar.NetworkController\(" | \
-		egrep --line-buffered -v "^.?/SMD *\(" | \
-		egrep --line-buffered -v "^.?/SurfaceFlinger\(" | \
-		egrep --line-buffered -v "^.?/Diag_Lib\(" | \
-		egrep --line-buffered -v "^.?/SSRM:n *\(" | \
-		egrep --line-buffered -v "^.?/BatteryMeterView\(" | \
-		egrep --line-buffered -v "^.?/DateView\(" | \
-		egrep --line-buffered -v "^.?/InputReader\(" | \
-		egrep --line-buffered -v "^.?/InputDispatcher\(" | \
-		egrep --line-buffered -v "^.?/ViewRootImpl\(" | \
-		egrep --line-buffered -v "^.?/KeyguardUpdateMonitor\(" | \
-		egrep --line-buffered -v "^.?/KeyguardEffectViewController\(" | \
-		egrep --line-buffered -v "^.?/AlarmManager\(" | \
-		egrep --line-buffered -v "^.?/BatteryService\(" | \
-		egrep --line-buffered -v "^.?/TimaService\(" | \
-		egrep --line-buffered -v "^.?/ThermalEngine\(" | \
-		egrep --line-buffered -v "^.?/ConnectivityService\(" | \
-		egrep --line-buffered -v "^.?/MotionRecognitionService\(" | \
-		egrep --line-buffered -v "^.?/StatusBarManagerService\(" | \
-		egrep --line-buffered -v "^.?/CustomFrequencyManagerService\(" | \
-		egrep --line-buffered -v "^.?/TemperatureHumiditySensor\(" | \
-		egrep --line-buffered -v "^.?/ZipFileCache\(" | \
-		egrep --line-buffered -v "^.?/WifiStateMachine\(" | \
-		egrep --line-buffered -v "^.?/SupplicantHeartBeat\(" | \
-		egrep --line-buffered -v "^.?/wpa_supplicant\(" | \
-		egrep --line-buffered -v "^.?/PhoneStatusBar\(" | \
-		egrep --line-buffered -v "^.?/PhoneStatusBar/NavigationBarView\(" | \
-		egrep --line-buffered -v "^.?/AudioManager\(" | \
-		egrep --line-buffered -v "^.?/STATUSBAR-[0-9a-zA-Z]*\("
-}
-
