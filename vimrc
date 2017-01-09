@@ -36,6 +36,7 @@ Plug 'benjifisher/matchit.zip'
 Plug 'molok/vcscommand.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-signify'
+Plug 'cfdrake/vim-pbxproj'
 call plug#end()
 
 let g:SuperTabDefaultCompletionType="context"
