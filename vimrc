@@ -49,7 +49,7 @@ nnoremap t :NERDTreeToggle<CR>
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprev<CR>
 
-nnoremap <C-l> :set list!<CR> 
+nnoremap <C-l> :set list!<CR>
 
 if has("unix")
 	command -nargs=? Swrite :w !sudo tee %
