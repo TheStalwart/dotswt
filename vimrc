@@ -35,6 +35,7 @@ Plug 'ervandew/supertab'
 Plug 'benjifisher/matchit.zip'
 Plug 'molok/vcscommand.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mileszs/ack.vim'
 Plug 'mhinz/vim-signify'
 Plug 'cfdrake/vim-pbxproj'
 call plug#end()
