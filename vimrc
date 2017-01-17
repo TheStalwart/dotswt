@@ -29,6 +29,7 @@ set wildignore+=.DS_Store 										" OS X
 "let xml_syntax_folding=1
 
 call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
