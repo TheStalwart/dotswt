@@ -98,7 +98,7 @@ esac
 stty -ixon
 
 if [ ${BASH_VERSINFO[0]} -gt 3 ]; then \
-  shopt -s autocd
+	shopt -s autocd
 fi
 
 export HISTCONTROL="ignoreboth"
