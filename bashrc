@@ -72,6 +72,11 @@ case `uname -s` in
 			export PATH="$HOME/.fastlane/bin:$PATH"
 		fi
 
+		# VMware Fusion
+		if [ -d "/Applications/VMware Fusion.app/Contents/Library" ]; then
+			export PATH=$PATH:"/Applications/VMware Fusion.app/Contents/Library"
+		fi
+
 		export STUDIO_VM_OPTIONS=~/.dotswt/studio.vmoptions
 		export GRADLE_OPTS=-Xmx2g
 
