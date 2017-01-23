@@ -30,6 +30,7 @@ set wildignore+=.DS_Store 										" OS X
 
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
@@ -50,6 +51,9 @@ nnoremap t :NERDTreeToggle<CR>
 
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprev<CR>
+
+" vim-better-whitespace
+autocmd BufWritePre * StripWhitespace
 
 nnoremap <C-l> :set list!<CR>
 
