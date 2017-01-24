@@ -1,0 +1,4 @@
+OPTIONS=color
+OPTIONS=!showrace
+OPTIONS=time
+
