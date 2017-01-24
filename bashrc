@@ -1,12 +1,3 @@
-# .bashrc
-
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
-
-# User specific aliases and functions
-
 case `uname -s` in
 	Linux )
 		export LANG=ru_RU.UTF-8
