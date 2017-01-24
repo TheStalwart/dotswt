@@ -134,3 +134,5 @@ if [ -f /usr/local/bin/colorsvn ]; then
 	alias svn="colorsvn"
 fi
 
+export NETHACKOPTIONS="@$HOME/.dotswt/nethackrc"
+
