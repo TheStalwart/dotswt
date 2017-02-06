@@ -57,6 +57,9 @@ nnoremap t :NERDTreeToggle<CR>
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprev<CR>
 
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
+
 " vim-better-whitespace
 autocmd BufWritePre * StripWhitespace
 
