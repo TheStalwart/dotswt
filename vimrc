@@ -1,3 +1,7 @@
+if has('nvim')
+	language messages en_US
+endif
+
 colo elflord
 
 set nocp
