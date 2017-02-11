@@ -75,8 +75,8 @@ case `uname -s` in
 			eval "$(rbenv init -)"
 		fi
 
-		if [ -f `brew --prefix`/etc/bash_completion ]; then
-			. `brew --prefix`/etc/bash_completion
+		if [ -f `brew --prefix`/Homebrew/completions/bash/brew ]; then
+			source `brew --prefix`/Homebrew/completions/bash/brew
 		fi
 
 		if [ -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ]; then
