@@ -87,6 +87,12 @@ case `uname -s` in
 			source /usr/local/lib/node_modules/cordova/scripts/cordova.completion
 		fi
 
+		if [ -d /Applications/Docker.app ]; then
+			for f in /Applications/Docker.app/Contents/Resources/etc/*.bash-completion; do
+				source $f
+			done
+		fi
+
 		ane2swc() { unzip $1 catalog.xml library.swf && zip -m ${1%.*}.swc catalog.xml library.swf ; }
 		;;
 esac
