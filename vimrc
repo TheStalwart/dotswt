@@ -45,6 +45,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'mhinz/vim-signify'
 Plug 'cfdrake/vim-pbxproj'
+Plug 'tomtom/tlib_vim'
+Plug 'endel/flashdevelop.vim'
 call plug#end()
 
 let g:SuperTabDefaultCompletionType="context"
