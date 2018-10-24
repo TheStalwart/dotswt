@@ -14,3 +14,8 @@
 	trustExitCode = true
 [commit]
 	template = /Users/stalwart/.stCommitMsg
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
