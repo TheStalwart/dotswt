@@ -47,6 +47,7 @@ Plug 'mhinz/vim-signify'
 Plug 'cfdrake/vim-pbxproj'
 Plug 'tomtom/tlib_vim'
 Plug 'endel/flashdevelop.vim'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 let g:SuperTabDefaultCompletionType="context"
