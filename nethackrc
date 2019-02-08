@@ -2,3 +2,12 @@ OPTIONS=color
 OPTIONS=!showrace
 OPTIONS=time
 
+OPTIONS=menucolors
+MENUCOLOR="blessed"=cyan&bold
+MENUCOLOR="cursed"=orange&bold
+MENUCOLOR="uncursed"=green
+
+OPTIONS=extmenu
+
+OPTIONS=autoquiver
+
