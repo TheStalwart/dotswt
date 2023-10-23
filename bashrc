@@ -93,6 +93,10 @@ case `uname -s` in
 			done
 		fi
 
+		if [ -d /Applications/Visual Studio Code.app ]; then
+			export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+		fi
+
 		ane2swc() { unzip $1 catalog.xml library.swf && zip -m ${1%.*}.swc catalog.xml library.swf ; }
 		;;
 esac
