@@ -2,4 +2,5 @@
 brew cleanup
 gem cleanup
 pod cache clean --all
+docker image prune --all
 cdd
