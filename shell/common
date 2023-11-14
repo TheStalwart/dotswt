@@ -6,7 +6,7 @@ if [ -f /usr/local/bin/eza ]; then
 	alias l="eza -F"
 	alias la="eza -Fa"
 	alias ll="eza -Fla"
-else if [ -f /usr/bin/exa ]; then
+elif [ -f /usr/bin/exa ]; then
 	alias l="exa -F"
 	alias la="exa -Fa"
 	alias ll="exa -Fla"
