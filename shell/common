@@ -1,0 +1,17 @@
+# Better coreutils
+# Availability checks should be converted
+# to path-agnostic versions
+# https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script
+if [ -f /usr/local/bin/eza ]; then
+	alias l="eza -F"
+	alias la="eza -Fa"
+	alias ll="eza -Fla"
+else if [ -f /usr/bin/exa ]; then
+	alias l="exa -F"
+	alias la="exa -Fa"
+	alias ll="exa -Fla"
+fi
+
+if [ -f /usr/local/bin/bat ]; then
+	alias c="bat"
+fi
