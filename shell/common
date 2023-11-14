@@ -25,3 +25,7 @@ fi
 
 # don't freeze on ctrl+s
 stty -ixon
+
+# screen
+alias s="screen -DRR"
+export SCREENRC=$DOTSWT/screenrc
