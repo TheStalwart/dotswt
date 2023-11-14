@@ -1,1 +1,2 @@
-hardstatus string "[%H] %h"
+# https://www.kilobitspersecond.com/2014/02/10/understanding-gnu-screens-hardstatus-strings/
+hardstatus alwayslastline "%{= KW} %H %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %=%Y-%M-%d %c"
