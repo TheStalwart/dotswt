@@ -15,3 +15,8 @@ fi
 if [ -f /usr/local/bin/bat ]; then
 	alias c="bat"
 fi
+
+# bash fine-tuning
+if [[ ${BASH_VERSINFO[0]} -gt 3 ]]; then \
+	shopt -s autocd
+fi
