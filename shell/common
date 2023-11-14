@@ -14,6 +14,8 @@ fi
 
 if [ -f /usr/local/bin/bat ]; then
 	alias c="bat"
+elif [ -f /usr/bin/batcat ]; then
+	alias c="batcat"
 fi
 
 # bash fine-tuning
