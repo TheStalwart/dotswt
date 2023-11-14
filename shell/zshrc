@@ -1,7 +1,6 @@
 # https://stackoverflow.com/questions/9901210/bash-source0-equivalent-in-zsh
 ZSH_SOURCE=${BASH_SOURCE[0]:-${(%):-%x}}
 if [ -n "$ZSH_SOURCE" ]; then
-    echo ZSH_SOURCE: $ZSH_SOURCE
     export DOTSWT=$(dirname $(dirname $ZSH_SOURCE))
 else
     export DOTSWT=$(dirname $(dirname $0))
