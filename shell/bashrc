@@ -2,6 +2,7 @@
 # is caused by Git converting files to CRLF
 # https://stackoverflow.com/questions/4182122/syntax-error-near-unexpected-token-elif
 
+# Resolve $DOTSWT root in shell-agnostic and path-agnostic way
 # https://stackoverflow.com/questions/9901210/bash-source0-equivalent-in-zsh
 ZSH_SOURCE=${BASH_SOURCE[0]:-${(%):-%x}}
 if [ -n "$ZSH_SOURCE" ]; then
