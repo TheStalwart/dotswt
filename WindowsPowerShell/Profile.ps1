@@ -1,0 +1,3 @@
+function la {
+    eza -aG
+}
