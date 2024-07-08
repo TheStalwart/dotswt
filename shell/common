@@ -1,20 +1,20 @@
-# Better coreutils
-# Availability checks should be converted
-# to path-agnostic versions
+# Use path-agnostic availability checks!
 # https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script
-if [ -f /usr/local/bin/eza ]; then
+
+# Better coreutils
+if which eza > /dev/null 2>&1; then
 	alias l="eza -F"
 	alias la="eza -Fa"
 	alias ll="eza -Fla"
-elif [ -f /usr/bin/exa ]; then
+elif which exa > /dev/null 2>&1; then
 	alias l="exa -F"
 	alias la="exa -Fa"
 	alias ll="exa -Fla"
 fi
 
-if [ -f /usr/local/bin/bat ]; then
+if which bat > /dev/null 2>&1; then
 	alias c="bat"
-elif [ -f /usr/bin/batcat ]; then
+elif which batcat > /dev/null 2>&1; then
 	alias c="batcat"
 fi
 
@@ -29,3 +29,4 @@ stty -ixon
 # screen
 alias s="screen -DRR"
 export SCREENRC=$DOTSWT/screenrc
+
