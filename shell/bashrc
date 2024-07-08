@@ -1,3 +1,6 @@
+# Apply shell configuration by including the following line in bashrc/zprofile:
+# source ~/.dotswt/shell/bashrc
+
 # syntax error near unexpected token `elif'
 # is caused by Git converting files to CRLF
 # https://stackoverflow.com/questions/4182122/syntax-error-near-unexpected-token-elif
