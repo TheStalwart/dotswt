@@ -1,3 +1,8 @@
+# This is a legacy config file.
+# If you need anything from here,
+# move configuration to shell/*
+# and convert to OS/shell/arch agnostic code.
+
 case `uname -s` in
 	Linux )
 		export LANG=ru_RU.UTF-8
@@ -91,10 +96,6 @@ case `uname -s` in
 			for f in /Applications/Docker.app/Contents/Resources/etc/*.bash-completion; do
 				source $f
 			done
-		fi
-
-		if [ -d /Applications/Visual Studio Code.app ]; then
-			export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 		fi
 
 		ane2swc() { unzip $1 catalog.xml library.swf && zip -m ${1%.*}.swc catalog.xml library.swf ; }
