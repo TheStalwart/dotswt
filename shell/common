@@ -4,8 +4,8 @@
 # Better coreutils
 if which eza > /dev/null 2>&1; then
 	alias l="eza -F"
-	alias la="eza -Fa"
-	alias ll="eza -Fla"
+	alias la="eza -F -a"
+	alias ll="eza -F -la"
 elif which exa > /dev/null 2>&1; then
 	alias l="exa -F"
 	alias la="exa -Fa"
