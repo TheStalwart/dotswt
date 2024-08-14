@@ -4,6 +4,7 @@
 # TODO: display only when CPU load is >10%?
 # TODO: display RAM and swap utilization
 # TODO: add CPU/GPU temperature if above suspicious
-backtick 0 1 1 sh -c 'mpstat -P ALL -o JSON 1 1 | jq -r ".[\"sysstat\"][\"hosts\"][0][\"statistics\"][0][\"cpu-load\"][0][\"idle\"]"'
-hardstatus alwayslastline "%{= KW} %H %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %= %`%% %Y-%M-%d %c:%s"
+# TODO: mpstat makes screen laggy on Raspberry Pi2B. Can we improve performance using native binary?
+# backtick 0 1 1 sh -c 'mpstat -P ALL -o JSON 1 1 | jq -r ".[\"sysstat\"][\"hosts\"][0][\"statistics\"][0][\"cpu-load\"][0][\"idle\"]"'
+hardstatus alwayslastline "%{= KW} %H %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %= %Y-%M-%d %c:%s"
 
