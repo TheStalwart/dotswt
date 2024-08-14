@@ -3,6 +3,6 @@
 # TODO: display every CPU core for <=4 core systems, e.g. Raspberry Pi2B
 # TODO: display only when CPU load is >10%?
 # TODO: display RAM and swap utilization
-backtick 0 1 1 sh -c 'mpstat -P ALL -o JSON | jq -r ".[\"sysstat\"][\"hosts\"][0][\"statistics\"][0][\"cpu-load\"][0][\"idle\"]"'
+backtick 0 1 1 sh -c 'mpstat -P ALL -o JSON 1 1 | jq -r ".[\"sysstat\"][\"hosts\"][0][\"statistics\"][0][\"cpu-load\"][0][\"idle\"]"'
 hardstatus alwayslastline "%{= KW} %H %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %= %`%% %Y-%M-%d %c:%s"
 
