@@ -1,2 +1,8 @@
 # https://www.kilobitspersecond.com/2014/02/10/understanding-gnu-screens-hardstatus-strings/
-hardstatus alwayslastline "%{= KW} %H %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %=%Y-%M-%d %c:%s"
+# TODO: display CPU utilization instead of idle %: https://unix.stackexchange.com/a/40787
+# TODO: display every CPU core for <=4 core systems, e.g. Raspberry Pi2B
+# TODO: display only when CPU load is >10%?
+# TODO: display RAM and swap utilization
+backtick 0 1 1 sh -c 'mpstat -P ALL -o JSON | jq -r ".[\"sysstat\"][\"hosts\"][0][\"statistics\"][0][\"cpu-load\"][0][\"idle\"]"'
+hardstatus alwayslastline "%{= KW} %H %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %= %`%% %Y-%M-%d %c:%s"
+
