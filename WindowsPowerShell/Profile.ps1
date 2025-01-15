@@ -12,6 +12,15 @@ function stree {
     & $Env:LocalAppData\SourceTree\SourceTree.exe -f (Get-Location)
 }
 
+function uptime {
+    try {
+        Get-Uptime
+    }
+    Catch { 
+        Get-CimInstance -ClassName Win32_OperatingSystem | Select-Object LastBootUpTime
+    }
+}
+
 # Make Ctrl+D exit shell, among other familiar keybinds
 # https://stackoverflow.com/a/63022342
 Set-PSReadlineOption -EditMode Emacs
