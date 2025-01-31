@@ -21,6 +21,16 @@ function uptime {
     }
 }
 
+# alias for GNU diff
+function gdiff {
+    param (
+        [Parameter(ValueFromRemainingArguments = $true)]
+        [string[]]$Args
+    )
+
+    & "C:\Program Files\git\usr\bin\diff" "--color=auto" @Args
+}
+
 # Make Ctrl+D exit shell, among other familiar keybinds
 # https://stackoverflow.com/a/63022342
 Set-PSReadlineOption -EditMode Emacs
