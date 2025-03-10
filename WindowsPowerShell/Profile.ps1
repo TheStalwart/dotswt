@@ -6,6 +6,10 @@ function la {
     eza -aG
 }
 
+function gds {
+    git diff; if ($?) { git status }
+}
+
 # https://stackoverflow.com/questions/19663202/how-do-you-open-sourcetree-from-the-command-line
 function stree {
     # https://pureinfotech.com/list-environment-variables-windows-10/
