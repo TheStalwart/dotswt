@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         Tripadvisor export to GPX
+// @updateURL    https://github.com/TheStalwart/dotswt/raw/refs/heads/master/userscripts/Tripadvisor%20export%20to%20GPX.user.js
 // @namespace    https://tldrtravel.info/
 // @license      MIT; https://mit-license.org/
-// @version      2025-02-14
+// @version      2025-03-14
 // @description  Export "Trips" as GPX files
 // @author       Pavel Shevchuk <stlwrt@gmail.com> (https://github.com/TheStalwart/)
 // @copyright    2025, Pavel Shevchuk (https://github.com/TheStalwart/)
