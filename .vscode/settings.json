@@ -1,4 +1,21 @@
 {
+    "[jsonc]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.json-language-features",
+        // When opening a file, `editor.tabSize` and `editor.insertSpaces`
+        // will be detected based on the file contents. Set to false to keep
+        // the values you've explicitly set, above.
+        // https://stackoverflow.com/a/29972553
+        "editor.detectIndentation": false
+    },
+    "[javascript]": {
+        "files.trimTrailingWhitespace": true,
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.detectIndentation": false
+    },
     "[powershell]": {
         "editor.defaultFormatter": "ms-vscode.powershell",
         "editor.formatOnSave": true
