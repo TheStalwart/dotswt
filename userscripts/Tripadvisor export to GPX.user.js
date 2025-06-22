@@ -36,7 +36,7 @@
     }
 
     function generateGPXMetadataElementString(tripData) {
-        let nameElement = `<name>${escapeXml(tripData.title)}</name>`;
+        let nameElement = `<name>Tripadvisor: ${escapeXml(tripData.title)}</name>`;
 
         let descElementContents = [];
 
