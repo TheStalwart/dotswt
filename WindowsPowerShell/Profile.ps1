@@ -45,3 +45,13 @@ function dotswt_steamnointro {
 # Make Ctrl+D exit shell, among other familiar keybinds
 # https://stackoverflow.com/a/63022342
 Set-PSReadlineOption -EditMode Emacs
+
+# expose just adb from Android SDK, i don't need the whole SDK in my $PATH
+function adb {
+    param (
+        [Parameter(ValueFromRemainingArguments = $true)]
+        [string[]]$Args
+    )
+
+    & $Env:LocalAppData\Android\Sdk\platform-tools\adb @Args
+}
