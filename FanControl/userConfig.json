@@ -1,8 +1,28 @@
 {
-  "__VERSION__": "225",
+  "__VERSION__": "236",
   "Main": {
     "Controls": [
       {
+        "Name": "CPU Fan",
+        "NickName": "Radiator Fan",
+        "Identifier": "/lpc/nct6686d/control/0",
+        "IsHidden": false,
+        "Enable": true,
+        "SelectedFanCurve": {
+          "Name": "Radiator Fan Curve"
+        },
+        "SelectedOffset": 0,
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6686d/fan/0"
+        },
+        "SelectedStart": 22,
+        "SelectedStop": 16,
+        "MinimumPercent": 0,
+        "SelectedCommandStepUp": 8,
+        "SelectedCommandStepDown": 8,
+        "ManualControlValue": 50,
+        "ManualControl": false,
+        "ForceApply": false,
         "Calibration": [
           [
             10,
@@ -44,61 +64,29 @@
             100,
             2139
           ]
-        ],
-        "Enable": true,
-        "ForceApply": false,
-        "Identifier": "/lpc/nct6686d/control/0",
-        "IsHidden": false,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
-        "Name": "CPU Fan",
-        "NickName": "Radiator Fan",
-        "PairedFanSensor": {
-          "Identifier": "/lpc/nct6686d/fan/0",
-          "IsHidden": false,
-          "Name": "CPU Fan",
-          "NickName": "Radiator Fan"
-        },
-        "SelectedCommandStepDown": 8,
-        "SelectedCommandStepUp": 8,
-        "SelectedFanCurve": {
-          "CommandMode": 0,
-          "Deadband": 3,
-          "IdleTemperature": 75,
-          "IsHidden": false,
-          "LoadTemperature": 90,
-          "MaxFanSpeed": 100,
-          "MinFanSpeed": 20,
-          "Name": "Radiator Fan Curve",
-          "SelectedResponseTime": 4,
-          "SelectedTempSource": {
-            "Identifier": "Mix/MAX(CPU, GPU)",
-            "IsHidden": false,
-            "Name": "MAX(CPU, GPU)",
-            "SelectedMixFunction": 1,
-            "SelectedSensors": [
-              {
-                "Identifier": "/amdcpu/0/temperature/2",
-                "IsHidden": false,
-                "Name": "Core (Tctl/Tdie)",
-                "NickName": "Core (Tctl/Tdie)"
-              },
-              {
-                "Identifier": "/gpu-amd/5/temperature/0",
-                "IsHidden": false,
-                "Name": "GPU Core",
-                "NickName": "GPU Core"
-              }
-            ]
-          },
-          "Step": 0.5
-        },
-        "SelectedOffset": 0,
-        "SelectedStart": 22,
-        "SelectedStop": 16
+        ]
       },
       {
+        "Name": "Pump Fan",
+        "NickName": "Pump",
+        "Identifier": "/lpc/nct6686d/control/1",
+        "IsHidden": false,
+        "Enable": true,
+        "SelectedFanCurve": {
+          "Name": "Pump Curve"
+        },
+        "SelectedOffset": 0,
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6686d/fan/1"
+        },
+        "SelectedStart": 41,
+        "SelectedStop": 26,
+        "MinimumPercent": 0,
+        "SelectedCommandStepUp": 8,
+        "SelectedCommandStepDown": 8,
+        "ManualControlValue": 50,
+        "ManualControl": false,
+        "ForceApply": false,
         "Calibration": [
           [
             20,
@@ -136,222 +124,179 @@
             100,
             3030
           ]
-        ],
-        "Enable": true,
-        "ForceApply": false,
-        "Identifier": "/lpc/nct6686d/control/1",
-        "IsHidden": false,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
-        "Name": "Pump Fan",
-        "NickName": "Pump",
-        "PairedFanSensor": {
-          "Identifier": "/lpc/nct6686d/fan/1",
-          "IsHidden": false,
-          "Name": "Pump Fan",
-          "NickName": "Pump"
-        },
-        "SelectedCommandStepDown": 8,
-        "SelectedCommandStepUp": 8,
-        "SelectedFanCurve": {
-          "CommandMode": 0,
-          "Deadband": 3,
-          "IdleTemperature": 75,
-          "IsHidden": false,
-          "LoadTemperature": 90,
-          "MaxFanSpeed": 100,
-          "MinFanSpeed": 50,
-          "Name": "Pump Curve",
-          "SelectedResponseTime": 4,
-          "SelectedTempSource": {
-            "Identifier": "Mix/MAX(CPU, GPU)",
-            "IsHidden": false,
-            "Name": "MAX(CPU, GPU)",
-            "SelectedMixFunction": 1,
-            "SelectedSensors": [
-              {
-                "Identifier": "/amdcpu/0/temperature/2",
-                "IsHidden": false,
-                "Name": "Core (Tctl/Tdie)",
-                "NickName": "Core (Tctl/Tdie)"
-              },
-              {
-                "Identifier": "/gpu-amd/5/temperature/0",
-                "IsHidden": false,
-                "Name": "GPU Core",
-                "NickName": "GPU Core"
-              }
-            ]
-          },
-          "Step": 0.5
-        },
-        "SelectedOffset": 0,
-        "SelectedStart": 41,
-        "SelectedStop": 26
+        ]
       },
       {
-        "Calibration": [],
-        "Enable": false,
-        "ForceApply": false,
-        "Identifier": "/lpc/nct6686d/control/2",
-        "IsHidden": true,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
         "Name": "System Fan #1",
         "NickName": "System Fan #1",
-        "PairedFanSensor": null,
-        "SelectedCommandStepDown": 8,
-        "SelectedCommandStepUp": 8,
+        "Identifier": "/lpc/nct6686d/control/2",
+        "IsHidden": true,
+        "Enable": false,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
+        "PairedFanSensor": null,
         "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStop": 0,
+        "MinimumPercent": 0,
+        "SelectedCommandStepUp": 8,
+        "SelectedCommandStepDown": 8,
+        "ManualControlValue": 50,
+        "ManualControl": false,
+        "ForceApply": false,
+        "Calibration": []
       },
       {
-        "Calibration": [],
-        "Enable": false,
-        "ForceApply": false,
-        "Identifier": "/lpc/nct6686d/control/3",
-        "IsHidden": true,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
         "Name": "System Fan #2",
         "NickName": "System Fan #2",
-        "PairedFanSensor": null,
-        "SelectedCommandStepDown": 8,
-        "SelectedCommandStepUp": 8,
+        "Identifier": "/lpc/nct6686d/control/3",
+        "IsHidden": true,
+        "Enable": false,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
+        "PairedFanSensor": null,
         "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStop": 0,
+        "MinimumPercent": 0,
+        "SelectedCommandStepUp": 8,
+        "SelectedCommandStepDown": 8,
+        "ManualControlValue": 50,
+        "ManualControl": false,
+        "ForceApply": false,
+        "Calibration": []
       },
       {
-        "Calibration": [],
-        "Enable": false,
-        "ForceApply": false,
-        "Identifier": "/lpc/nct6686d/control/4",
-        "IsHidden": true,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
         "Name": "System Fan #3",
         "NickName": "System Fan #3",
-        "PairedFanSensor": null,
-        "SelectedCommandStepDown": 8,
-        "SelectedCommandStepUp": 8,
+        "Identifier": "/lpc/nct6686d/control/4",
+        "IsHidden": true,
+        "Enable": false,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
+        "PairedFanSensor": null,
         "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStop": 0,
+        "MinimumPercent": 0,
+        "SelectedCommandStepUp": 8,
+        "SelectedCommandStepDown": 8,
+        "ManualControlValue": 50,
+        "ManualControl": false,
+        "ForceApply": false,
+        "Calibration": []
       },
       {
-        "Calibration": [],
-        "Enable": false,
-        "ForceApply": false,
-        "Identifier": "/lpc/nct6686d/control/5",
-        "IsHidden": true,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
         "Name": "System Fan #4",
         "NickName": "System Fan #4",
-        "PairedFanSensor": null,
-        "SelectedCommandStepDown": 8,
-        "SelectedCommandStepUp": 8,
+        "Identifier": "/lpc/nct6686d/control/5",
+        "IsHidden": true,
+        "Enable": false,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
+        "PairedFanSensor": null,
         "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStop": 0,
+        "MinimumPercent": 0,
+        "SelectedCommandStepUp": 8,
+        "SelectedCommandStepDown": 8,
+        "ManualControlValue": 50,
+        "ManualControl": false,
+        "ForceApply": false,
+        "Calibration": []
       },
       {
-        "Calibration": [],
-        "Enable": false,
-        "ForceApply": false,
-        "Identifier": "/lpc/nct6686d/control/6",
-        "IsHidden": true,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
         "Name": "System Fan #5",
         "NickName": "System Fan #5",
-        "PairedFanSensor": null,
-        "SelectedCommandStepDown": 8,
-        "SelectedCommandStepUp": 8,
+        "Identifier": "/lpc/nct6686d/control/6",
+        "IsHidden": true,
+        "Enable": false,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
+        "PairedFanSensor": null,
         "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStop": 0,
+        "MinimumPercent": 0,
+        "SelectedCommandStepUp": 8,
+        "SelectedCommandStepDown": 8,
+        "ManualControlValue": 50,
+        "ManualControl": false,
+        "ForceApply": false,
+        "Calibration": []
       },
       {
-        "Calibration": [],
-        "Enable": false,
-        "ForceApply": false,
-        "Identifier": "/lpc/nct6686d/control/7",
-        "IsHidden": true,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
         "Name": "System Fan #6",
         "NickName": "System Fan #6",
-        "PairedFanSensor": null,
-        "SelectedCommandStepDown": 8,
-        "SelectedCommandStepUp": 8,
+        "Identifier": "/lpc/nct6686d/control/7",
+        "IsHidden": true,
+        "Enable": false,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
+        "PairedFanSensor": null,
         "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStop": 0,
+        "MinimumPercent": 0,
+        "SelectedCommandStepUp": 8,
+        "SelectedCommandStepDown": 8,
+        "ManualControlValue": 50,
+        "ManualControl": false,
+        "ForceApply": false,
+        "Calibration": []
       },
       {
-        "Calibration": [
-          [
-            100,
-            0
-          ]
-        ],
-        "Enable": false,
-        "ForceApply": false,
-        "Identifier": "/gpu-amd/5/control/0",
-        "IsHidden": false,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MinimumPercent": 0,
         "Name": "GPU Fan",
         "NickName": "GPU Fan",
-        "PairedFanSensor": {
-          "Identifier": "/gpu-amd/5/fan/0",
-          "IsHidden": false,
-          "Name": "GPU Fan",
-          "NickName": "GPU Fan"
-        },
-        "SelectedCommandStepDown": 8,
-        "SelectedCommandStepUp": 8,
+        "Identifier": "/gpu-amd/5/control/0",
+        "IsHidden": false,
+        "Enable": false,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
+        "PairedFanSensor": {
+          "Identifier": "/gpu-amd/5/fan/0"
+        },
         "SelectedStart": 100,
-        "SelectedStop": 0
+        "SelectedStop": 0,
+        "MinimumPercent": 0,
+        "SelectedCommandStepUp": 8,
+        "SelectedCommandStepDown": 8,
+        "ManualControlValue": 50,
+        "ManualControl": false,
+        "ForceApply": false,
+        "Calibration": [
+          [
+            30,
+            1220
+          ],
+          [
+            40,
+            1221
+          ],
+          [
+            80,
+            1222
+          ],
+          [
+            90,
+            1224
+          ],
+          [
+            100,
+            1525
+          ]
+        ]
       }
     ],
     "CustomSensors": [
       {
+        "Name": "MAX(CPU, GPU)",
+        "NickName": "MAX(CPU, GPU)",
         "Identifier": "Mix/MAX(CPU, GPU)",
         "IsHidden": false,
-        "Name": "MAX(CPU, GPU)",
+        "AllowMissingSensor": false,
         "SelectedMixFunction": 1,
         "SelectedSensors": [
           {
-            "Identifier": "/amdcpu/0/temperature/2",
-            "IsHidden": false,
-            "Name": "Core (Tctl/Tdie)",
-            "NickName": "Core (Tctl/Tdie)"
+            "Identifier": "/amdcpu/0/temperature/2"
           },
           {
-            "Identifier": "/gpu-amd/5/temperature/0",
-            "IsHidden": false,
-            "Name": "GPU Core",
-            "NickName": "GPU Core"
+            "Identifier": "/gpu-amd/5/temperature/0"
           }
         ]
       }
@@ -360,67 +305,33 @@
     "FanCurves": [
       {
         "CommandMode": 0,
-        "Deadband": 3,
-        "IdleTemperature": 75,
-        "IsHidden": false,
-        "LoadTemperature": 90,
-        "MaxFanSpeed": 100,
-        "MinFanSpeed": 20,
         "Name": "Radiator Fan Curve",
-        "SelectedResponseTime": 4,
+        "IsHidden": false,
         "SelectedTempSource": {
-          "Identifier": "Mix/MAX(CPU, GPU)",
-          "IsHidden": false,
-          "Name": "MAX(CPU, GPU)",
-          "SelectedMixFunction": 1,
-          "SelectedSensors": [
-            {
-              "Identifier": "/amdcpu/0/temperature/2",
-              "IsHidden": false,
-              "Name": "Core (Tctl/Tdie)",
-              "NickName": "Core (Tctl/Tdie)"
-            },
-            {
-              "Identifier": "/gpu-amd/5/temperature/0",
-              "IsHidden": false,
-              "Name": "GPU Core",
-              "NickName": "GPU Core"
-            }
-          ]
+          "Identifier": "Mix/MAX(CPU, GPU)"
         },
-        "Step": 0.5
+        "Step": 0.5,
+        "Deadband": 3,
+        "SelectedResponseTime": 4,
+        "IdleTemperature": 75,
+        "MinFanSpeed": 20,
+        "MaxFanSpeed": 100,
+        "LoadTemperature": 90
       },
       {
         "CommandMode": 0,
-        "Deadband": 3,
-        "IdleTemperature": 75,
-        "IsHidden": false,
-        "LoadTemperature": 90,
-        "MaxFanSpeed": 100,
-        "MinFanSpeed": 50,
         "Name": "Pump Curve",
-        "SelectedResponseTime": 4,
+        "IsHidden": false,
         "SelectedTempSource": {
-          "Identifier": "Mix/MAX(CPU, GPU)",
-          "IsHidden": false,
-          "Name": "MAX(CPU, GPU)",
-          "SelectedMixFunction": 1,
-          "SelectedSensors": [
-            {
-              "Identifier": "/amdcpu/0/temperature/2",
-              "IsHidden": false,
-              "Name": "Core (Tctl/Tdie)",
-              "NickName": "Core (Tctl/Tdie)"
-            },
-            {
-              "Identifier": "/gpu-amd/5/temperature/0",
-              "IsHidden": false,
-              "Name": "GPU Core",
-              "NickName": "GPU Core"
-            }
-          ]
+          "Identifier": "Mix/MAX(CPU, GPU)"
         },
-        "Step": 0.5
+        "Step": 0.5,
+        "Deadband": 3,
+        "SelectedResponseTime": 4,
+        "IdleTemperature": 75,
+        "MinFanSpeed": 50,
+        "MaxFanSpeed": 100,
+        "LoadTemperature": 90
       }
     ],
     "FanSensors": [
@@ -492,22 +403,16 @@
     "TrayIconColor": null,
     "TrayIcons": [
       {
-        "Color": "#FF0DFF00",
         "SensorId": {
-          "Identifier": "/amdcpu/0/temperature/2",
-          "IsHidden": false,
-          "Name": "Core (Tctl/Tdie)",
-          "NickName": "Core (Tctl/Tdie)"
-        }
+          "Identifier": "/amdcpu/0/temperature/2"
+        },
+        "Color": "#FF0DFF00"
       },
       {
-        "Color": "#FFFF0000",
         "SensorId": {
-          "Identifier": "/gpu-amd/5/temperature/0",
-          "IsHidden": false,
-          "Name": "GPU Core",
-          "NickName": "GPU Core"
-        }
+          "Identifier": "/gpu-amd/5/temperature/0"
+        },
+        "Color": "#FFFF0000"
       }
     ]
   },
@@ -532,7 +437,6 @@
     "NvAPIWrapperSettings": {
       "Enabled": false,
       "ZeroRPMOverride": false
-    },
-    "SensorCount": 34
+    }
   }
 }
