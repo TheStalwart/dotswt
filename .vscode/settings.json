@@ -19,5 +19,13 @@
     "[powershell]": {
         "editor.defaultFormatter": "ms-vscode.powershell",
         "editor.formatOnSave": true
-    }
+    },
+    "[html]": {
+        "editor.formatOnSave": true,
+        // Prettier insists on self-closing tags
+        // that are not W3C-compliant,
+        // so use VSCode built-in formatter instead
+        // https://github.com/prettier/prettier/issues/5641
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
 }
