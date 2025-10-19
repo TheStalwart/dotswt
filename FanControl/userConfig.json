@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "240",
+  "__VERSION__": "244",
   "Main": {
     "Controls": [
       {
@@ -300,6 +300,9 @@
           },
           {
             "Identifier": "/amdcpu/0/temperature/4"
+          },
+          {
+            "Identifier": "/gpu-amd/5/temperature/0"
           }
         ]
       }
@@ -395,7 +398,7 @@
     ],
     "HideCalibration": false,
     "HideFanSpeedCards": false,
-    "HorizontalUIOrientation": false,
+    "HorizontalUIOrientation": true,
     "PrimaryColor": "#FF607D8B",
     "SecondaryColor": "#FFC6FF00",
     "SelectedTheme": "",
