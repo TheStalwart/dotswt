@@ -28,4 +28,9 @@
         // https://github.com/prettier/prettier/issues/5641
         "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "[nix]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true
+    }
 }
