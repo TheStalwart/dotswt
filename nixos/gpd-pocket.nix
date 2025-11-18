@@ -5,9 +5,12 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+  imports = [
+    # Include the results of the hardware scan.
+    # Use absolute path, 
+    # because /etc/nixos/configuration.nix is a symlink 
+    # to a file in a dotfile git repo
+    /etc/nixos/hardware-configuration.nix
     ];
 
   # Bootloader.
