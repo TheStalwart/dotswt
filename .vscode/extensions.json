@@ -3,6 +3,7 @@
         "DavidAnson.vscode-markdownlint",
         "eamodio.gitlens",
         "jnoortheen.nix-ide",
-        "yzhang.markdown-all-in-one"
+        "ms-vscode.PowerShell",
+        "yzhang.markdown-all-in-one",
     ]
 }
