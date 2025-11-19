@@ -90,13 +90,22 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Enable experimental features
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  # $ nix search nixpkgs wget
   environment.systemPackages = with pkgs; [
+    acpi
     btop
     git
+    intel-gpu-tools
+    lm_sensors
+    mc
     microsoft-edge
     nixfmt-classic
+    steam
+    usbutils
     vim
     vscode
   ];
