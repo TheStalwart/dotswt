@@ -11,7 +11,7 @@
     # because /etc/nixos/configuration.nix is a symlink 
     # to a file in a dotfile git repo
     /etc/nixos/hardware-configuration.nix
-    ];
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -77,10 +77,11 @@
     isNormalUser = true;
     description = "Stalwart";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      kdePackages.kate
-    #  thunderbird
-    ];
+    packages = with pkgs;
+      [
+        kdePackages.kate
+        #  thunderbird
+      ];
   };
 
   # Install firefox.
