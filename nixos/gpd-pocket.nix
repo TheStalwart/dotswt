@@ -94,6 +94,7 @@
   environment.systemPackages = with pkgs; [
     btop
     git
+    microsoft-edge
     nixfmt-classic
     vim
     vscode
