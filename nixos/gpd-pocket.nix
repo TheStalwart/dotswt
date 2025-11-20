@@ -98,6 +98,7 @@
   environment.systemPackages = with pkgs; [
     acpi
     btop
+    fastfetch
     git
     intel-gpu-tools
     lm_sensors
