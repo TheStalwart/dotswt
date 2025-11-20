@@ -101,10 +101,12 @@
     acpi
     btop
     fastfetch
+    geekbench
     git
     intel-gpu-tools
     lm_sensors
     mc
+    mesa-demos
     microsoft-edge
     nixfmt-classic
     nvtopPackages.intel
