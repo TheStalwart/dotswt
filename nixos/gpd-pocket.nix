@@ -104,6 +104,7 @@
     mc
     microsoft-edge
     nixfmt-classic
+    nvtopPackages.intel
     steam
     usbutils
     vim
