@@ -19,6 +19,9 @@
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelParams = [
+    "gpd-pocket-fan.speed_on_ac=0" # override BIOS attempts to run fan at full speed while charging
+  ];
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
