@@ -42,7 +42,7 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocales = [ "lv_LV.UTF-8/UTF-8" ];
-  i18n.extraLocaleSettings = { LC_TIME = "lv_LV.UTF-8"; };
+  i18n.extraLocaleSettings = { LC_TIME = "lv_LV.UTF-8"; }; # use 24-hour clock format
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
