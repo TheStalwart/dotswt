@@ -31,7 +31,8 @@
     "gpd-pocket-fan.speed_on_ac=0" # override BIOS attempts to run fan at full speed while charging
   ];
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "gpd"; # Define your hostname.
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable the X11 windowing system.
