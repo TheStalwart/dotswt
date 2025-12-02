@@ -23,5 +23,12 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [ discord mesa-demos microsoft-edge ];
+  # or visit https://search.nixos.org/packages
+  environment.systemPackages = with pkgs; [
+    discord
+    mesa-demos
+    microsoft-edge
+    qdirstat
+    xlsclients
+  ];
 }
