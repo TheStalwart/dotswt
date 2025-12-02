@@ -17,6 +17,7 @@
 
     # Include configuration shared among multiple machines
     ./shared/essentials.nix
+    ./shared/desktop.nix
     ./shared/i18n.nix
   ];
 
@@ -37,16 +38,9 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
-  # Enable networking
-  networking.networkmanager.enable = true;
-
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
-
-  # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -80,29 +74,15 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
-  # Enable experimental features
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
   # List packages installed in system profile. To search, run:
   # $ nix search nixpkgs wget
   environment.systemPackages = with pkgs; [
     acpi
-    btop
 
-    geekbench
     intel-gpu-tools
     lm_sensors
 
-    mesa-demos
-    microsoft-edge
-    nixfmt-classic
     nvtopPackages.intel
-    steam
-
-    vscode
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
