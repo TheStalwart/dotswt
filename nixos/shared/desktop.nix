@@ -27,6 +27,8 @@
 
   programs.steam.enable = true;
 
+  hardware.intel-gpu-tools.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # or visit https://search.nixos.org/packages
@@ -34,6 +36,7 @@
     discord
     mesa-demos
     microsoft-edge
+    nvtopPackages.intel
     qdirstat
     vscode.fhs
     xlsclients

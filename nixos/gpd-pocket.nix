@@ -72,11 +72,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search nixpkgs wget
   # or visit https://search.nixos.org/packages
-  environment.systemPackages = with pkgs; [
-    intel-gpu-tools
-
-    nvtopPackages.intel
-  ];
+  environment.systemPackages = with pkgs; [ ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
