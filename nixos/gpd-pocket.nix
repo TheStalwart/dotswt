@@ -33,8 +33,6 @@
 
   networking.hostName = "gpd"; # Define your hostname.
 
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
