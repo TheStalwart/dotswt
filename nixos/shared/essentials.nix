@@ -27,6 +27,7 @@
     lm_sensors
     mc
     nixfmt-classic
+    python311 # my other servers and workstations run 3.11
     usbutils
     wget
   ];
