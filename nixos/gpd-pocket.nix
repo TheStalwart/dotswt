@@ -16,6 +16,7 @@
     /etc/nixos/hardware-configuration.nix
 
     # Include configuration shared among multiple machines
+    ./shared/essentials.nix
     ./shared/i18n.nix
   ];
 
@@ -87,9 +88,6 @@
   # Install firefox.
   programs.firefox.enable = true;
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   # Enable experimental features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -98,19 +96,17 @@
   environment.systemPackages = with pkgs; [
     acpi
     btop
-    fastfetch
+
     geekbench
-    git
     intel-gpu-tools
     lm_sensors
-    mc
+
     mesa-demos
     microsoft-edge
     nixfmt-classic
     nvtopPackages.intel
     steam
-    usbutils
-    vim
+
     vscode
   ];
 
