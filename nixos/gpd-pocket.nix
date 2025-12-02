@@ -78,11 +78,6 @@
     isNormalUser = true;
     description = "Stalwart";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs;
-      [
-        kdePackages.kate
-        #  thunderbird
-      ];
   };
 
   # Install firefox.
