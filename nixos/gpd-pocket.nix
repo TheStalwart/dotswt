@@ -72,11 +72,9 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search nixpkgs wget
+  # or visit https://search.nixos.org/packages
   environment.systemPackages = with pkgs; [
-    acpi
-
     intel-gpu-tools
-    lm_sensors
 
     nvtopPackages.intel
   ];

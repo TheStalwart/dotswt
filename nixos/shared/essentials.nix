@@ -17,11 +17,14 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  # or visit https://search.nixos.org/packages
   environment.systemPackages = with pkgs; [
+    acpi
     btop
     fastfetch
     file
     geekbench
+    lm_sensors
     mc
     nixfmt-classic
     usbutils
