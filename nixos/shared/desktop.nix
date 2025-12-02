@@ -15,7 +15,13 @@
 
   programs.firefox.enable = true;
 
-  programs.vscode.enable = true;
+  # https://nixos.wiki/wiki/Visual_Studio_Code
+  # https://discourse.nixos.org/t/vscode-extensions-dont-work-anymore-since-25-05/64784/4
+  # https://nixos.org/guides/nix-pills/11-garbage-collector.html
+  # programs.vscode = {
+  #   enable = true;
+  #   package = pkgs.vscode.fhs; # this property doesn't seem to work, so i install FHS version via systemPackages below
+  # };
   # Make VSCode use Wayland instead of X11
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
@@ -29,6 +35,7 @@
     mesa-demos
     microsoft-edge
     qdirstat
+    vscode.fhs
     xlsclients
   ];
 }
