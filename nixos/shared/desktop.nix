@@ -29,6 +29,20 @@
 
   hardware.intel-gpu-tools.enable = true;
 
+  # https://wiki.nixos.org/wiki/Fonts
+  fonts = {
+    enableDefaultPackages = true;
+    packages = with pkgs; [ corefonts vista-fonts twemoji-color-font ];
+    fontconfig = {
+      defaultFonts = {
+        serif = [ "Liberation Serif" ];
+        sansSerif = [ "Liberation Sans" ];
+        monospace = [ "Liberation Mono" ];
+        emoji = [ "Twemoji" ];
+      };
+    };
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # or visit https://search.nixos.org/packages
