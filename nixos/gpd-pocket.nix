@@ -14,6 +14,9 @@
     # because /etc/nixos/configuration.nix is a symlink 
     # to a file in a dotfile git repo
     /etc/nixos/hardware-configuration.nix
+
+    # Include configuration shared among multiple machines
+    ./shared/i18n.nix
   ];
 
   # Bootloader.
@@ -35,14 +38,6 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
-  # Set your time zone.
-  time.timeZone = "Europe/Riga";
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-  i18n.extraLocales = [ "lv_LV.UTF-8/UTF-8" ];
-  i18n.extraLocaleSettings = { LC_TIME = "lv_LV.UTF-8"; }; # use 24-hour clock format
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
