@@ -55,3 +55,8 @@ function adb {
 
     & $Env:LocalAppData\Android\Sdk\platform-tools\adb @Args
 }
+
+if ($Host.Name -eq 'ConsoleHost') {
+    # avoid loading it in non-interactive scripts
+    Import-Module StopAll -Force
+}

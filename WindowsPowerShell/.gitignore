@@ -1,2 +1,6 @@
-# Do not track installed modules
+# Do not track 3rd party installed modules
 Modules/*
+
+# But do track StopAll module
+!Modules/StopAll/
+!Modules/StopAll/**
