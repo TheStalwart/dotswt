@@ -1,3 +1,5 @@
+# Copy or symlink this file to ~/.gitconfig
+
 [user]
 	name = Pavel Shevchuk
 	email = stlwrt@gmail.com
