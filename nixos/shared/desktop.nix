@@ -1,5 +1,6 @@
-# This file requires NixOS 25.11
-# Upgrade from 25.05 with the following commands:
+# Defines desired GUI Desktop Environment configuration
+
+# Requires NixOS 25.11, upgrade from 25.05 with the following commands:
 #   nix-channel --add https://channels.nixos.org/nixos-25.11 nixos
 #   nixos-rebuild switch --upgrade
 

@@ -1,3 +1,5 @@
+# Enables essential CLI tools
+
 { config, pkgs, ... }:
 
 {
