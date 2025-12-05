@@ -63,10 +63,13 @@ function Stop-All {
                 if ($PSCmdlet.ShouldProcess($display, "Stop process")) {
                     try {
                         Stop-Process -Id $p.Id -Force:($Force.IsPresent) -ErrorAction Stop
+                        Start-Sleep -Milliseconds 150
+                        $stillRunning = Get-Process -Id $p.Id -ErrorAction SilentlyContinue
+
                         $results += [PSCustomObject]@{
                             ProcessId = $p.Id
                             Name      = $exeLeaf
-                            Stopped   = $true
+                            Stopped   = ($null -eq $stillRunning)
                         }
                     }
                     catch {
