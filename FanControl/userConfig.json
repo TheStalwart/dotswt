@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "244",
+  "__VERSION__": "251",
   "Main": {
     "Controls": [
       {
@@ -437,6 +437,7 @@
       "Motherboard": true,
       "PSU": true,
       "Storage": false,
+"StorageUpdateInterval": "00:01:00",
       "ZeroRPMOverride": false
     },
     "NvAPIWrapperSettings": {
