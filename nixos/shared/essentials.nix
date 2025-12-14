@@ -26,6 +26,7 @@
     fastfetch
     file
     geekbench
+    inetutils
     lm_sensors
     mc
     nixfmt-classic
