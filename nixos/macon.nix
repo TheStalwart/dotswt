@@ -2,7 +2,7 @@
 # To fix it:
 # - Stop the container
 # - Open System -> Shell in TrueNAS Web Interface
-#   - `sudo -s`
+#   - `sudo -i`
 #   - `incus config set CONTAINERNAME security.nesting=true`
 # - Start the container
 # - Edit /etc/nix/nix.conf, set `nix.settings.sandbox = false;`
@@ -10,7 +10,7 @@
 # - `nixos-rebuild switch --upgrade`
 # - Stop the container
 # - Open System -> Shell
-#   - `sudo -s`
+#   - `sudo -i`
 #   - `incus config unset CONTAINERNAME security.nesting`
 # - Start the container
 
