@@ -19,6 +19,8 @@
 
   services.tailscale.enable = true;
 
+  programs.command-not-found.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # or visit https://search.nixos.org/packages
