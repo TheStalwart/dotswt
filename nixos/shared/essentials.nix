@@ -28,6 +28,7 @@
     acpi
     btop
     # cope # unreliable on 25.11, fixed on unstable?
+    dig
     fastfetch
     file
     geekbench
