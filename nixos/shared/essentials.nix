@@ -27,7 +27,7 @@
   environment.systemPackages = with pkgs; [
     acpi
     btop
-    cope
+    # cope # unreliable on 25.11, fixed on unstable?
     fastfetch
     file
     geekbench
