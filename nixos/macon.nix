@@ -7,7 +7,7 @@
 # - Start the container
 # - Edit /etc/nix/nix.conf, set `nix.settings.sandbox = false;`
 # - `nix-channel --update`
-# - `nixos-rebuild switch --upgrade`
+# - `nixos-rebuild switch --upgrade-all`
 # - Stop the container
 # - Open System -> Shell
 #   - `sudo -i`
