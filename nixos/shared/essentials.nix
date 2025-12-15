@@ -25,6 +25,7 @@
   environment.systemPackages = with pkgs; [
     acpi
     btop
+    cope
     fastfetch
     file
     geekbench
