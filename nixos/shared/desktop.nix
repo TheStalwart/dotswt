@@ -14,6 +14,9 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
+  # KDE Apps
+  programs.partition-manager.enable = true;
+
   programs.firefox.enable = true;
 
   # https://nixos.wiki/wiki/Visual_Studio_Code
