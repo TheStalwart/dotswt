@@ -1,5 +1,28 @@
 {
   "__VERSION__": "251",
+  "Sensors": {
+    "AdlxWrapperSettings": {
+      "Enabled": false
+    },
+    "DisabledPlugins": [],
+    "DisableStorageSensors": true,
+    "LibreHardwareMonitorSettings": {
+      "Controller": false,
+      "CPU": true,
+      "EmbeddedEC": true,
+      "GPU": true,
+      "Memory": false,
+      "Motherboard": true,
+      "PSU": true,
+      "Storage": false,
+      "StorageUpdateInterval": "00:01:00",
+      "ZeroRPMOverride": false
+    },
+    "NvAPIWrapperSettings": {
+      "Enabled": false,
+      "ZeroRPMOverride": false
+    }
+  },
   "Main": {
     "Controls": [
       {
@@ -322,7 +345,7 @@
         "IdleTemperature": 75,
         "MinFanSpeed": 20,
         "MaxFanSpeed": 100,
-        "LoadTemperature": 90
+        "LoadTemperature": 85
       },
       {
         "CommandMode": 0,
@@ -337,7 +360,7 @@
         "IdleTemperature": 75,
         "MinFanSpeed": 50,
         "MaxFanSpeed": 100,
-        "LoadTemperature": 90
+        "LoadTemperature": 85
       }
     ],
     "FanSensors": [
@@ -421,28 +444,5 @@
         "Color": "#FFFF0000"
       }
     ]
-  },
-  "Sensors": {
-    "AdlxWrapperSettings": {
-      "Enabled": false
-    },
-    "DisabledPlugins": [],
-    "DisableStorageSensors": true,
-    "LibreHardwareMonitorSettings": {
-      "Controller": false,
-      "CPU": true,
-      "EmbeddedEC": true,
-      "GPU": true,
-      "Memory": false,
-      "Motherboard": true,
-      "PSU": true,
-      "Storage": false,
-"StorageUpdateInterval": "00:01:00",
-      "ZeroRPMOverride": false
-    },
-    "NvAPIWrapperSettings": {
-      "Enabled": false,
-      "ZeroRPMOverride": false
-    }
   }
 }
