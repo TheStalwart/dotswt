@@ -3,6 +3,9 @@
 # Requires NixOS 25.11, upgrade from 25.05 with the following commands:
 #   nix-channel --add https://channels.nixos.org/nixos-25.11 nixos
 #   nixos-rebuild switch --upgrade-all
+# Or go straight to NixOS Unstable:
+#   nix-channel --add https://channels.nixos.org/nixos-unstable nixos
+#   nixos-rebuild switch --upgrade-all
 
 { config, pkgs, ... }:
 
