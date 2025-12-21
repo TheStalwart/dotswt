@@ -36,7 +36,7 @@
   environment.systemPackages = with pkgs; [
     bitwarden-desktop
     discord
-    mesa-demos
+    mesa-demos # glxgears etc.
     microsoft-edge
     nil # Nix Language server for Zed Editor https://github.com/oxalica/nil
     nixd # Nix Language server for Zed Editor https://github.com/nix-community/nixd
