@@ -17,7 +17,8 @@
 
     # Include configuration shared among multiple machines
     ./shared/essentials.nix
-    ./shared/desktop.nix
+    ./shared/kde.nix
+    ./shared/gui-apps.nix
     ./shared/i18n.nix
   ];
 
