@@ -1,5 +1,5 @@
 # Copy or symlink this file to /etc/nixos/configuration.nix
-# and run `nixos-rebuild switch` to sync system state
+# and run `nixos-rebuild switch --upgrade-all` to sync system state
 
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
@@ -11,7 +11,7 @@
   imports = [
     # Include the results of the hardware scan.
     # Use absolute path, 
-    # because /etc/nixos/configuration.nix is a symlink 
+    # because /etc/nixos/configuration.nix might be a symlink 
     # to a file in a dotfile git repo
     /etc/nixos/hardware-configuration.nix
 
