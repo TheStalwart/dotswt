@@ -10,7 +10,13 @@
   nixpkgs.config.allowUnfree = true;
 
   # Not enabled by default, even though some nixos utilities rely on it?
-  programs.git.enable = true;
+  programs.git = {
+    enable = true;
+    config.user = {
+      name = "Pavel Shevchuk";
+      email = "stlwrt@gmail.com";
+    };
+  };
 
   programs.vim.enable = true;
   programs.vim.defaultEditor = true;
