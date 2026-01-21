@@ -37,10 +37,13 @@
     discord
     mesa-demos
     microsoft-edge
+    nil # Nix Language server for Zed Editor https://github.com/oxalica/nil
+    nixd # Nix Language server for Zed Editor https://github.com/nix-community/nixd
     nvtopPackages.intel
     qdirstat
     spotify
     vscode.fhs
     xlsclients
+    zed-editor
   ];
 }
