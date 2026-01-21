@@ -5,7 +5,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -56,7 +56,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search nixpkgs wget
   # or visit https://search.nixos.org/packages
-  environment.systemPackages = with pkgs; [ ];
+  # environment.systemPackages = with pkgs; [ ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
