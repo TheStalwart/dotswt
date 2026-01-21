@@ -40,6 +40,7 @@
     nil # Nix Language server for Zed Editor https://github.com/oxalica/nil
     nixd # Nix Language server for Zed Editor https://github.com/nix-community/nixd
     nvtopPackages.intel
+    obsidian
     qdirstat
     spotify
     vscode.fhs
