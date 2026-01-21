@@ -10,8 +10,8 @@
 {
   imports = [
     # Include the results of the hardware scan.
-    # Use absolute path, 
-    # because /etc/nixos/configuration.nix might be a symlink 
+    # Use absolute path,
+    # because /etc/nixos/configuration.nix might be a symlink
     # to a file in a dotfile git repo
     /etc/nixos/hardware-configuration.nix
 
@@ -47,7 +47,10 @@
   users.users.stalwart = {
     isNormalUser = true;
     description = "Stalwart";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
   };
 
   # List packages installed in system profile. To search, run:
