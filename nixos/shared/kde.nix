@@ -10,9 +10,6 @@
 { config, pkgs, ... }:
 
 {
-  # Enable NetworkManager for GUI setups
-  networking.networkmanager.enable = true;
-
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;

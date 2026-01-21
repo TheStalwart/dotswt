@@ -21,6 +21,7 @@
     ./shared/gui-apps.nix
     ./shared/i18n.nix
     ./shared/pipewire.nix
+    ./shared/networkmanager.nix
   ];
 
   # Bootloader.
