@@ -11,6 +11,9 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  environment.variables = {
+    NIXPKGS_ALLOW_UNFREE = "1";
+  };
 
   # Not enabled by default, even though some nixos utilities rely on it?
   programs.git = {
