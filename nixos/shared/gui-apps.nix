@@ -7,13 +7,14 @@
 #   nix-channel --add https://channels.nixos.org/nixos-unstable nixos
 #   nixos-rebuild switch --upgrade-all
 
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   # KDE Apps
   programs.partition-manager.enable = true;
 
   programs.firefox.enable = true;
+  programs.thunderbird.enable = true;
 
   # https://nixos.wiki/wiki/Visual_Studio_Code
   # https://discourse.nixos.org/t/vscode-extensions-dont-work-anymore-since-25-05/64784/4
