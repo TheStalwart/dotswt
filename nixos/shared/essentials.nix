@@ -32,6 +32,9 @@
   programs.screen.enable = true;
 
   services.tailscale.enable = true;
+  # Tailscale MagicDNS breaks on NixOS system after resume
+  # https://github.com/tailscale/tailscale/issues/4254
+  services.resolved.enable = true;
 
   programs.command-not-found.enable = true;
 
