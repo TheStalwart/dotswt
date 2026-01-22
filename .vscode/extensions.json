@@ -1,5 +1,6 @@
 {
     "recommendations": [
+        "antcap96.xresources",
         "DavidAnson.vscode-markdownlint",
         "eamodio.gitlens",
         "jnoortheen.nix-ide",

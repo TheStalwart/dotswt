@@ -1,4 +1,7 @@
 {
+    "files.associations": {
+        "Xresources": "xdefaults"
+    },
     "[jsonc]": {
         "editor.formatOnSave": true,
         "editor.tabSize": 4,
