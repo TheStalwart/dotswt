@@ -56,6 +56,7 @@
     nmap
     python311 # my other servers and workstations run 3.11
     tig
+    unixtools.net-tools
     usbutils
     wget
   ];
