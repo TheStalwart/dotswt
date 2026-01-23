@@ -1,3 +1,6 @@
+! Symlink to: ~/.Xresources
+! Reload with: xrdb -merge ~/.Xresources
+
 Xft.dpi: 96
 Xcursor*theme: Oxygen_Black
 
@@ -15,41 +18,59 @@ URxvt.urlLauncher: firefox
 urxvt.matcher.button: 1
 URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-] 
 
-!Tango colors
+! Tango colors
 
 ! background (not tango), foreground
+xterm*background: #222222
 urxvt*background: #222222
+xterm*foreground: #babdb6
 urxvt*foreground: #babdb6
 
 ! Black (not tango) + DarkGrey
+xterm*color0: #222222
 urxvt*color0: #222222
+xterm*color8: #555753
 urxvt*color8: #555753
 
 ! DarkRed + Red
+xterm*color1: #a40000
 urxvt*color1: #a40000
+xterm*color9: #cc0000
 urxvt*color9: #cc0000
 
 ! DarkGreen + Green
+xterm*color2: #4e9a06
 urxvt*color2: #4e9a06
+xterm*color10: #73d216
 urxvt*color10: #73d216
 
 ! DarkYellow + Yellow
+xterm*color3: #c4a000
 urxvt*color3: #c4a000
+xterm*color11: #edd400
 urxvt*color11: #edd400
 
 ! DarkBlue + Blue
+xterm*color4: #3465a4
 urxvt*color4: #3465a4
+xterm*color12: #729fcf
 urxvt*color12: #729fcf
 
 ! DarkMangenta + Mangenta
+xterm*color5: #ce5c00
 urxvt*color5: #ce5c00
+xterm*color13: #f57900
 urxvt*color13: #f57900
 
-!DarkCyan + Cyan (both not tango)
+! DarkCyan + Cyan (both not tango)
+xterm*color6: #038e82
 urxvt*color6: #038e82
+xterm*color14: #05d2c1
 urxvt*color14: #05d2c1
 
 ! LightGrey + White
+xterm*color7: #babdb6
 urxvt*color7: #babdb6
+xterm*color15: #d3d7cf
 urxvt*color15: #d3d7cf
 
