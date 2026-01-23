@@ -46,6 +46,7 @@
     spotify
     vscode.fhs
     xlsclients
+    xlsfonts
     zed-editor
   ];
 }
