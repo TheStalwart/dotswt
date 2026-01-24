@@ -26,24 +26,17 @@
   # Make VSCode use Wayland instead of X11
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  programs.steam.enable = true;
-
-  hardware.intel-gpu-tools.enable = true;
-
   # List packages installed in system profile. To search, run:
   # $ nix search nixpkgs wget
   # or visit https://search.nixos.org/packages
   environment.systemPackages = with pkgs; [
     bitwarden-desktop
-    discord
     mesa-demos # glxgears etc.
-    microsoft-edge
     nil # Nix Language server for Zed Editor https://github.com/oxalica/nil
     nixd # Nix Language server for Zed Editor https://github.com/nix-community/nixd
     nvtopPackages.intel
     obsidian
     qdirstat
-    spotify
     vscode.fhs
     xlsclients
     xlsfonts
