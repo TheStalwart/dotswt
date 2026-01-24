@@ -4,8 +4,13 @@
 # and run `nixos-rebuild switch --upgrade-all` to sync system state
 
 {
-  # Enable the COSMIC login manager
-  services.displayManager.cosmic-greeter.enable = true;
+  # Disable the COSMIC login manager.
+  # Startup is much longer than ly,
+  # with no perceivable benefit
+  services.displayManager.cosmic-greeter.enable = false;
+
+  # Lightweight CLI display manager
+  services.displayManager.ly.enable = true;
 
   # Enable the COSMIC desktop environment
   services.desktopManager.cosmic.enable = true;
