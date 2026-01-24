@@ -20,6 +20,12 @@
   # on Raspberry Pi 4B
   services.xserver.windowManager.awesome.noArgb = true;
 
+  networking.firewall = {
+    allowedTCPPorts = [
+      5900 # VNC
+    ];
+  };
+
   environment.systemPackages = with pkgs; [
     arandr
     x11vnc
