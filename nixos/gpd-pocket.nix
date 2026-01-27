@@ -20,6 +20,7 @@
     ./shared/kde.nix
     ./shared/gui-apps.nix
     ./shared/i18n.nix
+    ./shared/amd64.nix
     ./shared/pipewire.nix
     ./shared/networkmanager.nix
   ];
