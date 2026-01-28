@@ -57,6 +57,7 @@
     psmisc
     python311 # my other servers and workstations run 3.11
     tig
+    tree
     unixtools.net-tools
     usbutils
     wget
