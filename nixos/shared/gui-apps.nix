@@ -37,6 +37,7 @@
     nvtopPackages.intel
     obsidian
     qdirstat
+    tigervnc # x0vncserver, w0vncserver
     vscode.fhs
     xlsclients
     xlsfonts
