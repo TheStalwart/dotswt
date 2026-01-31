@@ -8,6 +8,10 @@
 
 {
   programs.steam.enable = true;
+  programs.steam.remotePlay.openFirewall = true;
+  programs.steam.localNetworkGameTransfers.openFirewall = true;
+  programs.steam.gamescopeSession.enable = true;
+
   hardware.intel-gpu-tools.enable = true;
 
   environment.systemPackages = with pkgs; [
