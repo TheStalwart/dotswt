@@ -14,6 +14,18 @@
 
   hardware.intel-gpu-tools.enable = true;
 
+  # Set default browser to MS Edge
+  # https://unix.stackexchange.com/questions/379632/how-to-set-the-default-browser-in-nixos
+  # *.desktop files for installed apps are in /run/current-system/sw/share/applications/
+  environment.sessionVariables.DEFAULT_BROWSER = "${pkgs.microsoft-edge}/bin/microsoft-edge";
+  xdg.mime.defaultApplications = {
+    "text/html" = "microsoft-edge.desktop";
+    "x-scheme-handler/http" = "microsoft-edge.desktop";
+    "x-scheme-handler/https" = "microsoft-edge.desktop";
+    "x-scheme-handler/about" = "microsoft-edge.desktop";
+    "x-scheme-handler/unknown" = "microsoft-edge.desktop";
+  };
+
   environment.systemPackages = with pkgs; [
     discord
     spotify
