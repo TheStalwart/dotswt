@@ -52,6 +52,7 @@
     fastfetch
     file
     geekbench
+    htop
     inetutils
     lm_sensors
     mc
