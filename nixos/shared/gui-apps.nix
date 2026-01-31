@@ -7,6 +7,9 @@
 #   nix-channel --add https://channels.nixos.org/nixos-unstable nixos
 #   nixos-rebuild switch --upgrade-all
 
+# Include this file in /etc/nixos/configuration.nix imports section
+# and run `nixos-rebuild switch --upgrade-all` to sync system state
+
 { pkgs, ... }:
 
 {
