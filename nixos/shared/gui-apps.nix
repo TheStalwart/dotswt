@@ -29,6 +29,19 @@
   # Make VSCode use Wayland instead of X11
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
+  # Set default terminal emulator to Ghostty
+  # *.desktop files for installed apps are in /run/current-system/sw/share/applications/
+  # COSMIC resolves default terminal via xdg-mime
+  # https://github.com/pop-os/cosmic-settings/blob/master/cosmic-settings/src/pages/applications/default_apps.rs
+  # However, there seems to be a bug,
+  # as cosmic-settings recognizes Ghostty as "Terminal Emulator" but
+  # super+t shortcut still launches cosmic-term, unless i reselect Ghostty
+  # in Settings > Default Applications > Terminal
+  xdg.mime.defaultApplications = {
+    "x-scheme-handler/terminal" = "com.mitchellh.ghostty.desktop";
+    "application/x-terminal-emulator" = "com.mitchellh.ghostty.desktop";
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search nixpkgs wget
   # or visit https://search.nixos.org/packages
