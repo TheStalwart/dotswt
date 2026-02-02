@@ -10,6 +10,6 @@
   programs.hyprland = {
     enable = true;
     withUWSM = true; # recommended for most users
-    xwayland.enable = false;
+    xwayland.enable = true; # required for Steam
   };
 }
