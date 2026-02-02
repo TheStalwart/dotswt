@@ -8,7 +8,8 @@
     LC_TIME = "lv_LV.UTF-8"; # use 24-hour clock format
   };
 
-  # Configure keyboard layouts
+  # Configure keyboard layouts in X11
+  # (not applicable to Wayland desktops)
   services.xserver.xkb = {
     layout = "lv,ru";
     options = "grp:alt_shift_toggle";
