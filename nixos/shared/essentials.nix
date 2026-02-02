@@ -18,6 +18,15 @@
     NIXPKGS_ALLOW_UNFREE = "1";
   };
 
+  # Cap old NixOS generations
+  # https://hugosum.com/blog/how-to-avoid-too-many-old-nixos-generations
+  boot.loader.systemd-boot.configurationLimit = 10; # only 10 generations are kept
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
   # Not enabled by default, even though some nixos utilities rely on it?
   programs.git = {
     enable = true;
