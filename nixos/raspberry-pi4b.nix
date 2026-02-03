@@ -32,6 +32,11 @@
   # Fix Razer Abyssus 2014 mouse
   boot.kernelParams = [ "usbhid.mousepoll=0" ];
 
+  environment.systemPackages = with pkgs; [
+    libraspberrypi
+    raspberrypi-eeprom
+  ];
+
   # Changing hostname invalidates cookies and auth keys
   networking.hostName = "rpi4";
   # Prevent host becoming unreachable on WiFi after some time.
