@@ -1,12 +1,25 @@
 # Defines configuration for Raspberry Pi 4B
 
 # Include this file in /etc/nixos/configuration.nix imports section
-# and run `nixos-rebuild switch --upgrade-all` to sync system state
+# and run:
+# `nix-channel --add https://github.com/NixOS/nixos-hardware/archive/master.tar.gz nixos-hardware`
+# `nixos-rebuild switch --upgrade-all` to sync system state
+
+# Updating firmware:
+# `mount /dev/disk/by-label/FIRMWARE /mnt`
+# `BOOTFS=/mnt FIRMWARE_RELEASE_STATUS=stable rpi-eeprom-update -d -a`
+
+# More info:
+# https://nixos.wiki/wiki/NixOS_on_ARM/Raspberry_Pi_4
+# https://wiki.nixos.org/wiki/NixOS_on_ARM/Raspberry_Pi_4
+# https://github.com/NixOS/nixpkgs/issues/123725
 
 { pkgs, ... }:
 
 {
   imports = [
+    <nixos-hardware/raspberry-pi/4>
+
     ./desktops/awesome.nix
     ./shared/essentials.nix
     ./shared/fonts.nix
