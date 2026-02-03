@@ -48,7 +48,6 @@
   environment.systemPackages = with pkgs; [
     bitwarden-desktop
     ghostty
-    gitkraken
     mangohud
     mesa-demos # glxgears etc.
     nil # Nix Language server for Zed Editor https://github.com/oxalica/nil

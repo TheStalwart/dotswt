@@ -28,7 +28,8 @@
 
   environment.systemPackages = with pkgs; [
     discord
-    spotify
+    gitkraken
     microsoft-edge
+    spotify
   ];
 }
