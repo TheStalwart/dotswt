@@ -28,6 +28,7 @@
 
   environment.systemPackages = with pkgs; [
     arandr
+    networkmanagerapplet # nm-applet
     x11vnc
   ];
 }
