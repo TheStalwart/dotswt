@@ -29,6 +29,9 @@
     ./shared/pipewire.nix
   ];
 
+  # Fix Razer Abyssus 2014 mouse
+  boot.kernelParams = [ "usbhid.mousepoll=0" ];
+
   # Changing hostname invalidates cookies and auth keys
   networking.hostName = "rpi4";
 }
