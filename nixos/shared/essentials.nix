@@ -14,6 +14,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  hardware.enableAllFirmware = true;
   environment.variables = {
     NIXPKGS_ALLOW_UNFREE = "1";
   };
