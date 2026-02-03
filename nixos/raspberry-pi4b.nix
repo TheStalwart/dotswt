@@ -34,4 +34,7 @@
 
   # Changing hostname invalidates cookies and auth keys
   networking.hostName = "rpi4";
+  # Prevent host becoming unreachable on WiFi after some time.
+  networking.networkmanager.wifi.powersave = false;
+
 }
