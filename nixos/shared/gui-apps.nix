@@ -71,6 +71,7 @@
     with pkgs;
     [
       bitwarden-desktop
+      dconf-editor
       floorp-bin
       ghostty
       mangohud
