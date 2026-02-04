@@ -19,6 +19,9 @@
         "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.detectIndentation": false
     },
+    "[hyprlang]": {
+        "files.trimTrailingWhitespace": true,
+    },
     "[powershell]": {
         "editor.defaultFormatter": "ms-vscode.powershell",
         "editor.formatOnSave": true
