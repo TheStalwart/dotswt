@@ -42,23 +42,55 @@
     "application/x-terminal-emulator" = "com.mitchellh.ghostty.desktop";
   };
 
+  # Set default browser to Ablaze Floorp
+  # MS Edge is x86_64 only and has too many UI bugs on Linux
+  # https://unix.stackexchange.com/questions/379632/how-to-set-the-default-browser-in-nixos
+  # *.desktop files for installed apps are in /run/current-system/sw/share/applications/
+  environment.sessionVariables.DEFAULT_BROWSER = "${pkgs.floorp-bin}/bin/floorp";
+  xdg.mime.defaultApplications = {
+    "text/html" = "floorp.desktop";
+    "x-scheme-handler/http" = "floorp.desktop";
+    "x-scheme-handler/https" = "floorp.desktop";
+    "x-scheme-handler/about" = "floorp.desktop";
+    "x-scheme-handler/unknown" = "floorp.desktop";
+  };
+
+  # Steam is x86_64 only
+  # (hopefully we get native arm64 support after Steam Frame is released in 2026)
+  programs.steam.enable = pkgs.stdenv.hostPlatform.isx86_64;
+  programs.steam.remotePlay.openFirewall = pkgs.stdenv.hostPlatform.isx86_64;
+  programs.steam.localNetworkGameTransfers.openFirewall = pkgs.stdenv.hostPlatform.isx86_64;
+  programs.steam.gamescopeSession.enable = pkgs.stdenv.hostPlatform.isx86_64;
+
+  hardware.intel-gpu-tools.enable = pkgs.stdenv.hostPlatform.isx86;
+
   # List packages installed in system profile. To search, run:
   # $ nix search nixpkgs wget # requires >8GB RAM
   # or visit https://search.nixos.org/packages
-  environment.systemPackages = with pkgs; [
-    bitwarden-desktop
-    ghostty
-    mangohud
-    mesa-demos # glxgears etc.
-    nil # Nix Language server for Zed Editor https://github.com/oxalica/nil
-    nixd # Nix Language server for Zed Editor https://github.com/nix-community/nixd
-    nvtopPackages.intel
-    obsidian
-    qdirstat
-    tigervnc # x0vncserver, w0vncserver
-    vscode.fhs
-    xlsclients
-    xlsfonts
-    zed-editor
-  ];
+  environment.systemPackages =
+    with pkgs;
+    [
+      bitwarden-desktop
+      floorp-bin
+      ghostty
+      mangohud
+      mesa-demos # glxgears etc.
+      nil # Nix Language server for Zed Editor https://github.com/oxalica/nil
+      nixd # Nix Language server for Zed Editor https://github.com/nix-community/nixd
+      nvtopPackages.intel
+      obsidian
+      qdirstat
+      tigervnc # x0vncserver, w0vncserver
+      vscode.fhs
+      xlsclients
+      xlsfonts
+      zed-editor
+    ]
+    ++ lib.optionals pkgs.stdenv.hostPlatform.isx86_64 [
+      # Isn't it funny how this list is exclusively apps written in "portable" CEF/Electron?
+      discord
+      gitkraken
+      microsoft-edge
+      spotify
+    ];
 }

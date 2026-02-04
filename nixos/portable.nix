@@ -8,7 +8,6 @@
 {
   imports = [
     ./desktops/hyprland.nix
-    ./shared/amd64.nix
     ./shared/essentials.nix
     ./shared/fonts.nix
     ./shared/gui-apps.nix
