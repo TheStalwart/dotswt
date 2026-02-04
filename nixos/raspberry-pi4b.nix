@@ -13,12 +13,13 @@
 # https://nixos.wiki/wiki/NixOS_on_ARM/Raspberry_Pi_4
 # https://wiki.nixos.org/wiki/NixOS_on_ARM/Raspberry_Pi_4
 # https://github.com/NixOS/nixpkgs/issues/123725
+# https://nix.dev/tutorials/nixos/installing-nixos-on-a-raspberry-pi
 
 { pkgs, ... }:
 
 {
   imports = [
-    <nixos-hardware/raspberry-pi/4>
+    "${fetchTarball "https://github.com/NixOS/nixos-hardware/tarball/master"}/raspberry-pi/4"
 
     ./desktops/awesome.nix
     ./shared/essentials.nix
@@ -42,7 +43,7 @@
 
   # Changing hostname invalidates cookies and auth keys
   networking.hostName = "rpi4";
+
   # Prevent host becoming unreachable on WiFi after some time.
   networking.networkmanager.wifi.powersave = false;
-
 }
