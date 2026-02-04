@@ -52,7 +52,7 @@
   programs.command-not-found.enable = true;
 
   # List packages installed in system profile. To search, run:
-  # $ nix search nixpkgs wget
+  # $ nix search nixpkgs wget # requires >8GB RAM
   # or visit https://search.nixos.org/packages
   environment.systemPackages = with pkgs; [
     acpi
