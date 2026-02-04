@@ -93,7 +93,15 @@
       # Isn't it funny how this list is exclusively apps written in "portable" CEF/Electron?
       discord
       gitkraken
+
+      # Reasons i'm not using Microsoft Edge as my default browser on Linux:
+      # - Some tooltips are presented as a normal windows and trigger relayout in tiling window managers
+      # - Workspace sync is unreliable, i saw workspaces revert to an older state multiple times, losing tabs
+      # - Dragging and dropping tabs between windows is broken
+      # - Disabling title bar with vertical tabs causes some buttons to overlap
+      # - No arm64 build for Raspberry Pi
       microsoft-edge
+
       spotify
     ];
 }
