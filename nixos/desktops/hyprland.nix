@@ -3,6 +3,11 @@
 # Include this file in /etc/nixos/configuration.nix imports section
 # and run `nixos-rebuild switch --upgrade-all` to sync system state
 
+# When switching from a different Desktop Environment,
+# sometimes migration to dbus-broker is triggered.
+# In that case,
+# run `nixos-rebuild boot --upgrade-all` and reboot
+
 { pkgs, ... }:
 
 {
