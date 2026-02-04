@@ -35,6 +35,7 @@
   environment.systemPackages = with pkgs; [
     libraspberrypi
     raspberrypi-eeprom
+    alacritty # Ghostty doesn't work on Raspberry Pi 4B GPU
   ];
 
   # Changing hostname invalidates cookies and auth keys
