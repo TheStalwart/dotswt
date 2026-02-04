@@ -81,6 +81,8 @@
       obsidian
       qdirstat
       tigervnc # x0vncserver, w0vncserver
+      vivaldi
+      vivaldi-ffmpeg-codecs
       vscode.fhs
       xlsclients
       xlsfonts
