@@ -25,6 +25,11 @@
   # programs.vscode = {
   #   enable = true;
   #   package = pkgs.vscode.fhs; # this property doesn't seem to work, so i install FHS version via systemPackages below
+  #   extensions = with pkgs.vscode-extensions; [
+  #     davidanson.vscode-markdownlint
+  #     jnoortheen.nix-ide
+  #     yzhang.markdown-all-in-one
+  #   ];
   # };
   # Make VSCode use Wayland instead of X11
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
