@@ -78,6 +78,7 @@
     psmisc
     python311 # my other servers and workstations run 3.11
     ripgrep
+    speedtest-cli
     tig
     tree
     unixtools.net-tools
