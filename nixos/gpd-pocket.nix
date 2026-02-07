@@ -17,7 +17,7 @@
 
     # Include configuration shared among multiple machines
     ./shared/essentials.nix
-    ./desktops/cosmic.nix
+    ./desktops/hyprland.nix
     ./shared/gui-apps.nix
     ./shared/i18n.nix
     ./shared/pipewire.nix
