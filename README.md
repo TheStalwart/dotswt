@@ -1,3 +1,3 @@
 # Stalwart's dotfiles
 
-Some config files in this repo expect it to be deployed to /home/stalwart/.dotswt
+Some of these config files are more than two decades old and expect the repo to be deployed to /home/stalwart/.dotswt.
