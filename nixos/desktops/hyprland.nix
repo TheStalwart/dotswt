@@ -26,6 +26,9 @@
     xwayland.enable = true; # required for Steam
   };
 
+  # For Noctalia to detect laptop battery
+  services.upower.enable = true;
+
   # I don't need scaling,
   # so don't bother with hyprcursor or SVG cursor themes for now.
   # nordzy-cursor-theme nixpkg comes with hyprcursor version
