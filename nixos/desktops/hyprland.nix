@@ -35,6 +35,7 @@
 
   environment.systemPackages = with pkgs; [
     hyprls # LSP server for Hyprland configuration files
+    hyprmon # TUI multi-monitor layout editor
     hyprprop
     noctalia-shell # https://docs.noctalia.dev/getting-started/nixos/
     nwg-displays # GUI multi-monitor layout editor
