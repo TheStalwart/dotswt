@@ -23,6 +23,9 @@
   # including Raspberry Pi 4B
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  # Bootloader.
+  boot.loader.systemd-boot.enable = pkgs.stdenv.hostPlatform.isx86_64;
+  boot.loader.efi.canTouchEfiVariables = pkgs.stdenv.hostPlatform.isx86_64;
   # Cap old NixOS generations
   # https://hugosum.com/blog/how-to-avoid-too-many-old-nixos-generations
   boot.loader.systemd-boot.configurationLimit = 10; # only 10 generations are kept

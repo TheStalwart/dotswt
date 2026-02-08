@@ -24,10 +24,6 @@
     ./shared/networkmanager.nix
   ];
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
   boot.kernelParams = [
     "gpd-pocket-fan.speed_on_ac=0" # override BIOS attempts to run fan at full speed while charging
   ];
