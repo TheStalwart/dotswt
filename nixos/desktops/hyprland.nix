@@ -26,6 +26,10 @@
     xwayland.enable = true; # required for Steam
   };
 
+  # Hyprland itself does not implement
+  # any ways to lock/sleep on user idleness
+  services.hypridle.enable = true;
+
   # For Noctalia to detect laptop battery
   services.upower.enable = true;
 
