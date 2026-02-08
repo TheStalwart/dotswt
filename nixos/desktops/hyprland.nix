@@ -48,5 +48,6 @@
     noctalia-shell # https://docs.noctalia.dev/getting-started/nixos/
     nwg-displays # GUI multi-monitor layout editor
     quintom-cursor-theme
+    wlrctl # Wayland CLI
   ];
 }
