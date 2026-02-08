@@ -40,6 +40,7 @@
     hyprls # LSP server for Hyprland configuration files
     hyprmon # TUI multi-monitor layout editor
     hyprprop
+    libnotify # notify-send
     noctalia-shell # https://docs.noctalia.dev/getting-started/nixos/
     nwg-displays # GUI multi-monitor layout editor
     quintom-cursor-theme
