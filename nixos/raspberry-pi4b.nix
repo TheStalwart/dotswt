@@ -30,8 +30,6 @@
     ./shared/pipewire.nix
   ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
   # Fix Razer Abyssus 2014 mouse
   boot.kernelParams = [ "usbhid.mousepoll=0" ];
 

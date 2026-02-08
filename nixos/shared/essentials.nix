@@ -19,6 +19,10 @@
     NIXPKGS_ALLOW_UNFREE = "1";
   };
 
+  # I use latest kernel on all machines,
+  # including Raspberry Pi 4B
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   # Cap old NixOS generations
   # https://hugosum.com/blog/how-to-avoid-too-many-old-nixos-generations
   boot.loader.systemd-boot.configurationLimit = 10; # only 10 generations are kept

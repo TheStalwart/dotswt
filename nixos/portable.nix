@@ -16,9 +16,6 @@
     ./shared/pipewire.nix
   ];
 
-  # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
   # SSD with this instance is being plugged into PCs that usually run Windows
   time.hardwareClockInLocalTime = true;
 
