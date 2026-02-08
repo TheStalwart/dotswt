@@ -70,6 +70,7 @@
     nmap
     psmisc
     python311 # my other servers and workstations run 3.11
+    ripgrep
     tig
     tree
     unixtools.net-tools
