@@ -18,6 +18,7 @@ nixpkgs.lib.nixosSystem {
     /etc/nixos/hardware-configuration.nix
     ../shared/essentials.nix
     ../desktops/hyprland.nix
+    ../shared/fonts.nix
     ../shared/gui-apps.nix
     ../shared/i18n.nix
     ../shared/pipewire.nix
