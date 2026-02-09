@@ -20,7 +20,11 @@
   };
 
   # I use latest kernel on all machines,
-  # including Raspberry Pi 4B
+  # including Raspberry Pi 4B.
+  # Other kernel branches are documented
+  # in the following files:
+  # - https://github.com/NixOS/nixpkgs/blob/master/pkgs/top-level/linux-kernels.nix
+  # - https://github.com/NixOS/nixpkgs/blob/master/pkgs/top-level/aliases.nix
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Bootloader.
