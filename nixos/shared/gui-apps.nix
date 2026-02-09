@@ -86,6 +86,8 @@
       nvtopPackages.intel
       obsidian
       qdirstat
+      sourcegit
+      sublime-merge # Dark Mode behind paywall
       tigervnc # x0vncserver, w0vncserver
       vivaldi
       vivaldi-ffmpeg-codecs
