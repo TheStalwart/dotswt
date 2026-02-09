@@ -14,7 +14,7 @@
   # SDDM correctly launches UWSM Hyprland session
   # but i don't like its performance and look.
   services.displayManager.sddm.enable = false;
-  services.displayManager.sddm.wayland.enable = false;
+  services.displayManager.sddm.wayland.enable = true;
 
   # ly fails to load UWSM Hyprland session,
   # but i don't see any issues with the regular Hyprland session so far
