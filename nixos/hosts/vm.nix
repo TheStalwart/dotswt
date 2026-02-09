@@ -20,12 +20,13 @@
 nixpkgs.lib.nixosSystem {
   modules = [
     /etc/nixos/configuration.nix
-    ../desktops/cosmic.nix
     ../shared/essentials.nix
+    ../desktops/cosmic.nix
+    ../shared/fonts.nix
     ../shared/gui-apps.nix
     ../shared/i18n.nix
+    ../shared/pipewire.nix
     ../shared/insecure-vm.nix
     ../shared/networkmanager.nix
-    ../shared/pipewire.nix
   ];
 }
