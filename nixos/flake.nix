@@ -11,6 +11,7 @@
       nixosConfigurations = {
         vm = import ./hosts/vm.nix { inherit nixpkgs; };
         gpd = import ./hosts/gpd.nix { inherit nixpkgs; };
+        portable = import ./hosts/portable.nix { inherit nixpkgs; };
       };
     };
 }
