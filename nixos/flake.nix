@@ -3,15 +3,21 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    home-manager = {
+      # home-manager master == nixpkgs unstable
+      url = "github:nix-community/home-manager/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
-    { self, nixpkgs }:
+    { nixpkgs, home-manager, ... }:
     {
       nixosConfigurations = {
-        vm = import ./hosts/vm.nix { inherit nixpkgs; };
-        gpd = import ./hosts/gpd.nix { inherit nixpkgs; };
-        portable = import ./hosts/portable.nix { inherit nixpkgs; };
+        vm = import ./hosts/vm.nix { inherit nixpkgs home-manager; };
+        gpd = import ./hosts/gpd.nix { inherit nixpkgs home-manager; };
+        portable = import ./hosts/portable.nix { inherit nixpkgs home-manager; };
       };
     };
 }
