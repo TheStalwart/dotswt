@@ -15,7 +15,7 @@
 # To sync the system to the desired state:
 # `sudo nixos-rebuild switch --flake ~/.swt/nixos#vm --impure`
 
-{ nixpkgs }:
+{ nixpkgs, home-manager, ... }:
 
 nixpkgs.lib.nixosSystem {
   modules = [
@@ -28,5 +28,8 @@ nixpkgs.lib.nixosSystem {
     ../shared/pipewire.nix
     ../shared/insecure-vm.nix
     ../shared/networkmanager.nix
+
+    home-manager.nixosModules.home-manager
+    ../home
   ];
 }

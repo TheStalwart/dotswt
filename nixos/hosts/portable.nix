@@ -3,7 +3,7 @@
 # To sync the system to the desired state:
 # `sudo nixos-rebuild switch --flake ~/.swt/nixos#portable --impure`
 
-{ nixpkgs }:
+{ nixpkgs, home-manager, ... }:
 
 nixpkgs.lib.nixosSystem {
   modules = [
@@ -16,6 +16,9 @@ nixpkgs.lib.nixosSystem {
     ../shared/pipewire.nix
     ../shared/networkmanager.nix
     ../shared/users.nix
+
+    home-manager.nixosModules.home-manager
+    ../home
 
     {
       boot.initrd.luks.devices."luks-5c92e6c5-3005-4218-bae7-857d202f322d".device =
