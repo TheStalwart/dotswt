@@ -18,7 +18,9 @@
 
   # ly fails to load UWSM Hyprland session,
   # but i don't see any issues with the regular Hyprland session so far
-  services.displayManager.ly.enable = true;
+  imports = [
+    ../displayManagers/ly.nix
+  ];
 
   programs.hyprland = {
     enable = true;
