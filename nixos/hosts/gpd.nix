@@ -33,6 +33,12 @@ nixpkgs.lib.nixosSystem {
         "gpd-pocket-fan.speed_on_ac=0" # override BIOS attempts to run fan at full speed while charging
       ];
 
+      # Set bigger font for built-in display
+      console = {
+        earlySetup = true;
+        font = "latarcyrheb-sun32";
+      };
+
       networking.hostName = "gpd";
 
       hardware.bluetooth.enable = true;
