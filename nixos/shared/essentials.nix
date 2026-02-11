@@ -39,6 +39,14 @@
     options = "--delete-older-than 7d";
   };
 
+  # Suspend if no activity on login screen.
+  # After login, apps like hypridle will override these settings.
+  # NB: Suspended Proxmox VMs fail to wake up.
+  services.logind.settings.Login = {
+    IdleAction = "suspend";
+    IdleActionSec = "5min";
+  };
+
   # Not enabled by default, even though some nixos utilities rely on it?
   programs.git = {
     enable = true;
