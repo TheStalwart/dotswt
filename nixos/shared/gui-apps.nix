@@ -16,7 +16,17 @@
   # KDE Apps
   programs.partition-manager.enable = true;
 
-  programs.firefox.enable = true;
+  programs.firefox = {
+    enable = true;
+
+    # https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
+    # https://mozilla.github.io/policy-templates/
+    preferences = {
+      "browser.shell.checkDefaultBrowser" = false;
+      "general.autoScroll" = true;
+    };
+  };
+
   programs.thunderbird.enable = true;
 
   # https://nixos.wiki/wiki/Visual_Studio_Code
