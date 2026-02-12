@@ -17,7 +17,10 @@ nixpkgs.lib.nixosSystem {
   modules = [
     /etc/nixos/hardware-configuration.nix
     ../shared/essentials.nix
+
+    ../displayManager/tuigreet.nix
     ../desktops/hyprland.nix
+
     ../shared/fonts.nix
     ../shared/gui-apps.nix
     ../shared/i18n.nix
