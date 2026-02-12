@@ -1,12 +1,11 @@
 # Set preferred desktop environment to Hyprland
-
-# Include this file in /etc/nixos/configuration.nix imports section
-# and run `nixos-rebuild switch --upgrade-all` to sync system state
-
+#
+# Hyprland is useless without hand-crafted dotfiles,
+# so this configuration depends on home-manager.
+#
 # When switching from a different Desktop Environment,
 # sometimes migration to dbus-broker is triggered.
-# In that case,
-# run `nixos-rebuild boot --upgrade-all` and reboot
+# In that case, run `nixos-rebuild boot` and reboot
 
 { pkgs, ... }:
 
@@ -52,4 +51,17 @@
     quintom-cursor-theme
     wlrctl # Wayland CLI
   ];
+
+  home-manager.users.stalwart =
+    { config, ... }:
+    {
+      xdg.configFile = {
+        "hypr/hyprland.conf" = {
+          source = config.lib.file.mkOutOfStoreSymlink ../../hypr/hyprland.conf;
+        };
+        "hypr/hypridle.conf" = {
+          source = config.lib.file.mkOutOfStoreSymlink ../../hypr/hypridle.conf;
+        };
+      };
+    };
 }
