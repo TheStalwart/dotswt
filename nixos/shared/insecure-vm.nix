@@ -11,11 +11,4 @@
 
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "stalwart";
-
-  # ly ignores "services.displayManager.autoLogin" settings
-  # unless this parameter is set.
-  # I should probably report this to nixpkgs GitHub
-  services.displayManager.ly.settings = {
-    auto_login_service = "ly-autologin";
-  };
 }
