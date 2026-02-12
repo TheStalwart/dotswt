@@ -28,6 +28,7 @@ nixpkgs.lib.nixosSystem {
     ../shared/pipewire.nix
     ../shared/insecure-vm.nix
     ../shared/networkmanager.nix
+    ../services/sshd.nix
 
     home-manager.nixosModules.home-manager
     ../home
