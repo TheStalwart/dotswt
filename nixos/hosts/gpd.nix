@@ -24,6 +24,7 @@ nixpkgs.lib.nixosSystem {
     ../shared/pipewire.nix
     ../shared/networkmanager.nix
     ../shared/users.nix
+    ../services/sshd.nix
 
     home-manager.nixosModules.home-manager
     ../home
@@ -42,14 +43,6 @@ nixpkgs.lib.nixosSystem {
       networking.hostName = "gpd";
 
       hardware.bluetooth.enable = true;
-
-      services.openssh = {
-        enable = true;
-        settings = {
-          PasswordAuthentication = false;
-          PermitRootLogin = "no";
-        };
-      };
 
       services.displayManager.ly.settings = {
         battery_id = "max170xx_battery";

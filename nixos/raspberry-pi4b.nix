@@ -28,6 +28,7 @@
     ./shared/i18n.nix
     ./shared/networkmanager.nix
     ./shared/pipewire.nix
+    ./services/sshd.nix
   ];
 
   # Fix Razer Abyssus 2014 mouse
