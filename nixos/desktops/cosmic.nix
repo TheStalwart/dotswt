@@ -9,14 +9,6 @@
 { pkgs, ... }:
 
 {
-  # Disable the COSMIC login manager.
-  # Startup is much longer than ly,
-  # with no perceivable benefit
-  services.displayManager.cosmic-greeter.enable = false;
-
-  # Lightweight CLI display manager
-  services.displayManager.ly.enable = true;
-
   # Enable the COSMIC desktop environment
   services.desktopManager.cosmic.enable = true;
 

@@ -21,7 +21,10 @@ nixpkgs.lib.nixosSystem {
   modules = [
     /etc/nixos/configuration.nix
     ../shared/essentials.nix
+
+    ../displayManagers/cosmic-greeter.nix
     ../desktops/cosmic.nix
+
     ../shared/fonts.nix
     ../shared/gui-apps.nix
     ../shared/i18n.nix
