@@ -9,10 +9,17 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }:
+    {
+      nixpkgs,
+      home-manager,
+      nixos-hardware,
+      ...
+    }:
     {
       nixosConfigurations = {
         vm = import ./hosts/vm.nix { inherit nixpkgs home-manager; };
