@@ -2,6 +2,7 @@
     "files.associations": {
         "Xresources": "xdefaults"
     },
+    "files.eol": "\n",
     "[jsonc]": {
         "editor.formatOnSave": true,
         "editor.tabSize": 4,
