@@ -25,6 +25,7 @@
         vm = import ./hosts/vm.nix { inherit nixpkgs home-manager; };
         gpd = import ./hosts/gpd.nix { inherit nixpkgs home-manager; };
         portable = import ./hosts/portable.nix { inherit nixpkgs home-manager; };
+        rpi4 = import ./hosts/rpi4.nix { inherit nixpkgs home-manager nixos-hardware; };
       };
     };
 }
