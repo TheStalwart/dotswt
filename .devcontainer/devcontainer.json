@@ -14,6 +14,13 @@
             ]
         }
     },
+    // As of February 2026, 
+    // nix packages defined in "packages" of nix feature
+    // are installed, but not exposed to $PATH
+    // unless i define the same package list in environment variable
+    "containerEnv": {
+        "PACKAGES": "nixd,nil,nixfmt"
+    },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -26,7 +33,7 @@
                 "yzhang.markdown-all-in-one"
             ],
             "settings": {
-                "nix.serverPath": "/nix/store/10vbpksbfhzhcak7wxdb85i7v4x17hc3-nixd-2.9.0/bin/nixd",
+                "nix.serverPath": "nixd",
                 "nix.formatterPath": "nixfmt"
             }
         }
