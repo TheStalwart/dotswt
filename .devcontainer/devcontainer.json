@@ -3,6 +3,7 @@
     "image": "mcr.microsoft.com/devcontainers/base:bullseye",
     "features": {
         "ghcr.io/devcontainers/features/nix:1": {
+            // https://github.com/devcontainers/features/blob/main/src/nix/README.md
             // https://github.com/radxa-pkg/aic8800/blob/f82c5a87/.devcontainer/devcontainer.json
             "version": "latest",
             "packages": "nixd,nil,nixfmt",
