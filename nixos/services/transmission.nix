@@ -1,3 +1,5 @@
+# https://nixos.wiki/wiki/Transmission
+
 {
   services.transmission.enable = true;
   services.transmission.openRPCPort = true;
