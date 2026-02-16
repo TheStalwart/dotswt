@@ -59,6 +59,11 @@ nixpkgs.lib.nixosSystem {
         fsType = "ext4";
       };
 
+      # "legacyPackages" doesn't mean they're obsolete,
+      # it's a namespace for "non-flake", regular nix package definitions.
+      # Versions are pinned to a specific commit of nixpkgs,
+      # defined in the flake.lock file.
+      # https://stackoverflow.com/questions/79347692/why-nix-search-nixpkgs-returns-all-results-prefixed-with-legacypackages-x
       environment.systemPackages = [
         nixpkgs.legacyPackages.aarch64-linux.libraspberrypi
         nixpkgs.legacyPackages.aarch64-linux.raspberrypi-eeprom
