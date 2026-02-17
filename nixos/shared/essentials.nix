@@ -33,6 +33,10 @@
 
   # Cap old NixOS generations
   # https://hugosum.com/blog/how-to-avoid-too-many-old-nixos-generations
+  #
+  # More ways to reduce disk usage:
+  # `sudo nix-store --gc` # delete old versions of packages
+  # `sudo nix-store --optimize` # hard-link duplicate files in the Nix store
   boot.loader.systemd-boot.configurationLimit = 10; # only 10 generations are kept
   nix.gc = {
     automatic = true;
