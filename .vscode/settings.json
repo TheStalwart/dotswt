@@ -20,6 +20,9 @@
         "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.detectIndentation": false
     },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": true,
+    },
     "[hyprlang]": {
         "files.trimTrailingWhitespace": true,
     },
