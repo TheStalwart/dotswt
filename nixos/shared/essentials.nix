@@ -39,18 +39,6 @@
     options = "--delete-older-than 7d";
   };
 
-  # Suspend if no activity on login screen.
-  # After login, apps like hypridle will override these settings.
-  # NB: Suspended Proxmox VMs fail to wake up.
-  #
-  # See also: man logind.conf
-  services.logind.settings.Login = {
-    # let logind choose the most appropriate way to suspend/hibernate,
-    # depending on hardware capabilities
-    IdleAction = "sleep";
-    IdleActionSec = "3min";
-  };
-
   # Not enabled by default, even though some nixos utilities rely on it?
   programs.git = {
     enable = true;
