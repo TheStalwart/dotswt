@@ -5,6 +5,7 @@
   # A notable exception is COSMIC,
   # which doesn't seem to inhibit logind defaults,
   # so it will suspend after 3 minutes even if user is logged in and active.
+  # https://github.com/pop-os/cosmic-idle/issues
   #
   # NB: Suspended Proxmox VMs fail to wake up.
   #
