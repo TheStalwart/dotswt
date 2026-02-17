@@ -83,6 +83,7 @@
     python311 # my other servers and workstations run 3.11
     ripgrep
     speedtest-cli
+    sysstat # iostat
     tig
     tree
     unixtools.net-tools
