@@ -1,5 +1,6 @@
 # Home Manager entry point
 #
+# https://nix-community.github.io/home-manager/
 # https://home-manager-options.extranix.com/
 
 {
