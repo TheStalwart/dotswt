@@ -11,6 +11,12 @@
     };
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+
+    # https://github.com/nix-community/nixos-vscode-server
+    vscode-server = {
+      url = "github:nix-community/nixos-vscode-server";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -18,11 +24,12 @@
       nixpkgs,
       home-manager,
       nixos-hardware,
+      vscode-server,
       ...
     }:
     {
       nixosConfigurations = {
-        vm = import ./hosts/vm.nix { inherit nixpkgs home-manager; };
+        vm = import ./hosts/vm.nix { inherit nixpkgs home-manager vscode-server; };
         gpd = import ./hosts/gpd.nix { inherit nixpkgs home-manager; };
         portable = import ./hosts/portable.nix { inherit nixpkgs home-manager; };
         rpi4 = import ./hosts/rpi4.nix { inherit nixpkgs home-manager nixos-hardware; };

@@ -15,7 +15,12 @@
 # To sync the system to the desired state:
 # `sudo nixos-rebuild switch --flake ~/.swt/nixos#vm --impure`
 
-{ nixpkgs, home-manager, ... }:
+{
+  nixpkgs,
+  home-manager,
+  vscode-server,
+  ...
+}:
 
 nixpkgs.lib.nixosSystem {
   modules = [
@@ -35,5 +40,14 @@ nixpkgs.lib.nixosSystem {
 
     home-manager.nixosModules.home-manager
     ../home
+
+    # Workaround for VSCode failing to deploy server binary
+    # when connecting to a NixOS instance over SSH
+    # https://github.com/nix-community/nixos-vscode-server
+    vscode-server.nixosModules.default
+    {
+      services.vscode-server.enable = true;
+      services.vscode-server.enableFHS = true;
+    }
   ];
 }
