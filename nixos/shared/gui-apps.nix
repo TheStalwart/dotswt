@@ -87,6 +87,7 @@
     [
       bitwarden-desktop
       dconf-editor
+      dex # debug XDG Autostart with `dex -adv`
       floorp-bin
       ghostty
       mangohud
