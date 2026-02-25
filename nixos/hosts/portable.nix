@@ -10,7 +10,7 @@ nixpkgs.lib.nixosSystem {
     /etc/nixos/hardware-configuration.nix
     ../shared/essentials.nix
 
-    ../displayManager/tuigreet.nix
+    ../displayManagers/tuigreet.nix
     ../desktops/hyprland.nix
 
     ../shared/fonts.nix
