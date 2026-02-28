@@ -1,11 +1,20 @@
 # Apache HTTPd configuration
 # for debugging a legacy Wordpress site.
 
+{ pkgs, ... }:
+
 {
   services.httpd = {
     enable = true;
-    enablePHP = true;
     user = "stalwart";
+
+    enablePHP = true;
+    phpPackage = pkgs.php.buildEnv {
+      extraConfig = ''
+        log_errors=1
+        memory_limit=512M
+      '';
+    };
 
     virtualHosts = {
       localhost = {
