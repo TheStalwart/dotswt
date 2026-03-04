@@ -103,6 +103,7 @@
       vivaldi
       vivaldi-ffmpeg-codecs
       vscode.fhs
+      winbox4 # MikroTik router configuration GUI
       xlsclients
       xlsfonts
       zed-editor
