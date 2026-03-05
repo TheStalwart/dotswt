@@ -1,32 +1,8 @@
 {
-  "__VERSION__": "251",
-  "Sensors": {
-    "AdlxWrapperSettings": {
-      "Enabled": false
-    },
-    "DisabledPlugins": [],
-    "DisableStorageSensors": true,
-    "LibreHardwareMonitorSettings": {
-      "Controller": false,
-      "CPU": true,
-      "EmbeddedEC": true,
-      "GPU": true,
-      "Memory": false,
-      "Motherboard": true,
-      "PSU": true,
-      "Storage": false,
-      "StorageUpdateInterval": "00:01:00",
-      "ZeroRPMOverride": false
-    },
-    "NvAPIWrapperSettings": {
-      "Enabled": false,
-      "ZeroRPMOverride": false
-    }
-  },
-  "Main": {
+  "__VERSION__": "261",
+  "FanControl": {
     "Controls": [
       {
-        "Name": "CPU Fan",
         "NickName": "Radiator Fan",
         "Identifier": "/lpc/nct6686d/control/0",
         "IsHidden": false,
@@ -90,7 +66,6 @@
         ]
       },
       {
-        "Name": "Pump Fan",
         "NickName": "Pump",
         "Identifier": "/lpc/nct6686d/control/1",
         "IsHidden": false,
@@ -150,7 +125,6 @@
         ]
       },
       {
-        "Name": "System Fan #1",
         "NickName": "System Fan #1",
         "Identifier": "/lpc/nct6686d/control/2",
         "IsHidden": true,
@@ -169,7 +143,6 @@
         "Calibration": []
       },
       {
-        "Name": "System Fan #2",
         "NickName": "System Fan #2",
         "Identifier": "/lpc/nct6686d/control/3",
         "IsHidden": true,
@@ -188,7 +161,6 @@
         "Calibration": []
       },
       {
-        "Name": "System Fan #3",
         "NickName": "System Fan #3",
         "Identifier": "/lpc/nct6686d/control/4",
         "IsHidden": true,
@@ -207,7 +179,6 @@
         "Calibration": []
       },
       {
-        "Name": "System Fan #4",
         "NickName": "System Fan #4",
         "Identifier": "/lpc/nct6686d/control/5",
         "IsHidden": true,
@@ -226,7 +197,6 @@
         "Calibration": []
       },
       {
-        "Name": "System Fan #5",
         "NickName": "System Fan #5",
         "Identifier": "/lpc/nct6686d/control/6",
         "IsHidden": true,
@@ -245,7 +215,6 @@
         "Calibration": []
       },
       {
-        "Name": "System Fan #6",
         "NickName": "System Fan #6",
         "Identifier": "/lpc/nct6686d/control/7",
         "IsHidden": true,
@@ -264,7 +233,6 @@
         "Calibration": []
       },
       {
-        "Name": "GPU Fan",
         "NickName": "GPU Fan",
         "Identifier": "/gpu-amd/5/control/0",
         "IsHidden": false,
@@ -308,7 +276,6 @@
     ],
     "CustomSensors": [
       {
-        "Name": "MAX(CPU, GPU)",
         "NickName": "MAX(CPU, GPU)",
         "Identifier": "Mix/MAX(CPU, GPU)",
         "IsHidden": false,
@@ -330,12 +297,11 @@
         ]
       }
     ],
-    "Fahrenheit": false,
     "FanCurves": [
       {
-        "CommandMode": 0,
         "Name": "Radiator Fan Curve",
         "IsHidden": false,
+        "CommandMode": 0,
         "SelectedTempSource": {
           "Identifier": "Mix/MAX(CPU, GPU)"
         },
@@ -348,9 +314,9 @@
         "LoadTemperature": 85
       },
       {
-        "CommandMode": 0,
         "Name": "Pump Curve",
         "IsHidden": false,
+        "CommandMode": 0,
         "SelectedTempSource": {
           "Identifier": "Mix/MAX(CPU, GPU)"
         },
@@ -367,58 +333,158 @@
       {
         "Identifier": "/lpc/nct6686d/fan/0",
         "IsHidden": false,
-        "Name": "CPU Fan",
         "NickName": "Radiator Fan"
       },
       {
         "Identifier": "/lpc/nct6686d/fan/1",
         "IsHidden": false,
-        "Name": "Pump Fan",
         "NickName": "Pump"
       },
       {
         "Identifier": "/lpc/nct6686d/fan/2",
         "IsHidden": true,
-        "Name": "System Fan #1",
         "NickName": "System Fan #1"
       },
       {
         "Identifier": "/lpc/nct6686d/fan/3",
         "IsHidden": true,
-        "Name": "System Fan #2",
         "NickName": "System Fan #2"
       },
       {
         "Identifier": "/lpc/nct6686d/fan/4",
         "IsHidden": true,
-        "Name": "System Fan #3",
         "NickName": "System Fan #3"
       },
       {
         "Identifier": "/lpc/nct6686d/fan/5",
         "IsHidden": true,
-        "Name": "System Fan #4",
         "NickName": "System Fan #4"
       },
       {
         "Identifier": "/lpc/nct6686d/fan/6",
         "IsHidden": true,
-        "Name": "System Fan #5",
         "NickName": "System Fan #5"
       },
       {
         "Identifier": "/lpc/nct6686d/fan/7",
         "IsHidden": true,
-        "Name": "System Fan #6",
         "NickName": "System Fan #6"
       },
       {
         "Identifier": "/gpu-amd/5/fan/0",
         "IsHidden": false,
-        "Name": "GPU Fan",
         "NickName": "GPU Fan"
       }
     ],
+    "TemperatureSensors": [
+      {
+        "Identifier": "/amdcpu/0/temperature/2",
+        "IsHidden": false,
+        "NickName": "Core (Tctl/Tdie)"
+      },
+      {
+        "Identifier": "/amdcpu/0/temperature/7",
+        "IsHidden": false,
+        "NickName": "CCD1 (Tdie)"
+      },
+      {
+        "Identifier": "/amdcpu/0/temperature/3",
+        "IsHidden": false,
+        "NickName": "Package"
+      },
+      {
+        "Identifier": "/amdcpu/0/temperature/4",
+        "IsHidden": false,
+        "NickName": "IOD Hotspot"
+      },
+      {
+        "Identifier": "/amdcpu/0/temperature/5",
+        "IsHidden": false,
+        "NickName": "L3 (CCD1)"
+      },
+      {
+        "Identifier": "/amdcpu/0/temperature/6",
+        "IsHidden": false,
+        "NickName": "L3 (CCD2)"
+      },
+      {
+        "Identifier": "/gpu-amd/0/temperature/4",
+        "IsHidden": false,
+        "NickName": "GPU VR SoC"
+      },
+      {
+        "Identifier": "/gpu-amd/5/temperature/0",
+        "IsHidden": false,
+        "NickName": "GPU Core"
+      },
+      {
+        "Identifier": "/gpu-amd/5/temperature/7",
+        "IsHidden": false,
+        "NickName": "GPU Hot Spot"
+      },
+      {
+        "Identifier": "/lpc/nct6686d/temperature/0",
+        "IsHidden": false,
+        "NickName": "CPU"
+      },
+      {
+        "Identifier": "/lpc/nct6686d/temperature/1",
+        "IsHidden": false,
+        "NickName": "System"
+      },
+      {
+        "Identifier": "/lpc/nct6686d/temperature/2",
+        "IsHidden": false,
+        "NickName": "VRM MOS"
+      },
+      {
+        "Identifier": "/lpc/nct6686d/temperature/3",
+        "IsHidden": false,
+        "NickName": "PCH"
+      },
+      {
+        "Identifier": "/lpc/nct6686d/temperature/4",
+        "IsHidden": false,
+        "NickName": "CPU Socket"
+      },
+      {
+        "Identifier": "/lpc/nct6686d/temperature/5",
+        "IsHidden": false,
+        "NickName": "PCIe x1"
+      },
+      {
+        "Identifier": "/lpc/nct6686d/temperature/6",
+        "IsHidden": false,
+        "NickName": "M2 #1"
+      }
+    ]
+  },
+  "Sensors": {
+    "AdlxWrapperSettings": {
+      "Enabled": false
+    },
+    "DisabledPlugins": [],
+    "DisableStorageSensors": true,
+    "LibreHardwareMonitorSettings": {
+      "Controller": false,
+      "CPU": true,
+      "EmbeddedEC": true,
+      "GPU": true,
+      "Memory": false,
+      "Motherboard": true,
+      "PowerMonitor": false,
+      "PSU": true,
+      "Storage": false,
+      "StorageUpdateInterval": "00:01:00",
+      "ZeroRPMOverride": false
+    },
+    "NvAPIWrapperSettings": {
+      "Enabled": false,
+      "ZeroRPMOverride": false
+    }
+  },
+  "MainWindow": {
+    "Fahrenheit": false,
     "HideCalibration": false,
     "HideFanSpeedCards": false,
     "HorizontalUIOrientation": true,
@@ -428,7 +494,6 @@
     "ShowHiddenCards": false,
     "SyncThemeWithWindows": true,
     "SyncTrayIconColorWithWindows": true,
-    "TemperatureSensors": [],
     "TrayIconColor": null,
     "TrayIcons": [
       {
