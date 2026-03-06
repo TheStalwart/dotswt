@@ -67,6 +67,11 @@
 
   programs.command-not-found.enable = true;
 
+  # Enable password input feedback
+  security.sudo.extraConfig = ''
+    Defaults pwfeedback
+  '';
+
   # List packages installed in system profile. To search, run:
   # $ nix search nixpkgs wget # requires >8GB RAM
   # or visit https://search.nixos.org/packages
