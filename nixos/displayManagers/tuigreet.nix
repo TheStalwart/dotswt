@@ -2,6 +2,8 @@
 # Like ly, less features, but XDG Session compatible.
 #
 # Seems to ignore services.displayManager.autoLogin.* Nix Options.
+# Also, doesn't correctly report IdleHints to logind,
+# so a PC won't suspend unless i log in to desktop.
 #
 # https://github.com/apognu/tuigreet
 # https://ryjelsum.me/homelab/greetd-session-choose/
