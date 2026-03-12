@@ -1,0 +1,4 @@
+# On some setups 
+# i linked the entire directory to ~/.config/hypr
+# instead of individual files
+monitors.conf
