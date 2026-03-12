@@ -88,6 +88,7 @@
       bitwarden-desktop
       dconf-editor
       dex # debug XDG Autostart with `dex -adv`
+      drm_info # VRR diagnostic tool
       floorp-bin
       ghostty
       mangohud
