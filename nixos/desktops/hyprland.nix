@@ -31,6 +31,7 @@
   environment.sessionVariables.XCURSOR_SIZE = 24;
 
   environment.systemPackages = with pkgs; [
+    hyprdynamicmonitors # https://filipmikina.com/blog/hyprdynamicmonitors
     hyprls # LSP server for Hyprland configuration files
     hyprmon # TUI multi-monitor layout editor
     hyprprop
