@@ -97,7 +97,7 @@
       nvtopPackages.intel
       obsidian
       qdirstat
-      sourcegit
+      sourcegit # Similar UI and feature set to SourceTree
       sublime-merge # Dark Mode behind paywall
       tigervnc # x0vncserver, w0vncserver
       vivaldi
@@ -111,7 +111,7 @@
     ++ lib.optionals pkgs.stdenv.hostPlatform.isx86_64 [
       # Isn't it funny how this list is exclusively apps written in "portable" CEF/Electron?
       discord
-      gitkraken
+      # gitkraken # Clunky and confusing UI, everything is a modal dialog for some reason
 
       # Reasons i'm not using Microsoft Edge as my default browser on Linux:
       # - Some tooltips are presented as a normal windows and trigger relayout in tiling window managers
