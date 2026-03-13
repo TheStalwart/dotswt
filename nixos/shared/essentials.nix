@@ -90,7 +90,7 @@
     nixfmt # previously used nixfmt-classic, but its output was inconsistent between VSCode and Zed
     nmap
     psmisc
-    python311 # my other servers and workstations run 3.11
+    python314 # my other servers and workstations run 3.11, but it's broken in nixos-unstable as of March 2026
     ripgrep
     speedtest-cli
     sysstat # iostat
