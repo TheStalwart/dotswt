@@ -3,6 +3,7 @@
         "Xresources": "xdefaults"
     },
     "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
     "[jsonc]": {
         "editor.formatOnSave": true,
         "editor.tabSize": 4,
