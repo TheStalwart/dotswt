@@ -28,6 +28,7 @@ nixpkgs.lib.nixosSystem {
     ../desktops/awesome.nix
     ../shared/fonts.nix
     ../shared/gui-apps.nix
+    ../shared/web-browsers.nix
     ../shared/i18n.nix
     ../shared/pipewire.nix
     ../shared/networkmanager.nix

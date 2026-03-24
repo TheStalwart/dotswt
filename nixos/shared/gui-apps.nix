@@ -16,17 +16,6 @@
   # KDE Apps
   programs.partition-manager.enable = true;
 
-  programs.firefox = {
-    enable = true;
-
-    # https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
-    # https://mozilla.github.io/policy-templates/
-    preferences = {
-      "browser.shell.checkDefaultBrowser" = false;
-      "general.autoScroll" = true;
-    };
-  };
-
   programs.thunderbird.enable = true;
 
   # https://nixos.wiki/wiki/Visual_Studio_Code
@@ -57,19 +46,6 @@
     "application/x-terminal-emulator" = "com.mitchellh.ghostty.desktop";
   };
 
-  # Set default browser to Ablaze Floorp
-  # MS Edge is x86_64 only and has too many UI bugs on Linux
-  # https://unix.stackexchange.com/questions/379632/how-to-set-the-default-browser-in-nixos
-  # *.desktop files for installed apps are in /run/current-system/sw/share/applications/
-  environment.sessionVariables.DEFAULT_BROWSER = "${pkgs.floorp-bin}/bin/floorp";
-  xdg.mime.defaultApplications = {
-    "text/html" = "floorp.desktop";
-    "x-scheme-handler/http" = "floorp.desktop";
-    "x-scheme-handler/https" = "floorp.desktop";
-    "x-scheme-handler/about" = "floorp.desktop";
-    "x-scheme-handler/unknown" = "floorp.desktop";
-  };
-
   # Steam is x86_64 only
   # (hopefully we get native arm64 support after Steam Frame is released in 2026)
   programs.steam.enable = pkgs.stdenv.hostPlatform.isx86_64;
@@ -89,7 +65,6 @@
       dconf-editor
       dex # debug XDG Autostart with `dex -adv`
       drm_info # VRR diagnostic tool
-      floorp-bin
       ghostty
       mangohud
       mesa-demos # glxgears etc.
@@ -101,8 +76,6 @@
       sourcegit # Similar UI and feature set to SourceTree
       sublime-merge # Dark Mode behind paywall
       tigervnc # x0vncserver, w0vncserver
-      vivaldi
-      vivaldi-ffmpeg-codecs
       vscode.fhs
       winbox4 # MikroTik router configuration GUI
       xlsclients
@@ -113,15 +86,6 @@
       # Isn't it funny how this list is exclusively apps written in "portable" CEF/Electron?
       discord
       # gitkraken # Clunky and confusing UI, everything is a modal dialog for some reason
-
-      # Reasons i'm not using Microsoft Edge as my default browser on Linux:
-      # - Some tooltips are presented as a normal windows and trigger relayout in tiling window managers
-      # - Workspace sync is unreliable, i saw workspaces revert to an older state multiple times, losing tabs
-      # - Dragging and dropping tabs between windows is broken
-      # - Disabling title bar with vertical tabs causes some buttons to overlap
-      # - No arm64 build for Raspberry Pi
-      microsoft-edge
-
       spotify
     ];
 }
