@@ -4,7 +4,12 @@
 
 {
   # Firefox is The Default on Linux,
-  # but its tab/session management is very basic
+  # but its tab/session management is very basic.
+  # Tab groups will survive the window being closed,
+  # but new tabs (ctrl+T) are created outside of the tab group,
+  # so when i want to open a travel plan
+  # and add a couple extra tabs to research later,
+  # i have to remember to pin the new tabs to the group manually.
   programs.firefox = {
     enable = true;
 
@@ -21,13 +26,20 @@
     [
       # Firefox-based power-user browser, inspired by Vivaldi.
       # Has robust workspace management feature,
-      # but they feel weird when trying to open multiple workspaces at the same time and move tabs between them
+      # but they feel weird when trying to open multiple workspaces
+      # and move tabs between them, because they're separate FF sessions.
+      # Opening multiple windows in the same workspace is even worse,
+      # since accidentally closing one of the workspace windows
+      # essentially deletes the tabs from the workspace.
       floorp-bin
 
       # Chrome-based power-user browser.
       # Has extra features like RSS reader and Calendar.
       # Yet to properly test, but i'd like to move away from Chromium-based
       # due to hostile upstream that insists on nerfing ad blockers.
+      # It's also proprietary, so any bugs present might be left unfixed for years.
+      # Unless its calendar is substantially better than Thunderbird,
+      # i don't want to switch from one dumpster fire (Edge) to another.
       vivaldi
       vivaldi-ffmpeg-codecs
     ]
