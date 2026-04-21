@@ -83,6 +83,7 @@
     fastfetch
     file
     geekbench
+    gptfdisk
     htop
     inetutils
     lm_sensors
