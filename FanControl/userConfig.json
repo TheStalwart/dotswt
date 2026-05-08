@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "261",
+  "__VERSION__": "264",
   "FanControl": {
     "Controls": [
       {
@@ -376,88 +376,7 @@
         "NickName": "GPU Fan"
       }
     ],
-    "TemperatureSensors": [
-      {
-        "Identifier": "/amdcpu/0/temperature/2",
-        "IsHidden": false,
-        "NickName": "Core (Tctl/Tdie)"
-      },
-      {
-        "Identifier": "/amdcpu/0/temperature/7",
-        "IsHidden": false,
-        "NickName": "CCD1 (Tdie)"
-      },
-      {
-        "Identifier": "/amdcpu/0/temperature/3",
-        "IsHidden": false,
-        "NickName": "Package"
-      },
-      {
-        "Identifier": "/amdcpu/0/temperature/4",
-        "IsHidden": false,
-        "NickName": "IOD Hotspot"
-      },
-      {
-        "Identifier": "/amdcpu/0/temperature/5",
-        "IsHidden": false,
-        "NickName": "L3 (CCD1)"
-      },
-      {
-        "Identifier": "/amdcpu/0/temperature/6",
-        "IsHidden": false,
-        "NickName": "L3 (CCD2)"
-      },
-      {
-        "Identifier": "/gpu-amd/0/temperature/4",
-        "IsHidden": false,
-        "NickName": "GPU VR SoC"
-      },
-      {
-        "Identifier": "/gpu-amd/5/temperature/0",
-        "IsHidden": false,
-        "NickName": "GPU Core"
-      },
-      {
-        "Identifier": "/gpu-amd/5/temperature/7",
-        "IsHidden": false,
-        "NickName": "GPU Hot Spot"
-      },
-      {
-        "Identifier": "/lpc/nct6686d/temperature/0",
-        "IsHidden": false,
-        "NickName": "CPU"
-      },
-      {
-        "Identifier": "/lpc/nct6686d/temperature/1",
-        "IsHidden": false,
-        "NickName": "System"
-      },
-      {
-        "Identifier": "/lpc/nct6686d/temperature/2",
-        "IsHidden": false,
-        "NickName": "VRM MOS"
-      },
-      {
-        "Identifier": "/lpc/nct6686d/temperature/3",
-        "IsHidden": false,
-        "NickName": "PCH"
-      },
-      {
-        "Identifier": "/lpc/nct6686d/temperature/4",
-        "IsHidden": false,
-        "NickName": "CPU Socket"
-      },
-      {
-        "Identifier": "/lpc/nct6686d/temperature/5",
-        "IsHidden": false,
-        "NickName": "PCIe x1"
-      },
-      {
-        "Identifier": "/lpc/nct6686d/temperature/6",
-        "IsHidden": false,
-        "NickName": "M2 #1"
-      }
-    ]
+    "TemperatureSensors": []
   },
   "Sensors": {
     "AdlxWrapperSettings": {
