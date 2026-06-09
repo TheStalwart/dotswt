@@ -11,7 +11,7 @@
 # https://nix.dev/tutorials/nixos/installing-nixos-on-a-raspberry-pi
 #
 # To sync the system to the desired state:
-# `sudo nixos-rebuild switch --flake ~/.swt/nixos#rpi4`
+# `sudo nixos-rebuild switch --flake ~/.dotswt/nixos#rpi4`
 
 {
   nixpkgs,

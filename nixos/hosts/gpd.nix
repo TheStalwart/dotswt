@@ -9,7 +9,7 @@
 # Verify with: `swapon --show`
 #
 # To sync the system to the desired state:
-# `sudo nixos-rebuild switch --flake ~/.swt/nixos#gpd --impure`
+# `sudo nixos-rebuild switch --flake ~/.dotswt/nixos#gpd --impure`
 
 { nixpkgs, home-manager, ... }:
 

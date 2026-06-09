@@ -1,7 +1,7 @@
 # Portable instance of NixOS
 #
 # To sync the system to the desired state:
-# `sudo nixos-rebuild switch --flake ~/.swt/nixos#portable --impure`
+# `sudo nixos-rebuild switch --flake ~/.dotswt/nixos#portable --impure`
 
 { nixpkgs, home-manager, ... }:
 

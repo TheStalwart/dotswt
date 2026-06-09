@@ -13,7 +13,7 @@
 # - system.stateVersion = "25.05";
 #
 # To sync the system to the desired state:
-# `sudo nixos-rebuild switch --flake ~/.swt/nixos#vm --impure`
+# `sudo nixos-rebuild switch --flake ~/.dotswt/nixos#vm --impure`
 
 {
   nixpkgs,
