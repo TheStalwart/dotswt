@@ -29,7 +29,7 @@ stty -ixon
 # tmux & screen
 if which tmux > /dev/null 2>&1; then
 	# Replicate `screen -DRR` behavior with tmux
-	alias s="tmux new-session -AD -s 0"
+	alias s="tmux -f "$DOTSWT/tmux.conf" new-session -AD -s 0"
 else
 	# I have 20+ years of muscle memory with GNU Screen
 	# but the list of issues unlikely to be fixed is growing:
