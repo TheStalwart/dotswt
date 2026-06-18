@@ -26,8 +26,17 @@ fi
 # don't freeze on ctrl+s
 stty -ixon
 
-# screen
-alias s="screen -DRR"
+# tmux & screen
+if which tmux > /dev/null 2>&1; then
+	# Replicate `screen -DRR` behavior with tmux
+	alias s="tmux new-session -AD -s 0"
+else
+	# I have 20+ years of muscle memory with GNU Screen
+	# but the list of issues unlikely to be fixed is growing:
+	# - btop 256-color support is broken in screen
+	# - statusline backtick commands make the session lag every time it refreshes
+	alias s="screen -DRR"
+fi
 export SCREENRC=$DOTSWT/screenrc
 
 alias gds="git diff && git status"
