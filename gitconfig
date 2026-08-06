@@ -3,6 +3,7 @@
 # Or set essential values like user.name and user.email with:
 # git config --global user.name "Pavel Shevchuk"
 # git config --global user.email "stlwrt@gmail.com"
+# git config --global pull.rebase true
 
 [user]
 	name = Pavel Shevchuk
@@ -10,6 +11,8 @@
 [core]
 	editor = vim
 	excludesfile = /Users/stalwart/.dotswt/gitignore
+[pull]
+        rebase = true
 [color]
 	ui = true
 [difftool "sourcetree"]
