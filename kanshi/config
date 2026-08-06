@@ -1,0 +1,13 @@
+# https://wiki.archlinux.org/title/Kanshi
+# `man 5 kanshi`
+# `man kanshictl`
+
+profile builtin-only {
+	output eDP-1 enable scale 1.25
+}
+
+profile stacked {
+	output HDMI-A-2 enable scale 1 position 0,0
+	output eDP-1 enable scale 1.25 position 192,1080
+}
+
