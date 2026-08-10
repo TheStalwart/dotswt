@@ -10,7 +10,7 @@
                 "${workspaceFolder}",
                 "-c",
                 "${workspaceFolder}/dotbot.yaml",
-                "-vv"
+                "-v"
             ],
             "options": {
                 "env": {
