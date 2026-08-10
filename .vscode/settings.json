@@ -21,6 +21,11 @@
         "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.detectIndentation": false
     },
+    "[yaml]": {
+        // dotbot fails to parse the config unless it's 4-space tabulated
+        "editor.tabSize": 4,
+        "files.trimTrailingWhitespace": true,
+    },
     "[markdown]": {
         "files.trimTrailingWhitespace": true,
     },

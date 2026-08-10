@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Deploy with dotbot",
+            "type": "shell",
+            "command": "dotbot",
+            "args": [
+                "-d",
+                "${workspaceFolder}",
+                "-c",
+                "${workspaceFolder}/dotbot.yaml",
+                "-vv"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Run dotbot to deploy dotfiles"
+        }
+    ]
+}

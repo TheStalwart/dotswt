@@ -1,0 +1,16 @@
+# dotbot configuration
+# https://github.com/anishathalye/dotbot
+#
+# Install dotfiles with:
+# `dotbot -c ~/.dotswt/dotbot.yaml
+#
+# Make sure the file is tabulated with 4-spaces.
+# dotbot fails to parse if it's 2-spaces (VSCode defaults)
+
+- link:
+    ~/.tmux.conf: tmux.conf
+
+- shell:
+    - description: Configure Git to include the dotswt config
+    # to avoid committing machine-specific paths and credentials
+      command: git config --global include.path ~/.dotswt/gitconfig
