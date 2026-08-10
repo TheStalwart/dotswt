@@ -9,6 +9,11 @@
 
 - link:
     ~/.tmux.conf: tmux.conf
+    ~/.config/hypr/hyprland.lua: hypr/hyprland.lua
+    ~/.config/hypr/hypridle.conf: hypr/hypridle.conf
+    ~/.config/kanshi/config:
+        path: kanshi/config
+        create: true
 
 - shell:
     - description: Configure Git to include the dotswt config
