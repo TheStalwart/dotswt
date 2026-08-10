@@ -55,6 +55,9 @@ hl.on("hyprland.start", function ()
   -- Do not forget to copy/link ~/.config/hypr/hypridle.conf
   hl.exec_cmd("hypridle")
 
+  -- Start a polkit agent to handle authentication prompts
+  hl.exec_cmd("systemctl --user start hyprpolkitagent")
+
   -- Multi-display profile management
   -- that overrides Hyprland's internal monitor profile.
   hl.exec_cmd("kanshi")
