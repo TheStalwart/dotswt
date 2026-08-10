@@ -12,6 +12,14 @@
                 "${workspaceFolder}/dotbot.yaml",
                 "-vv"
             ],
+            "options": {
+                "env": {
+                    // VSCode installed via Linuxbrew
+                    // doesn't have the correct $PATH set
+                    // to run other apps installed via Linuxbrew
+                    "PATH": "${env:PATH}:/home/linuxbrew/.linuxbrew/bin"
+                }
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
