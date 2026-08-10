@@ -2,7 +2,7 @@
 # https://github.com/anishathalye/dotbot
 #
 # Install dotfiles with:
-# `dotbot -c ~/.dotswt/dotbot.yaml
+# `dotbot -c ~/.dotswt/dotbot.yaml`
 #
 # Make sure the file is tabulated with 4-spaces.
 # dotbot fails to parse if it's 2-spaces (VSCode defaults)
