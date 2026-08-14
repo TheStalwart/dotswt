@@ -284,7 +284,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("wlrctl window focus org.mozilla.firefox || firefox || flatpak run org.mozilla.firefox"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("wlrctl window focus code || code")) -- Visual Studio Code
 -- Win+K was previously bound to Kraken, but SourceGit is a better git client
-hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("wlrctl window focus SourceGit || SourceGit || ~/AppImages/sourcegit.appimage"))
+hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("wlrctl window focus SourceGit || SourceGit || ~/AppImages/sourcegit.?pp?mage"))
 
 -- Session management
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("noctalia msg session lock"))
