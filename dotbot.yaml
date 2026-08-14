@@ -11,6 +11,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.config/hypr/hyprland.lua: hypr/hyprland.lua
     ~/.config/hypr/hypridle.conf: hypr/hypridle.conf
+    ~/.config/hypr/hyprqt6engine.conf: hypr/hyprqt6engine.conf
     ~/.config/kanshi/config:
         path: kanshi/config
         create: true
