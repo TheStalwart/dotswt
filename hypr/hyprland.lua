@@ -149,6 +149,17 @@ hl.config({
     animations = {
         enabled = true,
     },
+
+    -- unscale XWayland
+    -- https://wiki.hypr.land/Configuring/Advanced-and-Cool/XWayland/
+    --
+    -- Apps that still don't support Wayland natively
+    -- as of August 2026:
+    -- - Steam
+    -- - SourceGit
+    xwayland = {
+      force_zero_scaling = true
+    }
 })
 
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
