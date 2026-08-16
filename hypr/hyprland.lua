@@ -3,6 +3,7 @@
 -- Documentation:
 -- - https://wiki.hypr.land/Configuring/Start/
 -- - https://wiki.archlinux.org/title/Hyprland
+-- - https://alejandrominaya.github.io/hyprland-lua-docs/
 
 -- You can (and should!!) split this configuration into multiple files
 -- Create your files separately and then require them like this:
@@ -265,6 +266,7 @@ hl.config({
 
         touchpad = {
             natural_scroll = true,
+            scroll_factor = 0.5,
         },
     },
 })
