@@ -296,6 +296,7 @@ hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("wlrctl window focus org.mozilla.firefox || firefox || flatpak run org.mozilla.firefox"))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("wlrctl window focus discord || discord || flatpak run com.discordapp.Discord"))
+hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("wlrctl window focus md.Obsidian || obsidian || flatpak run md.obsidian.Obsidian"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("wlrctl window focus code || code")) -- Visual Studio Code
 -- Win+K was previously bound to Kraken, but SourceGit is a better git client
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("wlrctl window focus SourceGit || SourceGit || ~/AppImages/sourcegit.?pp?mage"))
