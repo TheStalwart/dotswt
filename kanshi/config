@@ -1,13 +1,21 @@
 # https://wiki.archlinux.org/title/Kanshi
 # `man 5 kanshi`
 # `man kanshictl`
+#
+# `hyprctl monitors` lists currently connected displays
+# `kanshictl reload` reloads this config file
 
 profile builtin-only {
 	output eDP-1 enable scale 1.25
 }
 
-profile stacked {
+profile stacked-hdmi1080p {
 	output HDMI-A-2 enable scale 1 position 0,0
 	output eDP-1 enable scale 1.25 position 192,1080
+}
+
+profile stacked-dp1440p {
+	output DP-2 enable scale 1 position 0,0
+	output eDP-1 enable scale 1.25 position 512,1440
 }
 
