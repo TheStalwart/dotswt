@@ -308,7 +308,8 @@ hl.bind(mainMod .. " + CTRL + Escape", hl.dsp.exec_cmd("noctalia msg panel-toggl
 -- hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
-local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
+-- Default bind to close the current window is Win+Q, but i kept pressing Win+W
+local closeWindowBind = hl.bind(mainMod .. " + W", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
