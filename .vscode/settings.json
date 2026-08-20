@@ -45,8 +45,8 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[lua]": {
-        // Match hyprland config file default tab size of 2 spaces
-        "editor.tabSize": 2,
+        // Match hyprland config file default tab size of 4 spaces
+        "editor.tabSize": 4,
         "editor.detectIndentation": false,
     },
     "[nix]": {

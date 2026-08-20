@@ -49,19 +49,19 @@ local menu = "noctalia msg panel-toggle launcher"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function ()
-  -- List all IPC functions: `noctalia msg --help`
-  -- https://docs.noctalia.dev/v5/ipc/
-  hl.exec_cmd("noctalia")
+    -- List all IPC functions: `noctalia msg --help`
+    -- https://docs.noctalia.dev/v5/ipc/
+    hl.exec_cmd("noctalia")
 
-  -- Do not forget to copy/link ~/.config/hypr/hypridle.conf
-  hl.exec_cmd("hypridle")
+    -- Do not forget to copy/link ~/.config/hypr/hypridle.conf
+    hl.exec_cmd("hypridle")
 
-  -- Start a polkit agent to handle authentication prompts
-  hl.exec_cmd("systemctl --user start hyprpolkitagent")
+    -- Start a polkit agent to handle authentication prompts
+    hl.exec_cmd("systemctl --user start hyprpolkitagent")
 
-  -- Multi-display profile management
-  -- that overrides Hyprland's internal monitor profile.
-  hl.exec_cmd("kanshi")
+    -- Multi-display profile management
+    -- that overrides Hyprland's internal monitor profile.
+    hl.exec_cmd("kanshi")
 end)
 
 
