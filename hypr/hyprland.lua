@@ -254,7 +254,7 @@ hl.config({
 
 hl.config({
     input = {
-        kb_layout  = "lv,ru",
+        kb_layout  = "us,ru",
         kb_variant = "",
         kb_model   = "",
         kb_options = "grp:lalt_lshift_toggle",
@@ -274,6 +274,21 @@ hl.config({
         }
     },
 })
+
+-- Toggle between "us,ru" and "lv,ru" keyboard layout groups with Win+Space.
+-- lv(apostrophe) makes apostrophe a dead key,
+-- which is annoying when programming,
+-- but preferred when typing in Latvian.
+local latvian_enabled = false
+hl.bind("SUPER + SPACE", function()
+    latvian_enabled = not latvian_enabled
+    hl.config({
+        input = {
+            kb_layout = latvian_enabled and "lv,ru" or "us,ru",
+            kb_variant = latvian_enabled and "apostrophe," or ",",
+        },
+    })
+end)
 
 hl.gesture({
     fingers = 3,
