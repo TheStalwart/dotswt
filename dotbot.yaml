@@ -23,3 +23,18 @@
     - description: Configure Git to include the dotswt config
     # to avoid committing machine-specific paths and credentials
       command: git config --global include.path ~/.dotswt/gitconfig
+
+- shell:
+    - description: Ensure bashrc sources dotswt shell config
+      command: |
+        if [ -z "$DOTSWT" ]; then
+            if [ -f "$PWD/dotbot.yaml" ]; then
+                DOTSWT="$PWD"
+            else
+                echo "ERROR: DOTSWT not set and $PWD does not contain dotbot.yaml — aborting" >&2
+                exit 1
+            fi
+        fi
+        grep -qxF "source $DOTSWT/shell/bashrc" ~/.bashrc || echo "source $DOTSWT/shell/bashrc" >> ~/.bashrc
+      stdout: true
+      stderr: true
