@@ -9,6 +9,11 @@ profile builtin-only {
 	output eDP-1 enable scale 1.25
 }
 
+profile solo-38 {
+	output "ASUSTek COMPUTER INC PG38UQ S5LMTF119360" enable scale 1
+	output eDP-1 disable
+}
+
 profile stacked-hdmi1080p {
 	output HDMI-A-2 enable scale 1 position 0,0
 	output eDP-1 enable scale 1.25 position 192,1080
