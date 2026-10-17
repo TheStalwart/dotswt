@@ -2,6 +2,7 @@
     "recommendations": [
         "antcap96.xresources",
         "DavidAnson.vscode-markdownlint",
+        "dcasella.i3",
         "eamodio.gitlens",
         "fireblast.hyprlang-vscode",
         "ms-vscode.PowerShell",

@@ -12,6 +12,9 @@
     ~/.config/foot/foot.ini:
       path: foot/foot.ini
       create: true
+    ~/.config/sway/config:
+      path: sway/config
+      create: true
     ~/.config/hypr/hyprland.lua: hypr/hyprland.lua
     ~/.config/hypr/hypridle.conf: hypr/hypridle.conf
     ~/.config/hypr/hyprqt6engine.conf: hypr/hyprqt6engine.conf

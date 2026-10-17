@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "**/sway/config": "i3",
         "Xresources": "xdefaults"
     },
     "files.eol": "\n",
