@@ -51,11 +51,12 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
        natural_scroll enabled
 #       middle_emulation enabled
    }
-#
-#   input type:keyboard {
-#       xkb_layout "eu"
-#   }
-#
+
+input type:keyboard {
+    xkb_layout "us,ru"
+    xkb_options "grp:lalt_lshift_toggle"
+}
+
 # You can also configure each device individually.
 # Read `man 5 sway-input` for more information about this section.
 
